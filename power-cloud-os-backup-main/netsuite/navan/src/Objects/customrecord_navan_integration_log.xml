@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customrecordtype scriptid="customrecord_navan_integration_log">
+    <recordname>Navan Integration Log</recordname>
+    <includename>F</includename>
+    <description>Per-trip processing log for Navan expense integration.</description>
+    <accesstype>NONENEEDED</accesstype>
+    <allowattachments>F</allowattachments>
+    <allowinlineediting>F</allowinlineediting>
+    <allowinlinedeleting>T</allowinlinedeleting>
+    <allowquickadd>F</allowquickadd>
+    <enablenumbering>T</enablenumbering>
+    <numberingprefix>NLOG-</numberingprefix>
+    <isinactive>F</isinactive>
+    <isordered>F</isordered>
+    <showid>T</showid>
+    <showlastmodified>T</showlastmodified>
+    <showcreationdate>T</showcreationdate>
+    <customrecordcustomfields>
+        <customrecordcustomfield scriptid="custrecord_navan_log_event_type">
+            <label>Event Type</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_log_trip_uuid">
+            <label>Trip UUID</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_log_employee">
+            <label>Employee</label>
+            <fieldtype>SELECT</fieldtype>
+            <selectrecordtype>-4</selectrecordtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_log_expense_report">
+            <label>Expense Report ID</label>
+            <fieldtype>INTEGER</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_log_status">
+            <label>Status</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_log_booking_count">
+            <label>Booking Count</label>
+            <fieldtype>INTEGER</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_log_total_amount">
+            <label>Total Amount</label>
+            <fieldtype>CURRENCY</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_log_error_message">
+            <label>Error Message</label>
+            <fieldtype>TEXTAREA</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_log_raw_payload">
+            <label>Raw Payload</label>
+            <fieldtype>TEXTAREA</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_log_timestamp">
+            <label>Timestamp</label>
+            <fieldtype>DATETIMETZ</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+    </customrecordcustomfields>
+</customrecordtype>

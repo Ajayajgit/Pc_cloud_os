@@ -1,0 +1,19 @@
+{
+  "clientUUID": "d66871c6-b2f4-42e2-b734-c63b6c1ac717",
+  "companyName": "ZZ TEST API Client",
+  "revenueSourceId": 1,
+  "website": "https://zztest.example.com",
+  "contacts": [
+    {
+      "firstName": "Zed",
+      "lastName": "Tester",
+      "email": "zed@zztest.example.com",
+      "title": "CFO"
+    },
+    {
+      "firstName": "Zoe",
+      "lastName": "Tester",
+      "email": "zoe@zztest.example.com"
+    }
+  ]
+}

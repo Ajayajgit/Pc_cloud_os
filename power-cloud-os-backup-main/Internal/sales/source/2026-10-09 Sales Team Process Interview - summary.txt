@@ -1,0 +1,72 @@
+This transcript captures a structured internal audit of the sales-to-delivery lifecycle, conducted by Michael Flynn. The session identifies current operational friction points, specifically regarding NetSuite data entry, partner relationships, and the transition from sales to project execution.
+
+Core Thesis
+The current sales process relies heavily on manual intervention and partner relationships (Anderson Frank, NetSuite). While PowerCloud OS is successfully automating proposal generation and call transcription, the "last mile" of project setup—specifically NetSuite opportunity creation and expense tool integration (Navan/Uber)—remains a significant gap.
+
+Sales & Partner Dynamics
+• Lead Sources: Most deals currently flow through Anderson Frank (80% of current work) or NetSuite. Direct customer contact is rare but a target for future growth.
+• Subcontracting vs. Direct:
+    • Anderson Frank/System Accountants: True subcontracts where the partner is billed.
+    • NetSuite/Run DTC: Co-selling or referral models where the end client is billed directly.
+• Key Contacts: The primary relationship is with the partner's sales rep. For NetSuite deals, the complexity increases, often involving a sales manager and solutions consultant.
+
+Operational Friction & Gaps
+• NetSuite Opportunity Entry: Currently a "gray area." Opportunities are created by Jason Kramer only once a lead is deemed a "legitimate conversation." Michael intends to move this entry point earlier in the cycle.
+• Expense Management: The integration with Navan and Uber is the "biggest gap." It requires a manual full-project export/re-import, leading to frequent misses where consultants use generic values for on-site expenses.
+• Data Consistency: Meeting titles are inconsistent, and referral tracking in NetSuite is currently managed via a free-text field that is rarely audited.
+
+Proposal & Delivery Workflow
+
+Sales to Delivery Pipeline
+
+• Lead Received (Email/Call) -> Discovery Call (Recorded via Granola/Meet)
+• Discovery Call -> PowerCloud OS (Drafts Proposal/SOW)
+• Proposal -> Technical Review (Mike Flynn) & Sales Review (Steve Haim)
+• Signed Agreement -> Project Creation (NetSuite/Asana)
+• Project Creation -> Resource Allocation & Kickoff
+
+Financial & Reporting Requirements
+• Channel Reporting: Michael aims to drive all tracking through to the income statement to analyze profitability, bill rates, and close rates by channel.
+• Project Types: The team tracks three main types:
+    1.  Implementation: Full-scale builds.
+    2.  Support: Reactive maintenance.
+    3.  Rapid Assessment: Large projects for existing NetSuite users.
+
+Strategic Blind Spots
+• Closed-Loss Analysis: While "Closed-Lost" statuses exist, no formal autopsy is performed to understand why deals fail.
+• SOW Privacy: There is no current mechanism to share SOWs with the delivery team without exposing sensitive bill rates and pricing.
+• Folder Fragmentation: Michael is pushing to consolidate all "Pre-Sales" and "Project" folders into a single PowerCloud OS directory to prevent data silos.
+
+Sales Team Process Interview - Action Items
+
+Design private SOW folder structure
+
+Assignee: me
+
+A private folder structure is needed for SOWs to hide rates/prices from certain users.
+
+  - Design private SOW folder structure
+
+Migrate pre-sales folders to PowerCloud OS
+
+Assignee: me
+
+Michael wants to move all files from pre-sales folders into the PowerCloud OS folder structure.
+
+  - Migrate pre-sales folders to PowerCloud OS
+
+Implement closed-loss autopsy process
+
+Assignee: me
+
+Michael noted that the team is not currently performing autopsies or tracking reasons for closed-lost opportunities.
+
+  - Implement closed-loss autopsy process
+
+Automate Navan and Uber project imports
+
+Assignee: me
+
+Michael needs to resolve the manual process for updating project lists in Navan and Uber.
+
+  - Automate Navan and Uber project imports

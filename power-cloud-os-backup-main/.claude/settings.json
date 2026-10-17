@@ -1,0 +1,104 @@
+{
+  "enabledPlugins": {
+    "shopify-ai-toolkit@claude-plugins-official": true
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "ns_createRecord|ns_updateRecord|ns_deleteRecord",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "G:\\Shared drives\\Power Cloud OS\\.claude\\hooks\\block-netsuite-writes.py"
+            ],
+            "timeout": 10,
+            "statusMessage": "Checking Power Cloud write guardrail"
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "memory_gate"
+            ],
+            "timeout": 10,
+            "statusMessage": "Checking memory destination"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "session_brief"
+            ],
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "session_snapshot"
+            ],
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "session_snapshot"
+            ],
+            "timeout": 30,
+            "statusMessage": "Saving session to the folder before compaction"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "session_snapshot"
+            ],
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

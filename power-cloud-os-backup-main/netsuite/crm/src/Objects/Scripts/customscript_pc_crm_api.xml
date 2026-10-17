@@ -1,0 +1,89 @@
+<restlet scriptid="customscript_pc_crm_api">
+  <name>PC | CRM API</name>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/PC/pc_crm_api_rl.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_pc_api_support_type_id">
+      <accesslevel>2</accesslevel>
+      <description>PC | Internal id of the Support value in the engagement type list, created in the UI.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>INTEGER</fieldtype>
+      <help>Internal id of the Support value of the engagement type list. Until it is set, Support deals are reported as unmapped.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Support Type ID</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_pc_api_fail_after_step">
+      <accesslevel>2</accesslevel>
+      <description>PC | Test only. Throws a fault after this step of createEndClient or createProject, for ZZ TEST records only.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>INTEGER</fieldtype>
+      <help>Test only. Leave blank in normal use. Honored only for records whose name or title starts with ZZ TEST.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Fail After Step (Test)</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_pc_travel_search_id">
+      <accesslevel>2</accesslevel>
+      <description>PC | Script id or internal id of the saved search behind the travel project list.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <help>Leave blank to use customsearch901 (Navan Project Export). The search must have columns labeled Name and Email.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Travel Search ID</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_pc_api_subsidiary_id">
+      <accesslevel>2</accesslevel>
+      <description>PC | Internal id of the subsidiary new end clients belong to (OneWorld). Power Cloud Consulting, LLC is 1.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>INTEGER</fieldtype>
+      <help>Set on the sales deployment. Every end client the sales process creates belongs to this subsidiary; blank leaves the account default, which fails on a OneWorld account.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | End Client Subsidiary ID</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_pc_api_disabled_actions">
+      <accesslevel>2</accesslevel>
+      <description>PC | Comma-separated action names that the API refuses. The kill switch.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <help>Comma-separated action names, for example createProject,closeOpportunity. A listed action returns PC_API_DISABLED before any record is touched. Leave blank for normal use.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Disabled Actions</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_pc_crm_api_sales">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole>[scriptid=customrole_pc_crm_sales_write]</audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>TESTING</status>
+      <title>PC | CRM API (sales)</title>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_pc_crm_api_travel">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole>[scriptid=customrole_pc_crm_travel_read]</audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>TESTING</status>
+      <title>PC | CRM API (travel)</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

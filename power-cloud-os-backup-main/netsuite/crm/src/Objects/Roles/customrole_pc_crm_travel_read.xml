@@ -1,0 +1,55 @@
+<role scriptid="customrole_pc_crm_travel_read">
+  <centertype>BASIC</centertype>
+  <coreadminpermission>F</coreadminpermission>
+  <employeerestriction>NONE</employeerestriction>
+  <employeeselectionunrestricted>T</employeeselectionunrestricted>
+  <isinactive>F</isinactive>
+  <issalesrole>F</issalesrole>
+  <issinglesignononly>F</issinglesignononly>
+  <issupportrole>F</issupportrole>
+  <name>PC | CRM Travel Read</name>
+  <restrictbydevice>F</restrictbydevice>
+  <restricttimeandexpenses>F</restricttimeandexpenses>
+  <tfaduration>0</tfaduration>
+  <tfarequired>OFF</tfarequired>
+  <permissions>
+    <!-- Project view: read the travel project list. -->
+    <permission>
+      <permkey>LIST_JOB</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+    <!-- Perform Search: run the saved search behind the travel project list. -->
+    <permission>
+      <permkey>LIST_FIND</permkey>
+      <permlevel>FULL</permlevel>
+    </permission>
+    <!-- OAuth 2.0 client credentials login. -->
+    <permission>
+      <permkey>ADMI_LOGIN_OAUTH2</permkey>
+      <permlevel>FULL</permlevel>
+    </permission>
+    <!-- Employees view, added 2026-10-09 (build_log): without it NetSuite drops the Principal : Email column from the loaded travel search. -->
+    <permission>
+      <permkey>LIST_EMPLOYEE</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+    <!-- Added 2026-10-09 (build_log, test 1): the permission shown as "Employee Search" in the UI; object:import of the live role
+         emits it as LIST_OTHER_ADDRESS (not on Oracle's published id list). Without it NetSuite drops the Principal : Email
+         column from the loaded travel search even with Employees View. FULL is the only level the UI offered. -->
+    <permission>
+      <permkey>LIST_OTHER_ADDRESS</permkey>
+      <permlevel>FULL</permlevel>
+    </permission>
+    <!-- Employee Record View: added in the UI during the 2026-10-09 permission experiment; did not contribute to test 1.
+         Mike kept it ("doing no harm"); mirrored here so the XML matches the live role. -->
+    <permission>
+      <permkey>LIST_EMPLOYEE_RECORD</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+    <!-- SuiteScript: VIEW is the lowest level, raised only with a ledger note. -->
+    <permission>
+      <permkey>ADMI_CUSTOMSCRIPT</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+  </permissions>
+</role>

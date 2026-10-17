@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customrecordtype scriptid="customrecord_navan_config">
+    <recordname>Navan Integration Config</recordname>
+    <includename>T</includename>
+    <description>Stores Navan API credentials and integration settings. Singleton record.</description>
+    <accesstype>NONENEEDED</accesstype>
+    <allowattachments>F</allowattachments>
+    <allowinlineediting>F</allowinlineediting>
+    <allowinlinedeleting>F</allowinlinedeleting>
+    <allowquickadd>F</allowquickadd>
+    <enablenumbering>F</enablenumbering>
+    <isinactive>F</isinactive>
+    <isordered>F</isordered>
+    <showid>F</showid>
+    <showlastmodified>T</showlastmodified>
+    <showcreationdate>T</showcreationdate>
+    <customrecordcustomfields>
+        <customrecordcustomfield scriptid="custrecord_navan_client_id">
+            <label>Client ID</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_client_secret">
+            <label>Client Secret</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_api_base_url">
+            <label>API Base URL</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+            <defaultvalue>https://api.navan.com</defaultvalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_lookback_days">
+            <label>Lookback Days</label>
+            <fieldtype>INTEGER</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+            <defaultvalue>7</defaultvalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_project_search">
+            <label>Project Saved Search</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+            <description>Internal ID of a saved search that returns projects to push to Navan as Bill To Client options.</description>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_invoice_folder">
+            <label>Invoice Folder ID</label>
+            <fieldtype>INTEGER</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_alert_email">
+            <label>Alert Email</label>
+            <fieldtype>EMAIL</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_last_poll_time">
+            <label>Last Poll Time</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_relay_url">
+            <label>Relay Base URL</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+            <description>Base URL of the PC Browser Relay, e.g. https://relay.powerclouderp.com</description>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_relay_secret">
+            <label>Relay Shared Secret</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+            <description>Shared bearer secret sent to the relay (X-PC-Secret header) over TLS. Script-readable; admin-visible.</description>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_uber_last_ok">
+            <label>Uber Poll Last Check-in</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+            <description>ISO timestamp of the relay Uber poll's last successful check-in. Set by the Uber attach RESTlet heartbeat; the Uber watchdog alerts when it goes stale.</description>
+        </customrecordcustomfield>
+    </customrecordcustomfields>
+</customrecordtype>

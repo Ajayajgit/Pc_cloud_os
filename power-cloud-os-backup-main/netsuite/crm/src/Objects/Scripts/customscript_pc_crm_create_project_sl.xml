@@ -1,0 +1,58 @@
+<suitelet scriptid="customscript_pc_crm_create_project_sl">
+  <name>PC | Create Project Service</name>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/PC/pc_crm_create_project_sl.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_pc_sl_allowed_roles">
+      <accesslevel>2</accesslevel>
+      <description>PC | Comma-separated script ids of the roles allowed to call the service. Administrator is always allowed.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <help>Comma-separated role script ids, for example the CRM sales write role. Leave blank to allow Administrator only.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Allowed Role Script IDs</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_pc_type_support_id">
+      <accesslevel>2</accesslevel>
+      <description>PC | Internal id of the Support value in the engagement type list, created in the UI.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>INTEGER</fieldtype>
+      <help>Internal id of the Support value of the engagement type list. Until it is set, Support deals are reported as unmapped.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Support Type ID</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_pc_fail_after_step">
+      <accesslevel>2</accesslevel>
+      <description>PC | Test only. Throws a fault after this builder step, for ZZ TEST opportunities only.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>INTEGER</fieldtype>
+      <help>Test only. Leave blank in normal use. Honored only for opportunities whose title starts with ZZ TEST.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Fail After Step (Test)</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_pc_crm_create_project_sl">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole>ADMINISTRATOR|[scriptid=customrole_pc_crm_sales_write]</audslctrole>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>ERROR</loglevel>
+      <!-- Execute as the narrow CRM sales write role (PLAN.md T2 and T3): the suitelet writes the ledger and creates projects and tasks, which a seller's own role cannot; this replaces the legacy suitelet's Execute as Administrator. -->
+      <runasrole>[scriptid=customrole_pc_crm_sales_write]</runasrole>
+      <status>RELEASED</status>
+      <title>PC | Create Project Service</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

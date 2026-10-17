@@ -1,0 +1,12 @@
+<deploy>
+    <files>
+        <path>~/FileCabinet/SuiteScripts/PC/*</path>
+    </files>
+    <objects>
+        <path>~/Objects/Lists/*</path>
+        <path>~/Objects/Fields/*</path>
+        <path>~/Objects/Records/*</path>
+        <path>~/Objects/Roles/*</path>
+        <path>~/Objects/Scripts/*</path>
+    </objects>
+</deploy>

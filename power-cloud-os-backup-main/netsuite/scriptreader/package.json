@@ -1,0 +1,20 @@
+{
+    "name": "powercloud-script-reader",
+    "version": "1.0.0",
+    "description": "Power Cloud - NetSuite AI Connector custom toolset for reading SuiteScript source and File Cabinet files.",
+    "author": "Power Cloud Consulting",
+    "private": true,
+    "scripts": {
+        "validate": "suitecloud project:validate",
+        "deploy": "suitecloud project:deploy",
+        "role:oneworld": "node scripts/set-role-variant.js oneworld",
+        "role:oneworld-notax": "node scripts/set-role-variant.js oneworld --notax",
+        "role:oneworld-notax-mfg": "node scripts/set-role-variant.js oneworld --notax --mfg",
+        "role:standard": "node scripts/set-role-variant.js standard",
+        "role:standard-notax": "node scripts/set-role-variant.js standard --notax"
+    },
+    "devDependencies": {
+        "@oracle/suitecloud-cli": "^3.2.0",
+        "playwright": "^1.61.1"
+    }
+}

@@ -1,0 +1,186 @@
+#!/usr/bin/env python3
+"""Power Cloud write guardrail (A8, v4). ACTIVE since 2026-09-21 through the client stamp
+(templates/client-record/.claude/settings.json, via pc_hooks.py "ns_write_gate"). Before that
+date it was wired only into the root .claude/settings.json, which client-folder sessions never
+load, so it had never run on an engagement.
+
+Design (2026-08-12, per Mike): enforcement keys off the CONNECTION, not the
+session folder, and production writes are a legitimate, gated part of the
+lifecycle (sandbox-verified changes promote to production). So the hook never
+hard-blocks the workflow; it guarantees that no production write can ever
+happen silently.
+
+v4 (2026-09-23, per Mike): one approval per BATCH, not per record. A 200-item
+import was prompting 200 times, which made the gate unusable. v3 also never
+recognized any claude.ai connector, because the tool name carries a connector
+ID, not the display name, so every connector fell through to "unidentifiable".
+
+Behavior for NetSuite MCP write tools (ns_createRecord/ns_updateRecord/
+ns_deleteRecord), keyed on the connector segment of the tool name
+(mcp__<connector>__ns_createRecord):
+
+  Environment: ns_connectors.json (next to this file) maps connector IDs to
+  prod/sandbox. Unlisted connectors fall back to name markers (local MCP
+  servers can carry "prod"/"sb" in their name), then to "unidentified".
+
+  - SANDBOX/DEMO connector -> allowed through normal permission flow.
+  - PRODUCTION or unidentified, create/update -> forced "ask" on the first
+    write of a batch. A batch is: same session, same tool on the same
+    connector, same record type. Once a human has approved one and it ran,
+    the rest of the batch is allowed for BATCH_WINDOW after the latest
+    approved write.
+  - PRODUCTION or unidentified, delete -> forced "ask" on EVERY write.
+
+  Approval proof comes from the session transcript: a prior call of the same
+  tool + record type whose tool_result is not an error. That result exists
+  only if the forced prompt was approved (or, inductively, was itself inside
+  an approved batch); a denial is recorded with is_error true. Claude cannot
+  mint that record, and anything that cannot be confirmed (no transcript,
+  unreadable lines, missing timestamps) falls back to asking.
+
+  Parallel writes issued in one message all ask, because none has a result
+  yet; issue the first write of a batch on its own.
+
+This mechanizes the execution skill's gate 2 for MCP data-writes. It is not
+the discovery hard-guarantee; that remains the CLAUDE.md read-only rule plus
+(follow-up) the read-only role variant on discovery connections, which
+enforces inside NetSuite for every surface including claude.ai.
+
+Contract: hook JSON on stdin. Exit 0 with no output = normal flow. JSON on
+stdout with permissionDecision "ask" = force the confirmation prompt;
+"allow" = skip the prompt (batch already approved).
+"""
+import json
+import sys
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+WRITE_TOOLS = ("ns_createRecord", "ns_updateRecord", "ns_deleteRecord")
+BATCH_TOOLS = ("ns_createRecord", "ns_updateRecord")
+BATCH_WINDOW = timedelta(hours=2)
+SANDBOX_MARKERS = ("sandbox", "_sb", "-sb", " sb", "sb1", "sb2", "demo", "prototype", "frog", "test_drive", "td3")
+PROD_MARKERS = ("prod",)
+CONNECTORS_FILE = Path(__file__).resolve().parent / "ns_connectors.json"
+
+
+def emit(decision: str, reason: str) -> None:
+    print(json.dumps({
+        "hookSpecificOutput": {
+            "hookEventName": "PreToolUse",
+            "permissionDecision": decision,
+            "permissionDecisionReason": reason,
+        }
+    }))
+
+
+def split_tool(tool: str):
+    """mcp__<connector>__ns_createRecord -> (connector, 'ns_createRecord')."""
+    head, _, op = tool.rpartition("__")
+    connector = head[len("mcp__"):] if head.startswith("mcp__") else head
+    return connector, op
+
+
+def environment(connector: str):
+    """Return (env, label). env is 'prod', 'sandbox' or 'unknown'."""
+    try:
+        entry = json.loads(CONNECTORS_FILE.read_text(encoding="utf-8-sig"))["connectors"].get(connector)
+    except Exception:
+        entry = None
+    if isinstance(entry, dict) and entry.get("env") in ("prod", "sandbox"):
+        return entry["env"], entry.get("name") or connector
+    name = connector.lower().replace("'", "_")
+    if any(m in name for m in PROD_MARKERS):
+        return "prod", connector
+    if any(m in name for m in SANDBOX_MARKERS):
+        return "sandbox", connector
+    return "unknown", connector
+
+
+def record_type(tool_input) -> str:
+    return str((tool_input or {}).get("recordType", "")).strip().lower()
+
+
+def batch_approved(transcript_path: str, tool: str, rtype: str) -> bool:
+    """True if this session already ran an approved `tool` write of `rtype` within BATCH_WINDOW."""
+    if not transcript_path or not rtype:
+        return False
+    try:
+        lines = Path(transcript_path).read_text(encoding="utf-8", errors="replace").splitlines()
+    except Exception:
+        return False
+    uses = set()
+    latest = None
+    for line in lines:
+        if tool not in line and "tool_result" not in line:
+            continue  # cheap prefilter; transcripts get large during imports
+        try:
+            entry = json.loads(line)
+        except Exception:
+            continue
+        content = (entry.get("message") or {}).get("content")
+        if not isinstance(content, list):
+            continue
+        for block in content:
+            if not isinstance(block, dict):
+                continue
+            if block.get("type") == "tool_use" and block.get("name") == tool \
+                    and record_type(block.get("input")) == rtype:
+                uses.add(block.get("id"))
+            elif block.get("type") == "tool_result" and block.get("tool_use_id") in uses \
+                    and block.get("is_error") is not True:
+                try:
+                    ts = datetime.fromisoformat(str(entry.get("timestamp")).replace("Z", "+00:00"))
+                except Exception:
+                    continue
+                if latest is None or ts > latest:
+                    latest = ts
+    return latest is not None and datetime.now(timezone.utc) - latest <= BATCH_WINDOW
+
+
+def main() -> int:
+    try:
+        raw = sys.stdin.buffer.read().decode("utf-8-sig")  # tolerate BOM
+        payload = json.loads(raw)
+    except Exception:
+        return 0  # malformed input: never brick the session on a hook bug
+
+    tool = payload.get("tool_name", "")
+    connector, op = split_tool(tool)
+    if op not in WRITE_TOOLS:
+        return 0
+
+    env, label = environment(connector)
+    if env == "sandbox":
+        return 0  # sandbox/demo: normal permission prompts + execution gates apply
+
+    rtype = record_type(payload.get("tool_input"))
+    if op in BATCH_TOOLS and batch_approved(payload.get("transcript_path", ""), tool, rtype):
+        emit("allow", f"Power Cloud gate: {op} '{rtype}' on {label} is part of a batch already approved this session.")
+        return 0
+
+    if env == "prod":
+        head = (
+            f"PRODUCTION NetSuite write ({label}). Power Cloud gate: production data-writes "
+            "require explicit approval, only for sandbox-verified execution work (execution "
+            "skill, gate 2). If this is a discovery or assessment session: DECLINE, discovery "
+            "is read-only, no exceptions."
+        )
+    else:
+        head = (
+            f"This NetSuite connector ({label}) is not listed in .claude/hooks/ns_connectors.json, "
+            "so the gate cannot tell production from sandbox and treats it as production "
+            "(fail-safe). Add it there to fix."
+        )
+    if op in BATCH_TOOLS:
+        tail = (
+            f" Approving this approves the batch: further {op} writes of '{rtype or '?'}' on this "
+            "connector in this session run without asking for the next 2 hours. Deletes always ask."
+        )
+    else:
+        tail = " Deletes are approved one record at a time."
+    emit("ask", head + tail)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

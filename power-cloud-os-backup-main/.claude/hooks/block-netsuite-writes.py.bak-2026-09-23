@@ -1,0 +1,85 @@
+#!/usr/bin/env python3
+"""Power Cloud write guardrail (A8, v3). ACTIVE since 2026-09-21 through the client stamp
+(templates/client-record/.claude/settings.json, via pc_hooks.py "ns_write_gate"). Before that
+date it was wired only into the root .claude/settings.json, which client-folder sessions never
+load, so it had never run on an engagement.
+
+Design (2026-08-12, per Mike): enforcement keys off the CONNECTION, not the
+session folder, and production writes are a legitimate, gated part of the
+lifecycle (sandbox-verified changes promote to production, one human approval
+per write). So the hook never hard-blocks the workflow; it guarantees that no
+production write can ever happen silently.
+
+Behavior for NetSuite MCP write tools (ns_createRecord/ns_updateRecord/
+ns_deleteRecord), based on the connector name embedded in the tool name
+(mcp__<connector>__ns_createRecord):
+
+  - SANDBOX/DEMO connector -> allowed through normal permission flow.
+  - PRODUCTION connector   -> forced "ask": an explicit human confirmation on
+    EVERY write, even if the tool was previously allowlisted, with a reason
+    that restates the gate (is this SB-verified execution work? if this is a
+    discovery session, decline).
+  - Environment NOT identifiable from the name -> forced "ask" with a rename
+    instruction (connector names must carry Prod or SB/Sandbox).
+
+This mechanizes the execution skill's gate 2 for MCP data-writes. It is not
+the discovery hard-guarantee; that remains the CLAUDE.md read-only rule plus
+(follow-up) the read-only role variant on discovery connections, which
+enforces inside NetSuite for every surface including claude.ai.
+
+Contract: hook JSON on stdin. Exit 0 with no output = normal flow. JSON on
+stdout with permissionDecision "ask" = force the confirmation prompt.
+"""
+import json
+import sys
+
+WRITE_TOOLS = ("ns_createRecord", "ns_updateRecord", "ns_deleteRecord")
+SANDBOX_MARKERS = ("sandbox", "_sb", "-sb", " sb", "sb1", "sb2", "demo", "prototype", "frog", "test_drive", "td3")
+PROD_MARKERS = ("prod",)
+
+
+def ask(reason: str) -> None:
+    print(json.dumps({
+        "hookSpecificOutput": {
+            "hookEventName": "PreToolUse",
+            "permissionDecision": "ask",
+            "permissionDecisionReason": reason,
+        }
+    }))
+
+
+def main() -> int:
+    try:
+        raw = sys.stdin.buffer.read().decode("utf-8-sig")  # tolerate BOM
+        payload = json.loads(raw)
+    except Exception:
+        return 0  # malformed input: never brick the session on a hook bug
+
+    tool = payload.get("tool_name", "")
+    if not any(w in tool for w in WRITE_TOOLS):
+        return 0
+
+    name = tool.lower().replace("'", "_")
+
+    if any(m in name for m in SANDBOX_MARKERS) and not any(m in name for m in PROD_MARKERS):
+        return 0  # sandbox/demo: normal permission prompts + execution gates apply
+
+    if any(m in name for m in PROD_MARKERS):
+        ask(
+            "PRODUCTION NetSuite write. Power Cloud gate: production data-writes "
+            "require explicit approval, one per write, only for sandbox-verified "
+            "execution work (execution skill, gate 2). If this is a discovery or "
+            "assessment session: DECLINE, discovery is read-only, no exceptions."
+        )
+        return 0
+
+    ask(
+        "This NetSuite connector's name does not say whether it is production or "
+        "sandbox, so this write needs explicit approval (fail-safe). Fix properly: "
+        "rename the connector to include 'Prod' or 'SB'/'Sandbox'."
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

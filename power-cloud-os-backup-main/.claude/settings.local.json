@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo clone powercloud-mike/ScriptReader*)",
+      "Bash(ls -la \"C:/Users/mpfly/.claude/\" 2>&1 | head -50; echo \"=== AGENTS ===\"; ls -la \"C:/Users/mpfly/.claude/agents/\" 2>&1 | head -50; echo \"=== SETTINGS.LOCAL ===\"; ls -la \"C:/Users/mpfly/.claude/settings.local.json\" 2>&1)",
+      "Bash(find \"C:/Users/mpfly/.claude\" -ipath \"*netsuite*\" -type f 2>/dev/null | head -50)",
+      "mcp__b87cc6f9-1ca3-4682-8a1d-dc02e2b9eb77__read_file_content"
+    ]
+  }
+}

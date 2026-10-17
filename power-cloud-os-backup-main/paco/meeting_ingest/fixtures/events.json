@@ -1,0 +1,18 @@
+[
+  {
+    "id": "sample-client", "summary": "Acme | Go-live",
+    "organizer": {"email": "mike@firm.example"},
+    "start": {"dateTime": "2026-09-10T10:00:00-04:00"},
+    "attendees": [{"email": "guest@acme.example"}],
+    "artifacts": [{"id": "synthetic-transcript", "kind": "transcript"}],
+    "discovery_complete": true
+  },
+  {
+    "id": "sample-prospect", "summary": "Newco | Sales | Discovery",
+    "organizer": {"email": "mike@firm.example"},
+    "start": {"dateTime": "2026-09-10T11:00:00-04:00"},
+    "attendees": [{"email": "guest@netsuite.com"}],
+    "artifacts": [{"id": "synthetic-notes", "kind": "notes"}],
+    "discovery_complete": true
+  }
+]

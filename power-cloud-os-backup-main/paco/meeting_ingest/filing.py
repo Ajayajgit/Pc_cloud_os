@@ -1,0 +1,294 @@
+"""Flat-source filing plans and resumable execution. Preview performs GETs only.
+
+No writer is created by the survey CLI. Execution requires an approved plan digest
+and an explicitly enabled adapter; current delegated scopes remain read-only.
+"""
+import hashlib
+import json
+import re
+import sqlite3
+from contextlib import contextmanager
+from pathlib import Path
+from urllib.parse import quote
+
+from .core import attendee_domains, private
+from .google_read import FOLDER
+
+MARKER = 'powercloud-meeting-ingest-v1'
+
+
+def digest(value):
+    return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+
+
+def basename(event):
+    start = event['start'].get('dateTime') or event['start'].get('date')
+    title = re.sub(r'[<>:"/\\|?*\x00-\x1f]', '-', event['summary']).strip(' .')[:100]
+    key = event['organizer']['email'].lower() + ':' + event['id']
+    return f"{start[:10]} {title or 'Meeting'} [{hashlib.sha256(key.encode()).hexdigest()[:10]}]"
+
+
+def one_folder(reader, parent, name):
+    matches = [x for x in reader.children(parent) if x['name'] == name]
+    if len(matches) != 1 or matches[0]['mimeType'] != FOLDER:
+        raise ValueError(f'Expected one existing {name} folder; no folder will be created automatically')
+    return matches[0]
+
+
+def file_meta(reader, file_id):
+    return reader.get('drive', 'files/' + quote(file_id, safe=''), {
+        'supportsAllDrives': 'true',
+        'fields': 'id,name,mimeType,parents,driveId,owners(emailAddress),trashed,version,modifiedTime,capabilities(canAddChildren,canMoveItemIntoTeamDrive),appProperties,md5Checksum'})
+
+
+def prepare(reader, event, client, owner):
+    """Owner is explicitly authorized by caller; organizer is never rewritten."""
+    if private(event) or event.get('status') == 'cancelled':
+        raise ValueError('Private or cancelled meeting cannot be filed')
+    if '/' in client['path'] or not client.get('folder_id'):
+        raise ValueError('Only an existing root client folder can be selected')
+    if not event.get('discovery_complete') or not event.get('artifacts'):
+        raise ValueError('Complete artifact discovery required before planning a filing')
+    owner = owner.lower()
+    source = one_folder(reader, client['folder_id'], 'source')
+    working = one_folder(reader, client['folder_id'], 'working')
+    target = file_meta(reader, source['id'])
+    if not target.get('driveId') or not target.get('capabilities', {}).get('canAddChildren'):
+        raise ValueError('Destination must be an accessible shared-drive source folder')
+    stem = basename(event)
+    plan = {'schema':1, 'organizer':event['organizer']['email'].lower(), 'owner':owner,
+            'event_id':event['id'], 'title':event['summary'], 'start':event['start'],
+            'client':client['path'], 'client_folder_id':client['folder_id'],
+            'source_id':source['id'], 'working_id':working['id'], 'drive_id':target['driveId'],
+            'attendee_domains':attendee_domains(event), 'moves':[], 'generated':[]}
+    seen = set()
+    for artifact in event['artifacts']:
+        if artifact['id'] in seen:
+            continue
+        seen.add(artifact['id'])
+        f = file_meta(reader, artifact['id'])
+        if f.get('trashed') or f.get('driveId') or owner not in {x.get('emailAddress','').lower() for x in f.get('owners',[])}:
+            raise ValueError('Original is not a live personal-Drive file owned by the approved owner')
+        if not f.get('parents') or not f.get('capabilities',{}).get('canMoveItemIntoTeamDrive'):
+            raise ValueError('Source parent or move capability unavailable')
+        plan['moves'].append({'id':f['id'],'name':f['name'],'parents':f['parents'],
+                              'version':f.get('version'),'kind':artifact['kind']})
+        if artifact['kind'] in {'notes','transcript'}:
+            if f['mimeType'] != 'application/vnd.google-apps.document':
+                raise ValueError('Only native Google Docs exports are supported')
+            content = reader.get('drive', 'files/' + quote(f['id'],safe='') + '/export',
+                                 {'mimeType':'text/markdown'}, raw=True)
+            if not content.strip():
+                raise ValueError('Empty document export; original has not been moved')
+            after = file_meta(reader, f['id'])
+            if after.get('version') != f.get('version'):
+                raise ValueError('Document changed while exporting; rebuild preview')
+            # Artifact ID disambiguates several transcripts/notes for one occurrence.
+            suffix = hashlib.sha256(f['id'].encode()).hexdigest()[:6]
+            plan['generated'].append({'role':artifact['kind']+':'+f['id'],
+                                     'name':f"{stem} - {artifact['kind']} [{suffix}].md", 'content':content})
+    header = '\n'.join([f"# {event['summary']}", '', '<!-- Generated by '+MARKER+' -->',
+                        f"Calendar event: {event['id']}", f"Organizer: {plan['organizer']}",
+                        f"Original owner / filing identity: {owner}",
+                        f"Start: {event['start'].get('dateTime') or event['start'].get('date')}",
+                        'Attendee domains: '+', '.join(plan['attendee_domains']),
+                        'Destination: '+client['path']+'/source/',
+                        'Routing: confirmed client destination; flat source convention', '', '## Originals',
+                        *[f"- {a['kind']}: https://drive.google.com/open?id={a['id']}" for a in plan['moves']], ''])
+    plan['generated'].append({'role':'meeting','name':stem+' - meeting.md','content':header})
+    names = [x['name'] for x in plan['generated']]
+    if len(names) != len(set(names)):
+        raise ValueError('Generated filename collision')
+    existing = reader.children(source['id'])
+    collisions = {x['name'] for x in existing} & set(names)
+    if collisions:
+        raise ValueError('Generated filename already exists; use the original approved plan/journal to resume')
+    logs = [x for x in reader.children(working['id']) if x['name']=='meetings_log.md']
+    if logs:
+        if len(logs) != 1:
+            raise ValueError('Multiple meeting logs require manual reconciliation')
+        log = file_meta(reader, logs[0]['id'])
+        props = log.get('appProperties', {})
+        if (props.get('generator') != MARKER or props.get('role') != 'log'
+                or log.get('trashed') or log.get('parents') != [working['id']]
+                or log.get('driveId') != target['driveId'] or not log.get('version')):
+            raise ValueError('Existing manual meetings_log.md requires explicit reconciliation')
+        content = reader.get('drive', 'files/' + quote(log['id'], safe=''),
+                             {'alt':'media','supportsAllDrives':'true'}, raw=True)
+        if (hashlib.md5(content.encode()).hexdigest() != log.get('md5Checksum')
+                or file_meta(reader, log['id']).get('version') != log['version']):
+            raise ValueError('Meeting log changed while reading; rebuild preview')
+        if ('<!-- Generated by '+MARKER+' -->') not in content:
+            raise ValueError('Meeting log provenance marker missing')
+        plan['log_update'] = {'id':log['id'], 'name':'meetings_log.md',
+            'parents':[working['id']], 'driveId':target['driveId'],
+            'version':log['version'], 'md5Checksum':log['md5Checksum'],
+            'appProperties':props, 'content':content + ('\n' if not content.endswith('\n') else '') +
+                '\n' + meeting_log_entry(plan)}
+    plan['sha256'] = digest(plan)
+    return plan
+
+
+def meeting_log_entry(plan):
+    return '\n'.join([
+        f"- {plan['start'].get('dateTime') or plan['start'].get('date')} — {plan['title']} — organizer {plan['organizer']} — original owner {plan['owner']} — "+', '.join(x['kind'] for x in plan['moves'])+' — '+plan['client']+'/source/',
+        f"  Calendar event: {plan['event_id']}", ''])
+
+
+def check_log_update(writer, plan, recorded):
+    item = plan['log_update']
+    current = writer.meta(item['id'])
+    if (not current or current.get('trashed') or current.get('name') != item['name']
+            or current.get('parents') != item['parents'] or current.get('driveId') != item['driveId']
+            or current.get('appProperties') != item['appProperties']):
+        raise ValueError('Meeting log metadata changed since preview')
+    expected = hashlib.md5(item['content'].encode()).hexdigest()
+    if current.get('md5Checksum') == expected and recorded:
+        return True
+    if (current.get('md5Checksum') != item['md5Checksum'] or current.get('version') != item['version']
+            or recorded == 'done'):
+        raise ValueError('Meeting log content changed since preview; refusing overwrite')
+    return False
+
+
+def verify_plan(plan, approved_digest):
+    unsigned = {k:v for k,v in plan.items() if k!='sha256'}
+    if plan.get('sha256') != digest(unsigned) or approved_digest != plan['sha256']:
+        raise ValueError('Plan changed or exact plan digest was not approved')
+
+
+def save_preview(plan, output):
+    output = Path(output)
+    output.mkdir(parents=True, exist_ok=True)
+    (output/'filing-plan.json').write_text(json.dumps(plan,indent=2,ensure_ascii=False),encoding='utf-8')
+    for item in plan['generated']:
+        (output/item['name']).write_text(item['content'],encoding='utf-8')
+    lines = ['# First-filing preview — no Drive writes', '',
+             f"Destination: **{plan['client']}/source/** (flat)",
+             f"Organizer: {plan['organizer']}",f"Move as original owner: {plan['owner']}", '',
+             '## Move originals, preserving names and file IDs',
+             *['- '+m['name'] for m in plan['moves']], '', '## Create Markdown files in source',
+             *['- '+g['name'] for g in plan['generated']], '',
+             ('Append the approved entry to `working/meetings_log.md`, preserving its existing content.' if plan.get('log_update') else 'Create generated `working/meetings_log.md` after every other operation succeeds.'), '',
+             'Ownership transfers to the shared drive. Existing shared-drive originals are never relocated.',
+             'Resume retries unfinished operations; it does not automatically move files back.', '',
+             'Plan SHA-256: '+plan['sha256'], '']
+    (output/'PREVIEW.md').write_text('\n'.join(lines),encoding='utf-8')
+
+
+@contextmanager
+def journal_lock(path):
+    """One executor per journal; OS releases lock if the process crashes."""
+    with open(str(path)+'.lock','a+b') as lock:
+        lock.seek(0);lock.write(b'0');lock.flush();lock.seek(0)
+        if __import__('os').name == 'nt':
+            import msvcrt
+            msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
+        else:
+            import fcntl
+            fcntl.flock(lock,fcntl.LOCK_EX | fcntl.LOCK_NB)
+        try:
+            yield
+        finally:
+            lock.seek(0)
+            if __import__('os').name == 'nt':
+                msvcrt.locking(lock.fileno(),msvcrt.LK_UNLCK,1)
+            else:
+                fcntl.flock(lock,fcntl.LOCK_UN)
+
+
+def execute(plan, writer, journal, approved_digest):
+    """Writer protocol is independently testable; caller must authorize live writes.
+
+    Single approved meeting per journal. Plans and planned IDs survive crashes.
+    An unknown HTTP outcome is reconciled from Drive before another mutation.
+    """
+    verify_plan(plan,approved_digest)
+    if not writer.enabled or writer.subject.lower()!=plan['owner']:
+        raise ValueError('Explicit write enablement and approved owner identity required')
+    with journal_lock(journal):
+        db=sqlite3.connect(journal)
+        try:
+            tables={r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+            if tables and 'filing_plan' not in tables:
+                raise ValueError('Not a filing journal; survey state cannot be promoted')
+            db.executescript('CREATE TABLE IF NOT EXISTS filing_plan (hash TEXT PRIMARY KEY, body TEXT); CREATE TABLE IF NOT EXISTS operations (role TEXT PRIMARY KEY, file_id TEXT NOT NULL, state TEXT NOT NULL);')
+            existing=db.execute('SELECT hash FROM filing_plan').fetchone()
+            if existing and existing[0]!=plan['sha256']:
+                raise ValueError('Journal belongs to another immutable plan')
+            db.execute('INSERT OR IGNORE INTO filing_plan VALUES (?,?)',(plan['sha256'],json.dumps(plan)));db.commit()
+            target=writer.meta(plan['source_id'])
+            if not target or target.get('driveId')!=plan['drive_id'] or plan['client_folder_id'] not in target.get('parents',[]) or target['name']!='source':
+                raise ValueError('Destination changed since preview')
+            working=writer.meta(plan['working_id'])
+            if not working or working.get('trashed') or working.get('driveId')!=plan['drive_id'] or working.get('parents')!=[plan['client_folder_id']] or working.get('name')!='working':
+                raise ValueError('Working folder changed since preview')
+            # Detect new collisions before moving any originals, including on resume.
+            checks=[(x,plan['source_id']) for x in plan['generated']]+[({'role':'log','name':'meetings_log.md'},plan['working_id'])]
+            for item,parent in checks:
+                row=db.execute('SELECT file_id FROM operations WHERE role=?',('generated:'+item['role'],)).fetchone()
+                if any(x['name']==item['name'] and (x['id'] != plan['log_update']['id'] if item['role']=='log' and plan.get('log_update') else (not row or x['id']!=row[0])) for x in writer.children(parent)):
+                    raise ValueError('Destination filename appeared since preview; refusing overwrite')
+            if plan.get('log_update'):
+                recorded = db.execute("SELECT state FROM operations WHERE role='log:update'").fetchone()
+                check_log_update(writer, plan, recorded[0] if recorded else None)
+            # Verify all unmoved originals before the first mutation of this run.
+            for move in plan['moves']:
+                current=writer.meta(move['id'])
+                role='move:'+move['id']
+                recorded=db.execute('SELECT state FROM operations WHERE role=?',(role,)).fetchone()
+                at_target=current and not current.get('trashed') and current.get('name')==move['name'] and current.get('parents')==[plan['source_id']] and current.get('driveId')==plan['drive_id']
+                if at_target:
+                    if not recorded:
+                        raise ValueError('Original moved outside this journal; manual reconciliation required')
+                    continue
+                if not current or current.get('trashed') or current.get('driveId') or current.get('parents')!=move['parents'] or current.get('version')!=move['version'] or plan['owner'] not in {o.get('emailAddress','').lower() for o in current.get('owners',[])}:
+                    raise ValueError('Original changed since preview; rebuild or reconcile plan')
+                if recorded and recorded[0]=='done':
+                    raise ValueError('Completed original moved back externally; do not move it again')
+            for move in plan['moves']:
+                role='move:'+move['id']
+                db.execute("INSERT OR IGNORE INTO operations VALUES (?,?,'pending')",(role,move['id']));db.commit()
+                current=writer.meta(move['id'])
+                if current.get('parents')!=[plan['source_id']]:
+                    writer.move(move,plan['source_id'])
+                current=writer.meta(move['id'])
+                if current.get('parents')!=[plan['source_id']] or current.get('driveId')!=plan['drive_id']:
+                    raise ValueError('Move result could not be verified')
+                db.execute("UPDATE operations SET state='done' WHERE role=?",(role,));db.commit()
+            log='\n'.join(['# Meetings log','', '<!-- Generated by '+MARKER+' -->','', meeting_log_entry(plan)])
+            generated=plan['generated'] + ([] if plan.get('log_update') else [{'role':'log','name':'meetings_log.md','content':log}])
+            for item in generated:
+                role='generated:'+item['role']
+                parent=plan['working_id'] if item['role']=='log' else plan['source_id']
+                row=db.execute('SELECT file_id FROM operations WHERE role=?',(role,)).fetchone()
+                if not row:
+                    file_id=writer.reserve_id()
+                    db.execute("INSERT INTO operations VALUES (?,?,'pending')",(role,file_id));db.commit()
+                else:
+                    file_id=row[0]
+                props={'generator':MARKER,'plan':plan['sha256'],'role':item['role']}
+                current=writer.meta(file_id)
+                if not current:
+                    if any(x['name']==item['name'] for x in writer.children(parent)):
+                        raise ValueError('Destination filename appeared since preview; refusing overwrite')
+                    writer.create(file_id,parent,item['name'],item['content'],props)
+                    current=writer.meta(file_id)
+                expected=hashlib.md5(item['content'].encode()).hexdigest()
+                if not current or current.get('trashed') or current.get('appProperties')!=props or current.get('parents')!=[parent] or current.get('name')!=item['name'] or current.get('md5Checksum')!=expected:
+                    raise ValueError('Generated file differs from approved content; refusing overwrite')
+                db.execute("UPDATE operations SET state='done' WHERE role=?",(role,));db.commit()
+            if plan.get('log_update'):
+                item = plan['log_update']
+                db.execute("INSERT OR IGNORE INTO operations VALUES ('log:update',?,'pending')", (item['id'],))
+                db.commit()
+                recorded = db.execute("SELECT state FROM operations WHERE role='log:update'").fetchone()[0]
+                if not check_log_update(writer, plan, recorded):
+                    writer.update_log(item)
+                if not check_log_update(writer, plan, 'pending'):
+                    raise ValueError('Meeting log update could not be verified')
+                db.execute("UPDATE operations SET state='done' WHERE role='log:update'")
+                db.commit()
+            return {'state':'filed','operations':db.execute('SELECT role,file_id,state FROM operations').fetchall()}
+        finally:
+            db.close()

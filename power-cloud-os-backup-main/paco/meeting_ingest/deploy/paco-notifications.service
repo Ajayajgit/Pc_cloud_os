@@ -1,0 +1,16 @@
+[Unit]
+Description=Paco Monday notification ingress
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/powercloud-meeting-ingest
+ExecStart=/opt/powercloud-meeting-ingest/venv/bin/python -m meeting_ingest.paco_notifications --config /etc/powercloud/meeting-ingest/paco-config.json
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/powercloud-meeting-ingest/paco-state
+TimeoutStartSec=5min
+

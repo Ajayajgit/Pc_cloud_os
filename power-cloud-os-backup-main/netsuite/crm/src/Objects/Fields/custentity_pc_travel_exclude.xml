@@ -1,0 +1,12 @@
+<entitycustomfield scriptid="custentity_pc_travel_exclude">
+  <appliestoproject>T</appliestoproject>
+  <defaultchecked>F</defaultchecked>
+  <description>PC | Sales OS phase 1. Keeps a project out of the travel approver lists.</description>
+  <displaytype>NORMAL</displaytype>
+  <fieldtype>CHECKBOX</fieldtype>
+  <help>Check to keep this project out of the travel project lists. Set on test projects.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>PC | Exclude From Travel Lists</label>
+  <storevalue>T</storevalue>
+</entitycustomfield>

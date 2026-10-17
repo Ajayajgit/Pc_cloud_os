@@ -1,0 +1,12 @@
+<entitycustomfield scriptid="custentity_pc_asana_url">
+  <appliestoproject>T</appliestoproject>
+  <description>PC | Sales OS phase 1. Asana project link, copied from the opportunity.</description>
+  <displaytype>NORMAL</displaytype>
+  <fieldtype>TEXT</fieldtype>
+  <help>URL of the Asana project. Copied from the opportunity when the project is created.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>PC | Asana Project URL</label>
+  <maxlength>300</maxlength>
+  <storevalue>T</storevalue>
+</entitycustomfield>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+    <projectname>PowerCloud_Navan_Expense</projectname>
+    <frameworkversion>1.0</frameworkversion>
+    <dependencies>
+        <features>
+            <feature required="true">CUSTOMRECORDS</feature>
+            <feature required="true">SERVERSIDESCRIPTING</feature>
+        </features>
+    </dependencies>
+</manifest>

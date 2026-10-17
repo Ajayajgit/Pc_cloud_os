@@ -1,0 +1,12 @@
+{
+  "dealUUID": "f2622ab7-20c0-42e5-8d1d-85ba25d74852",
+  "title": "ZZ TEST Cutover C - Rapid Assessment",
+  "entityId": 5811,
+  "classId": 1,
+  "engagementTypeId": 3,
+  "commercialModelId": 1,
+  "principalId": 3,
+  "rate": 205,
+  "entityStatusId": 9,
+  "memo": "T7 cutover test"
+}

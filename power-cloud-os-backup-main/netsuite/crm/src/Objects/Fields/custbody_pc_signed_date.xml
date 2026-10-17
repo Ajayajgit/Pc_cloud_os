@@ -1,0 +1,11 @@
+<transactionbodycustomfield scriptid="custbody_pc_signed_date">
+  <bodyopportunity>T</bodyopportunity>
+  <description>PC | Sales OS phase 1. Date the agreement was signed.</description>
+  <displaytype>NORMAL</displaytype>
+  <fieldtype>DATE</fieldtype>
+  <help>Date the client signed the agreement. A project cannot be created until it is set.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>PC | Signed Agreement Date</label>
+  <storevalue>T</storevalue>
+</transactionbodycustomfield>

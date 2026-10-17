@@ -1,0 +1,22 @@
+<transactionbodycustomfield scriptid="custbody_pc_partner_contact">
+  <bodyopportunity>T</bodyopportunity>
+  <description>PC | Sales OS phase 1. The sales rep at the subcontracting firm.</description>
+  <displaytype>NORMAL</displaytype>
+  <fieldtype>SELECT</fieldtype>
+  <help>The sales rep at the subcontracting firm. The list shows only contacts of the Billing Party.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>PC | Partner Contact</label>
+  <selectrecordtype>-6</selectrecordtype>
+  <storevalue>T</storevalue>
+  <customfieldfilters>
+    <customfieldfilter>
+      <fldfilter>STDENTITYCOMPANY</fldfilter>
+      <fldfilterchecked>F</fldfilterchecked>
+      <fldfiltercomparetype>EQ</fldfiltercomparetype>
+      <fldfilternotnull>F</fldfilternotnull>
+      <fldfilternull>F</fldfilternull>
+      <fldcomparefield>[scriptid=custbody_pc_billing_party]</fldcomparefield>
+    </customfieldfilter>
+  </customfieldfilters>
+</transactionbodycustomfield>

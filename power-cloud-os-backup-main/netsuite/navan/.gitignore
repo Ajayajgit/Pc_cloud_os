@@ -1,0 +1,17 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.suitecloud-sdk/
+.playwright-mcp/
+*.db
+*.db-shm
+*.db-wal
+
+# Uber for Business data exports (contain employee PII — never commit)
+expense_codes_*.csv
+daily_trips-*.csv
+employees_0*.csv
+
+# NetSuite UI search/report exports (PII — never commit)
+*SearchResults*.csv

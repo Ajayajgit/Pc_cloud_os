@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restlet scriptid="customscript_pc_navan_invoice_attach">
+    <name>PowerCloud - Navan Invoice Attach</name>
+    <scriptfile>[/SuiteScripts/PowerCloud/navan-expense/scripts/rl_navan_invoice_attach.js]</scriptfile>
+    <description>Receives invoice PDFs from the PC Browser Relay and attaches them to expense report lines.</description>
+    <isinactive>F</isinactive>
+    <notifyowner>T</notifyowner>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_pc_navan_invoice_attach">
+            <title>PowerCloud Navan Invoice Attach</title>
+            <status>RELEASED</status>
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <allroles>T</allroles>
+        </scriptdeployment>
+    </scriptdeployments>
+</restlet>

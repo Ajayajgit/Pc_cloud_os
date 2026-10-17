@@ -1,0 +1,3 @@
+# This is a backup, not a codebase. Store every file byte-for-byte so a restore
+# returns exactly what was on the Drive, with no line-ending translation.
+* -text

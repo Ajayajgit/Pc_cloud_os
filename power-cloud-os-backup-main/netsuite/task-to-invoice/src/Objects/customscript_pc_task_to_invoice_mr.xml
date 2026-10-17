@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Power Cloud - Task to Invoice
+  Map/Reduce that stamps the Task name onto billable Time records.
+
+  DEPLOYMENT NOTE
+    Must complete before the Invoice Billable Customers run. The schedule below is
+    nightly at 02:00. Adjust if billing runs earlier.
+-->
+<mapreducescript scriptid="customscript_pc_task_to_invoice_mr">
+  <name>PC | MR | Task to Invoice</name>
+  <scriptfile>[/SuiteScripts/PowerCloud/task_to_invoice/pc_task_to_invoice_mr.js]</scriptfile>
+  <description>Stamps the source Task name onto billable Time in custcol_powercloud_task so NetSuite copies it to the invoice line at billing time.</description>
+  <notifyowner>T</notifyowner>
+
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_pc_t2i_since_days">
+      <label>Look Back (Days)</label>
+      <description>Rolling window: only consider time dated within this many days. Defaults to 45 if unset, and is hard-capped at 180 in code so a mis-set value cannot trigger a multi-year scan. Measured baseline: all unbilled billable time spans roughly 28 days.</description>
+      <fieldtype>INTEGER</fieldtype>
+      <defaultvalue>45</defaultvalue>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+
+    <scriptcustomfield scriptid="custscript_pc_t2i_cutoff_date">
+      <label>Never Touch Time On Or Before</label>
+      <description>Hard date floor. Time dated on or before this is never modified. Set this to the end date of your last closed accounting period and advance it at each close. Leave blank to rely on the rolling window and the billed filter alone.</description>
+      <fieldtype>DATE</fieldtype>
+      <displaytype>NORMAL</displaytype>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_pc_task_to_invoice_mr">
+      <status>SCHEDULED</status>
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <title>PC | MR | Task to Invoice</title>
+      <recurrence>
+        <daily>
+          <startdate>2026-09-05</startdate>
+          <starttime>02:00:00Z</starttime>
+          <everyxdays>1</everyxdays>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>

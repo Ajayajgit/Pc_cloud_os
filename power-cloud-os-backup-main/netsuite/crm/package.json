@@ -1,0 +1,16 @@
+{
+  "name": "power-cloud-crm",
+  "version": "0.1.0",
+  "description": "Power Cloud - CRM: sales OS phase 1 SDF project (fields, channel map, project builder, CRM RESTlet, class propagation)",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "validate": "suitecloud project:validate",
+    "deploy": "suitecloud project:deploy",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@oracle/suitecloud-unit-testing": "^1.6.0",
+    "jest": "^29.7.0"
+  }
+}

@@ -1,0 +1,12 @@
+<entitycustomfield scriptid="custentity_pc_deal_uuid">
+  <appliestoproject>T</appliestoproject>
+  <description>PC | Sales OS phase 1. Links the project to its deal and deal folder.</description>
+  <displaytype>NORMAL</displaytype>
+  <fieldtype>TEXT</fieldtype>
+  <help>Set once when the project is created from its opportunity. Do not edit.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>PC | Deal UUID</label>
+  <maxlength>36</maxlength>
+  <storevalue>T</storevalue>
+</entitycustomfield>

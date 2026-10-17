@@ -1,0 +1,682 @@
+ADMI_ACCOUNTING	Accounting Management	Accounting	None, Full
+ADMI_ACCOUNTINGBOOK	Accounting Book	Accounting	None, View, Create, Edit, Full
+ADMI_ACCOUNTINGLIST	Accounting Lists	Accounting	None, View, Create, Edit, Full
+ADMI_ACCTPERIODS	Manage Accounting Periods	Accounting Periods	None, View, Full
+ADMI_ACCTSETUP	Set Up Accounting	Accounting	None, Full
+ADMI_ACCTSETUP	Accounting Preferences	Accounting	None, Full
+ADMI_ADVANCED_ORDER_MANAGEMENT	Advanced Order Management	Advanced Order Management	None, Full
+ADMI_ADVANCED_TEMPLATES	Advanced PDF/HTML Templates	Advanced Printing	None, Full
+ADMI_ALLOW_JS_HTML_UPLOAD	Allow JS / HTML Uploads	Documents	None, Full
+ADMI_ALLOWNONGLCHANGES	Allow Non G/L Changes	Accounting Periods	None, Full
+ADMI_ANALYTICS	Analytics Administrator	-	None, Full
+ADMI_APP_DEPLOYMENT	SuiteApp Deployment	SuiteApp	None, Full
+ADMI_APPDEFPKG	App Definitions and Packages	-	None, Full
+ADMI_APPPUBLISHER	Application Publishers	SSP Applications	None, Full
+ADMI_AUDITLOGIN	View Login Audit Trail	Login Audit Trail	None, Full
+ADMI_BACKUPEXPORT	Backup Your Data	CSV Export	None, Full
+ADMI_BALANCE_TRX_BY_SEGMENTS	Balance Transactions by Segments	Balancing Segments	None, View, Create
+ADMI_BANK_CONNECTIVITY_CONFIG	Bank Connectivity Plug-In Configuration	-	None, Full
+ADMI_BILLINGINFO	Billing Information	Allow Multiple Users	None, Full
+ADMI_BLCGA	Balance Location Costing Group Accounts	Group Average Costing	None, Full
+ADMI_BUNDLER	SuiteBundler	SuiteBundler	None, Full
+ADMI_BUNDLER	SuiteApp Marketplace	SuiteBundler	None, Full
+ADMI_BUNDLERAUDITTRAIL	SuiteBundler Audit Trail	SuiteBundler	None, Full
+ADMI_BUNDLERMANUP	SuiteBundler Upgrade Install Base	SuiteBundler	None, Full
+ADMI_CAMPAIGNEMAIL	Set Up Campaign Email Addresses	Marketing Automation	None, Full
+ADMI_CAMPAIGNSETUP	Setup Campaigns	Marketing Automation	None, Full
+ADMI_CASEALERT	Case Alerts	Customer Support and Service	None, View, Full
+ADMI_CASEFORM	Online Case Form	Customer Support and Service	None, Full
+ADMI_CASEISSUE	Support Case Issue	Customer Support and Service	None, Full
+ADMI_CASEORIGIN	Support Case Origin	Customer Support and Service	None, Full
+ADMI_CASEPRIORITY	Support Case Priority	Customer Support and Service	None, Full
+ADMI_CASERULE	Support Case Territory Rule	Customer Support and Service	None, View, Create, Edit, Full
+ADMI_CASESTATUS	Support Case Status	Customer Support and Service	None, Full
+ADMI_CASETERRITORY	Support Case Territory	Customer Support and Service	None, View, Create, Edit, Full
+ADMI_CASETYPE	Support Case Type	Customer Support and Service	None, Full
+ADMI_CENTERLINK	Custom Center Link	Custom Centers	None, Full
+ADMI_CERTIFICATES	Certificate Management	-	None, View, Create, Edit, Full
+ADMI_CLASSESTOLOCS	Convert Classes to Locations	Locations	None, Full
+ADMI_CLASSSEGMENTMAPPING	Class Segment Mapping	Classes	None, Full
+ADMI_CLASSSEGMENTMAPPING	Class Mapping	Multi Book Version 2	-
+ADMI_CLOSEPERIOD	Lock Transactions	Accounting Periods	None, Full
+ADMI_COMMERCECATEGORY	Commerce Categories	-	None, Full
+ADMI_COMMISSIONSETUP	Commission Feature Setup	Commissions	None, Full
+ADMI_COMPANY	Company Information	Company Setup	None, Full
+ADMI_CONVERTCLASSES	Convert Classes to Departments	Departments	None, Full
+ADMI_CONVERTLEAD	Lead Conversion Mapping	Sales Force Automation	None, Full
+ADMI_COPYPROJECTTASK	Copy Project Tasks	Project Management	None, Full
+ADMI_CREATEJOBSFROMSALESTRANS	Create Jobs from Sales Transactions	Project Management	None, Full
+ADMI_CREDITCARD	Credit Card Processing	Credit Card Payments	None, Full
+ADMI_CRMLIST	CRM Lists	Opportunities	None, View, Create, Edit, Full
+ADMI_CROSSCHARGE	Manage Cross Charge Automation	Intercompany Framework	View, None, Full
+ADMI_CSVIMPORTPREF	Set Up CSV Preferences	Accounting	None, Full
+ADMI_CUSTADDRESSFORM	Custom Address Form	Custom Forms	None, View, Create, Edit, Full
+ADMI_CUSTBODYFIELD	Custom Body Fields	Custom Fields	None, View, Create, Edit, Full
+ADMI_CUSTCATEGORY	Custom Center Categories	Custom Centers	None, View, Create, Edit, Full
+ADMI_CUSTCENTER	Custom Centers	Custom Centers	None, View, Create, Edit, Full
+ADMI_CUSTCOLUMNFIELD	Custom Column Fields	Custom Fields	None, View, Create, Edit, Full
+ADMI_CUSTEMAILLAYOUT	Custom HTML Layouts	Custom PDF/HTML Templates	None, View, Create, Edit, Full
+ADMI_CUSTENTITYFIELD	Custom Entity Fields	Custom Fields	None, View, Create, Edit, Full
+ADMI_CUSTENTRYFORM	Custom Entry Forms	Custom Forms	None, View, Create, Edit, Full
+ADMI_CUSTEVENTFIELD	Custom Event Fields	Custom Fields	None, View, Create, Edit, Full
+ADMI_CUSTFIELD	Custom Fields	SuiteFlow Custom Fields	None, View, Create, Edit, Full
+ADMI_CUSTFIELDTAB	Custom Subtabs	Custom Subtabs	None, View, Create, Edit, Full
+ADMI_CUSTFORM	Custom Transaction Forms	Custom Forms	None, View, Create, Edit, Full
+ADMI_CUSTITEMFIELD	Custom Item Fields	Custom Fields	None, View, Create, Edit, Full
+ADMI_CUSTITEMNUMBERFIELD	Custom Item Number Fields	Inventory	None, View, Create, Edit, Full
+ADMI_CUSTLAYOUT	Custom PDF Layouts	Custom PDF/HTML Templates	None, View, Create, Edit, Full
+ADMI_CUSTLIST	Custom Lists	Custom Lists	None, View, Create, Edit, Full
+ADMI_CUSTOMERFORM	Online Customer Form	Sales Force Automation	None, View, Create, Edit, Full
+ADMI_CUSTOMERRULE	Sales Territory Rule	Sales Force Automation	None, View, Create, Edit, Full
+ADMI_CUSTOMER_SEGMENTS	Customer Segments Manager	-	None, Full
+ADMI_CUSTOMIZEDFIELDLEVELHELP	Customize Field Level Help	SuiteBuilder Customized Field Level Help	None, View, Create, Edit, Full
+ADMI_CUSTOMSCRIPT	SuiteScript	Client SuiteScript	None, View, Create, Edit, Full
+ADMI_CUSTOMSUBLIST	Custom Sublists	Custom Sublists	None, View, Create, Edit, Full
+ADMI_CUSTOTHERFIELD	Other Custom Fields	Custom Fields	None, View, Create, Edit, Full
+ADMI_CUSTRECORD	Custom Record Types	Custom Records	None, View, Create, Edit, Full
+ADMI_CUSTRECORDFORM	Online Custom Record Form	Custom Forms	None, View, Create, Edit, Full
+ADMI_CUSTSECTION	Custom Center Tabs	Custom Records	None, View, Create, Edit, Full
+ADMI_CUSTTASKS	Custom Center Links	Custom Records	None, View, Create, Edit, Full
+ADMI_CUSTTRANFIELD	Custom Transaction Fields	Custom Fields	None, View, Create, Edit, Full
+ADMI_CUSTTRANSACTION	Custom Transaction Types	Custom Transactions	None, View, Create, Edit, Full
+ADMI_DELETEDRECORD	Deleted Records	Search for Deleted Records	None, Full
+ADMI_DEPTSEGMENTMAPPING	Department Segment Mapping	Departments	None, Full
+ADMI_DEPTSEGMENTMAPPING	Department Mapping	Multi Book Version 2	None, Full
+ADMI_DEVICE_ID	Device ID Management	Suite Commerce InStore	None, Full
+ADMI_DIRECTINVOICEPAYMENTSETUP	Direct Invoice Payment Setup	-	None, View, Create, Edit, Full
+ADMI_DOMAINS	Set Up Domains	SuiteCommerce	None, Full
+ADMI_DUPLICATESETUP	Duplicate Detection Setup	Duplicate Detection &amp; Merge	None, Full
+ADMI_EMPLCATEGORY	Publish Employee List	SuiteCommerce	None, Full
+ADMI_EMPLOYEE_EXPENSE_SOURCE	Employee Expense Sources	Expense Reports	None, View, Create, Edit, Full
+ADMI_EMPLOYEECENTERPUBLISHING	Employee Center Publishing	-	None, Full
+ADMI_EMPLOYEELIST	Other Lists	Accounting	None, View, Create, Edit, Full
+ADMI_ENABLEFEATURES	Enable Features	Enable Company Features	None, Full
+ADMI_ENTITYACCOUNTMAPPING	Entity Account Mapping	Accounting	None, Full
+ADMI_ENTITYSTATUS	Customer Status	Customer Relationship Management	None, Full
+ADMI_ESCALATIONRULE	Escalation Assignment Rule	Customer Support and Service	None, View, Create, Edit, Full
+ADMI_ESCALATIONTERRITORY	Escalation Assignment	Customer Support and Service	None, View, Create, Edit, Full
+ADMI_EXPENSEREPORTPOLICY	Expense Report Policies	Expense Reports	None, View, Full
+ADMI_EXPORTIIF	Export as IIF	Accounting	None, Full
+ADMI_FFTEXCEPTIONREASON	Fulfillment Exception Reason	-	None, View, Create, Edit, Full
+ADMI_FINANCIALINSTITUTION	Financial Institution Records	-	None, Full
+ADMI_FINCHARGEPREF	Finance Charge Preferences	A/R	None, Full
+ADMI_GAINLOSSACCTMAPPING	Foreign Currency Variance Mapping	Accounting	None, Full
+ADMI_GLOBALACCOUNTMAPPING	Global Account Mapping	Accounting	None, Full
+ADMI_HTMLFORMULA	Create HTML Formulas in Search	-	None, View, Create, Edit, Full
+ADMI_IMPORTCSVFILE	Import CSV File	CSV Import	None, Full
+ADMI_IMPORTOVERRIDESSTRIG	Control SuiteScript and Workflow Triggers per CSV Import		None, Full
+ADMI_IMPORTXML	Set Up ADP Payroll	Import ADP Payroll	None, Full
+ADMI_INTEGRAPP	Integration Application	Integration	None, Full
+ADMI_ISSUESETUP	Issue Setup	Issue Management	None, Full
+ADMI_ISSUESHOWSTOPPER	Mark Issue As Showstopper	Issue Management	None, Full
+ADMI_ITEMACCOUNTMAPPING	Item Account Mapping	Accounting	None, Full
+ADMI_KERNEL	Core Administration Permissions	Core Administration Permissions	None, Full
+ADMI_KEYS	Key management	-	None, View, Create, Edit, Full
+ADMI_KNOWLEDGEBASE	Publish Knowledge Base	Knowledge Base	None, View, Create, Edit, Full
+ADMI_KPIREPORT	KPI Scorecards	KPI Scorecards	None, Full
+ADMI_LOCATIONCOSTINGGROUP	Location Costing Group	Item Record Management	None, Full
+ADMI_LOCSEGMENTMAPPING	Location Segment Mapping	Custom Segments	None, Full
+ADMI_LOCSEGMENTMAPPING	Location Mapping	Multi Book Version 2	None, Full
+ADMI_LOGIN_OAUTH	Log in using Access Tokens	TBA	None, Full
+ADMI_LOGIN_OAUTH2	Log in using OAuth 2.0 Access Tokens	OAuth 2.0	None, Full
+ADMI_MANAGECUSTOMSEGMENTS	Custom Segments	Custom Segments	None, View, Create, Edit, Full
+ADMI_MANAGE_OAUTH2	OAuth 2.0 Authorized Applications Management	OAuth 2.0	None, Full
+ADMI_MANAGE_OAUTH_TOKENS	Access Token Management	Token-based Authentication	None, Full
+ADMI_MANAGE_OWN_OAUTH_TOKENS	User Access Tokens	Token-based Authentication	None, Full
+ADMI_MANAGE_RESTRICTIONS	Manage Custom Restrictions	Advanced Employee Permissions	None, View, Edit, Full, Create
+ADMI_MANAGEPERMISSIONS	Manage Custom Permissions	Allow Multiple Users	None, Full
+ADMI_MANAGEROLES	Bulk Manage Roles	Show Role Differences	None, Full
+ADMI_MANAGEUSERS	Manage Users	Managing Users	None, Full
+ADMI_MANUFACTURING	Manufacturing Preferences	Assembly Items	None, Full
+ADMI_MHLEVEL	Merchandise Hierarchy Level	-	None, Full
+ADMI_MHNODE	Merchandise Hierarchy Node	-	None, Full
+ADMI_MHVERSION	Merchandise Hierarchy Version	-	None, Full
+ADMI_MIGRATEREVARRNGANDPLAN	Migrate Revenue Arrangements and Plans	Advanced Revenue Management	None, Full
+ADMI_MOBILE_ACCESS	Mobile Device Access	-	None, Full
+ADMI_MCP_SERVER	MCP Server Connection	-	None, Full
+ADMI_NSASOIDCPROVIDER	OIDC Provider Setup		None, Full
+ADMI_NUMBERING	Auto-Generated Numbers		None, View, Edit, Full
+ADMI_OIDC	OpenID Connect (OIDC) Single Sign-On	-	None, Full
+ADMI_OIDCSETUP	Set Up OpenID Connect (OIDC) Single Sign-On	-	None, Full
+ADMI_OPENIDSSO	OpenID Single Sign-on	-	None, Full
+ADMI_OPENIDSSOSETUP	Set Up OpenID Single Sign-on	-	None, Full
+ADMI_ORDERALLOCATIONSTRATEGY	Order Allocation Strategy	-	None, View, Create, Edit, Full
+ADMI_ORDERPROMISING	Order Promising	-	None, View, Full
+ADMI_OUTLOOKINTEGRATION	Outlook Integration 2.0	Outlook Integration	None, Full
+ADMI_OUTLOOKINTEGRATION_V3	Outlook Integration 3.0	Outlook Integration	None, Full
+ADMI_PARTNERCONTRIBUTION	Partner Contribution	-	None, Full
+ADMI_PAYMENT_LINK_SETUP	Set Up Payment Link		None, Full
+ADMI_PAYROLL	Set Up Payroll	Payroll	None, Full
+ADMI_PENDINGBOOKJOURNAL	Allow Pending Book Journal Entry	-	None, Full
+ADMI_PERIODCLOSING	Period Closing Management	-	None, Full
+ADMI_PERIODOVERRIDE	Override Period Restrictions	-	None, Full
+ADMI_PI_REMOVAL_CREATE	Remove Personal Information Create	-	None, Full
+ADMI_PI_REMOVAL_RUN	Remove Personal Information Run	-	None, Full
+ADMI_PROJECT_ACCOUNTING_SETUP	Project Profitability Setup	Project Management	None, Full
+ADMI_PROJECT_ACCOUNTING_SETUP	Project Profitability	Advanced Project Profitability	None, Full
+ADMI_PROMPTS	Prompts	AI	None, View, Create, Edit, Full
+ADMI_PROVISION	Provisioning	NLCORP feature	None, View, Full
+ADMI_RAG	Knowledge Base for Retrieval Augmented Generation	Artificial Intelligence	None, Full
+ADMI_RECSYS	Intelligent Recommendations	Artificial Intelligence	None, View
+ADMI_REPOGROUPS	Financial Statement Sections	Accounting	None, Full
+ADMI_REPOLAYOUTS	Financial Statement Layouts	Accounting	None, Full
+ADMI_RESTWEBSERVICES	REST Web Services	REST Web Services	None, Full
+ADMI_REVIEW_CUSTOM_GL_RUNS	Review Custom GL plug-in executions	Custom GL Lines Plug-in	None, Full
+ADMI_SALESCHANNEL	Sales Channel	-	None, View, Edit, Full, Create
+ADMI_SALESTERRITORY	Sales Territory	Sales Force Automation	None, View, Create, Edit, Full
+ADMI_SAMLSSO	SAML Single Sign-on	SAML Single Sign-on	None, Full
+ADMI_SAMLSSOSETUP	Set Up SAML Single Sign-on	SAML Single Sign-on	None, Full
+ADMI_SAVEDASHBOARD	Publish Dashboards	Publishing Dashboards	None, Full
+ADMI_SETUPCOMPANY	Set Up Company	Company Preferences	None, View, Full
+ADMI_SETUPIMAGERESIZE	Set Up Image Resizing	SuiteCommerce Advanced	None, Full
+ADMI_SETUPYEARSTATUS	Set Up Year Status	Accounting	None, Full
+ADMI_SFASETUP	Sales Force Automation Setup	Sales Force Automation	None, Full
+ADMI_SITEMANAGEMENT	Web Site Management	Web Site	None, Full
+ADMI_STATETAXIMPORT	Import State Sales Tax	Accounting	None, Full
+ADMI_STORESEARCH	Site Search	-	None, Full
+ADMI_STORESETUP	Set Up Web Site	Web Site	None, Full
+ADMI_SUBLIST	Custom Sublist	Allow Multiple Users	None, View, Create, Edit, Full
+ADMI_SUBSIDIARYHIERARCHYMOD	Subsidiary Hierarchy Modification	-	None, View, Edit
+ADMI_SUBSIDIARYSETTINGSMANAGER	Subsidiary Settings Manager	-	None, View, Edit
+ADMI_SUITE_OAX_CONNECTOR	NSAW Connector Administrator		None, Full
+ADMI_SUITEANALYTICSCONNECT	SuiteAnalytics Connect	SuiteAnalytics Connect	None, Full
+ADMI_SUITEAPP_MANAGEMENT	SuiteApp Management	SuiteApp Control Center	None, Full
+ADMI_SUITECOMMERCEANALYTICS	SuiteCommerce Analytics		None, View, Full
+ADMI_SUITESIGNON	SuiteSignOn	Outbound Single Sign-on	None, Full
+ADMI_SUITE_OAX_CONNECTOR	OAX Connector Administrator	NetSuite Analytics Warehouse	None, Full
+ADMI_SUPPLYALLOCATIONSETUP	Supply Allocation Setup	-	None, View, Create, Edit, Full
+ADMI_SUPPORTSETUP	Support Setup	Customer Support and Service	None, Full
+ADMI_SWAPPRICES	Swap Prices Between Price Levels	Multiple Prices	None, Full
+ADMI_TAXMIGRATION	SuiteTax Migration	-	None, Full
+ADMI_TIMEMODIFICATION	Bulk Time Entry Modification	-	None, Full
+ADMI_TAXPERIODS	Manage Tax Reporting Periods	Accounting	None, Full
+ADMI_TEAMSELLINGCONTRIBUTION	Team Selling Contribution	Team Selling	None, Full
+ADMI_TELEPHONY_SETUP	Telephony Integration	Telephony	None, Full
+ADMI_TRAN_ACCOUNTING_RULES	Transaction Accounting Rules	-	None, Full
+ADMI_TRANSITEMTXT	Translation	Multi-Language	None, Full
+ADMI_TRANSLATION	Manage Translation	Multi-Language	None, Full
+ADMI_TSTDRV_MASTER	Testdrive Masters	NLCORP feature	None, Full
+ADMI_TWOFACTORAUTH	Two-Factor Authentication	Two-Factor Authentication	None, Full
+ADMI_TWOFACTORAUTHBASE	Two-Factor Authentication base	Two-Factor Authentication	None, Full
+ADMI_UNCATSITEITEMS	Uncategorized Presentation Items	Web Store	None, Full
+ADMI_UPDATEPRICES	Update Prices	Item Record Management	None, Full
+ADMI_UPSELLSETUP	Upsell Setup	Upsell Manager	None, Full
+ADMI_WEBSERVICES	SOAP Web Services	SuiteTalk	None, Full
+ADMI_WEBSERVICES	Web Services	Internal Web Services	None, Full
+ADMI_WEBSERVICESLOG	View SOAP Web Services Logs	SuiteTalk	None, Full
+ADMI_WEBSERVICESLOG	View Web Services Logs	Internal Web Services	None, Full
+ADMI_WEBSERVICESSETUP	Set Up SOAP Web Services	SuiteTalk	None, Full
+ADMI_WEBSERVICESSETUP	Set Up Web Services	Internal Web Services	None, Full
+ADMI_WORKFLOW	Workflow	SuiteFlow	None, Full
+LIST_ACCOUNT	Accounts	Accounting	None, View, Create, Edit, Full
+LIST_ACH	Automated Clearing House	Payment Instruments	None, View, Create, Edit, Full
+LIST_ALLGOVERNMENTISSUEDIDS	Advanced Government-Issued IDs	Advanced Government-Issued ID Tracking	None, View, Create, Edit, Full
+LIST_ALLOCSCHEDULE	Allocation Schedules	Expense Allocation	None, View, Create, Edit, Full
+LIST_AMORTIZATION	Amortization Schedules	Amortization	None, View, Create, Edit, Full
+LIST_BASICGOVERNMENTISSUEDIDS	Basic Government-Issued IDs	Basic Government-Issued ID Tracking	None, View, Create, Edit, Full
+LIST_BIG_SEARCH	Persist Search	Search	None, Create
+LIST_BILLINBOUNDSHIPMENT	Bill Inbound Shipment	Inbound Shipment Management	None, View, Create, Edit, Full
+LIST_BILLINGSCHEDULE	Billing Schedules	SuiteBilling	None, View, Create, Edit, Full
+LIST_BILLOFDISTRIBUTION	Bill Of Distribution	Advanced Inventory Management	None, View, Create, Edit, Full
+LIST_BILLOFMATERIALSINQUIRY	Bill Of Materials Inquiry	Assembly Items	None, View, Create, Edit, Full
+LIST_BOM	Bill of Materials	Assembly Items	None, View, Create, Edit, Full
+LIST_BILLCAPTURE	Scanned Vendor Bills	-	None, View, Create, Edit, Full
+LIST_BIN	Bins	Accounting	None, View, Create, Edit, Full
+LIST_BONUS	Bonus	-	View, None, Create, Full, Edit
+LIST_BONUSTYPE	Bonus Types	-	View, None, Create, Full, Edit
+LIST_CALENDAR	Calendar	Calendar Preferences	None, View, Create, Edit, Full
+LIST_CALL	Phone Calls	Phone Calls	None, View, Create, Edit, Full
+LIST_CAMPAIGN	Marketing Campaigns	Marketing Automation	None, View, Create, Edit, Full
+LIST_CAMPAIGNHISTORY	Campaign History	Marketing Automation	None, View, Create, Edit, Full
+LIST_CARDHOLDERAUTHENTICATION	Cardholder Authentications	Credit Card Payments	None, View, Edit, Full, Create
+LIST_CARDHOLDERAUTHEVENT	Cardholder Authentication Events	Credit Card Payments	None, View, Edit, Full, Create
+LIST_CASE	Cases	Customer Support and Service	None, View, Create, Edit, Full
+LIST_CASE_DUPLICATES	Duplicate Case Management		None, Full
+LIST_CATEGORY	Expense Categories	Expense Reports	None, View, Create, Edit, Full
+LIST_CERTIFICATES	Certificate Access	-	None, View, Create, Edit, Full
+LIST_CHECKITEMAVAILABILITY	Check Item Availability	Advanced Inventory Management	None, View, Create, Edit, Full
+LIST_CLASS	Classes	Classes	None, View, Create, Edit, Full
+LIST_COLORTHEME	Color Themes	SuiteCommerce	None, View, Create, Edit, Full
+LIST_COMMISSIONRULES	Employee Commission Schedules/Plans	Employee Commissions	None, View, Create, Edit, Full
+LIST_COMPANY	Companies	Customer Relationship Management	None, View, Create, Edit, Full
+LIST_COMPETITOR	Competitors	Sales Force Automation	None, View, Create, Edit, Full
+LIST_COMPONENTWHEREUSEDINQUIRY	Component Where Used	Assembly Items	None, View, Create, Edit, Full
+LIST_CONTACT	Contacts	Contacts	None, View, Create, Edit, Full
+LIST_CONTACTROLE	Contact Roles	Sales Force Automation	None, View, Create, Edit, Full
+LIST_CONTACTSUBSIDIARYRELATION	Contact-Subsidiary Relationship	-	None, View
+LIST_CONVERTLEAD	Lead Conversion	-	View, None, Create, Full, Edit
+LIST_COSTEDBOMINQUIRY	Costed Bill Of Materials Inquiry	Assembly Items	None, View, Create, Edit, Full
+LIST_CRMGROUP	CRM Groups	Customer Relationship Management	None, View, Create, Edit, Full
+LIST_CRMMESSAGE	Track Messages	Customer Relationship Management	None, View, Create, Edit, Full
+LIST_CRMTEMPLATE	Marketing Template	Marketing Automation	None, View, Create, Edit, Full
+LIST_CURRENCY	Currency	Multiple Currencies	None, View, Create, Edit, Full
+LIST_CUSTJOB	Customers	Prospects and Contacts	None, View, Create, Edit, Full
+LIST_CUSTPROFILE	Customer Profile	Customer Profile	None, View, Create, Edit, Full
+LIST_CUSTRECORDENTRY	Custom Record Entries	Custom Records	None, View, Create, Edit, Full
+LIST_DEPARTMENT	Departments	Departments	None, View, Create, Edit, Full
+LIST_DISTRIBUTIONNETWORK	Distribution Network	Advanced Inventory Management	None, View, Create, Edit, Full
+LIST_EARLIEST_AVAILABILITY	Earliest Availability	Supply Allocation	None, View, Create, Edit, Full
+LIST_EMAILTEMPLATE	Email Template	Email Template	None, View, Create, Edit, Full
+LIST_EMPLOYEE	Employees	Employees	None, View, Create, Edit, Full
+LIST_EMPLOYEE_ACCESS	Employee Access Tab	Advanced Employee Permissions	None, View, Create, Edit, Full
+LIST_EMPLOYEE_ADMINISTRATION	Employee Administration	Advanced Employee Permissions	None, View, Create, Edit, Full
+LIST_EMPLOYEE_CONFIDENTIAL	Employee Confidential	Advanced Employee Permissions	None, View, Create, Edit, Full
+LIST_EMPLOYEE_PUBLIC	Employee Public	Advanced Employee Permissions	None, View, Create, Edit, Full
+LIST_EMPLOYEE_RECORD	Employee Record	-	View, Create, Edit, Full
+LIST_EMPLOYEE_SELF	Employee Self	Advanced Employee Permissions	View, Create, Edit, Full
+LIST_EMPLOYEECHANGETYPE	Employee Change Request Type	-	None, View, Create, Edit, Full
+LIST_EMPLOYEECHANGEREASON	Employee Change Reason	Effective Dating	None, View, Create, Edit, Full
+LIST_EMPLOYEECHANGEREQUEST	Employee Change Request	Employee Change Requests	None, View, Create, Edit, Full
+LIST_EMPLOYEECHANGETYPE	Employee Change Request Type	Employee Change Requests	None, View, Create, Edit, Full
+LIST_EMPLOYEEEFFECTIVEDATING	Employee Effective Dating	Effective Dating	None, View, Create, Edit, Full
+LIST_EMPLOYEESEPARATION	Termination Reasons	Termination Reason Tracking	None, View, Create, Edit, Full
+LIST_EMPLOYEESSN	Employee Social Security Numbers	Employees	None, View, Full
+LIST_ENTITY_DUPLICATES	Duplicate Entity Management	Duplicate Detection &amp; Merge	None, View, Full
+LIST_EVENT	Events	Events	None, View, Create, Edit, Full
+LIST_EXPENSEAMORTIZATIONRULE	Expense Amortization Rule	-	None, View, Create, Edit, Full
+LIST_EXPENSEPLAN	Expense Amortization Plan	-	None, View, Create, Edit, Full
+LIST_EXPORT	Export Lists	Search Result Export	None, Create
+LIST_FAIRVALUEDIMENSION	Fair Value Dimension	Revenue Recognition	None, View, Create, Edit, Full
+LIST_FAIRVALUEFORMULA	Fair Value Formula	Revenue Recognition	None, View, Create, Edit, Full
+LIST_FAIRVALUEPRICE	Fair Value Price	Revenue Recognition	None, View, Create, Edit, Full
+LIST_FAXMESSAGE	Fax Messages	Communications	None, View, Create, Edit, Full
+LIST_FAXTEMPLATE	Fax Template	Mail Merge	None, View, Create, Edit, Full
+LIST_FILECABINET	Documents and Files	File Cabinet	None, View, Create, Edit, Full
+LIST_FIND	Perform Search	Order Management	None, View, Full
+LIST_FINHISTORY	Financial History		None, View, Create, Edit, Full
+LIST_FISCALCALENDAR	Fiscal Calendars	Accounting	None, View, Create, Edit, Full
+LIST_GENERAL_TOKEN	General Token	Payment Instruments	None, View, Create, Edit, Full
+LIST_GENERICRESOURCE	Generic Resources	Project Management	None, View, Create, Edit, Full
+LIST_GIFT_CERTIFICATE	Gift Certificate	-	None, View, Create, Edit, Full
+LIST_GLLINESAUDITLOG	Custom GL Lines Plug-in Audit Log	Custom GL Lines Plug-in	None, View, Create, Edit, Full
+LIST_GLLINESAUDITLOGSEG	Custom GL Lines Plug-in Audit Log (Segments)	Custom GL Lines Plug-in	None, View, Create, Edit, Full
+LIST_GLOBALINVTRELATIONSHIP	Global Inventory Relationship	-	None, View, Create, Edit, Full
+LIST_GOVERNMENTISSUEDIDTYPE	Government-Issued ID Types	Advanced Government-Issued ID Tracking	None, View, Create, Edit, Full
+LIST_HCMJOB	HCMJob Management	-	None, View, Create, Edit, Full
+LIST_HCMPOSITION	Positions	-	None, View, Create, Edit, Full
+LIST_HISTORY	Notes Tab	Communications	None, View, Create, Edit, Full
+LIST_IMPORTED_EMPLOYEE_EXPENSE	Imported Employee Expenses	Expense Reports	View, None
+LIST_INBOUNDSHIPMENT	Inbound Shipment	Inbound Shipment Management	None, View, Create, Edit, Full
+LIST_INFOCATEGORY	Store Content Categories	Web Store	None, View, Create, Edit, Full
+LIST_INFOITEM	Store Content Items	SuiteCommerce	None, View, Create, Edit, Full
+LIST_INFOITEMFORM	Publish Forms	SuiteCommerce	None, View, Create, Edit, Full
+LIST_INTEGRAPP	Integration Applications	SuiteTalk	None, View, Create, Edit, Full
+LIST_INTERNALPUBLISH	Internal Publisher		None, View, Create, Edit, Full
+LIST_INVCOSTTEMPLATE	Inventory Cost Template	Multi-Book Accounting	None, View, Create, Edit, Full
+LIST_INVENTORYSTATUS	Inventory Status	Inventory Management	None, View, Create, Edit, Full
+LIST_ISSUE	Issues	Issue Management	None, View, Create, Edit, Full
+LIST_ITEM	Items	Item Record Management	None, View, Create, Edit, Full
+LIST_ITEM_COLLECTION	Item Collection	-	None, View, Create, Edit, Full
+LIST_ITEMDEMANDPLAN	Item Demand Plan	Advanced Inventory Management	None, View, Create, Edit, Full
+LIST_ITEMREVENUECATEGORY	Item Revenue Category	Revenue Recognition	None, View, Create, Edit, Full
+LIST_ITEMPROCESSFAMILY	Item Process Family	Warehouse Management	None, View, Create, Edit, Full
+LIST_ITEMPROCESSGROUP	Item Process Group	Warehouse Management	None, View, Create, Edit, Full
+LIST_ITEM_REVISION	Item Revisions	Item Record Management	None, View, Create, Edit, Full
+LIST_ITEMSUPPLYPLAN	Item Supply Plan	Advanced Inventory Management	None, View, Create, Edit, Full
+LIST_ITEMTEMPLATE	Item Templates		None, View, Create, Edit, Full
+LIST_JOB	Jobs	Projects	None, View, Create, Edit, Full
+LIST_JOBREQUISITION	HCMJob Requisitions	Job Requisitions	None, View, Create, Edit, Full
+LIST_KEYS	Key access	-	None, View, Create, Edit, Full
+LIST_KUDOS	Kudos	Kudos	None, View, Create, Edit, Full
+LIST_KNOWLEDGEBASE	Knowledge Base	Knowledge Base	None, View, Create, Edit, Full
+LIST_LABORCOSTING	Labor Costing	Labor Costing	View, None, Full, Create, Edit
+LIST_LICENSEPLATE	License Plate	-	View, None, Full, Create, Edit
+LIST_LOCATION	Locations	Locations	None, View, Create, Edit, Full
+LIST_MAILMERGE	Mail Merge	Mail Merge	None, View, Create, Edit, Full
+LIST_MAILMESSAGE	Letter Messages	Communications	None, View, Create, Edit, Full
+LIST_MAILTEMPLATE	Letter Template	Mail Merge	None, View, Create, Edit, Full
+LIST_MASSUPDATES	Mass Updates	Mass Update	None, View, Create, Edit, Full
+LIST_MATERIALREQUIREMENTSPLAN	Material Requirements Planning	Material Requirements Planning	View, None, Full, Create, Edit
+LIST_MEDIAITEMFOLDER	Media Folders	File Cabinet	None, View, Create, Edit, Full
+LIST_MEMDOC	Memorized Transactions	Transactions	None, View, Create, Edit, Full
+LIST_MESSAGE_UNRESTRICTED	Messages for Analytics and REST	Email	None, View
+LIST_MFGCOSTTEMPLATE	Manufacturing Cost Template	Inventory Management	None, View, Create, Edit, Full
+LIST_MFGROUTING	Manufacturing Routing	Inventory Management	None, View, Create, Edit, Full
+LIST_NEWSITEM	News Items	-	None, View, Create, Edit, Full
+LIST_NOTIFICATION	Notifications	-	None, View, Create, Edit, Full
+LIST_ORDER_REALLOCATION	Commit Orders	Advanced Inventory Management	None, View, Create, Edit, Full
+LIST_ORDERMANAGEDASHBOARD	Order Management Dashboard	Sales Channel Allocation	None, View, Create, Edit, Full
+LIST_ORGANIZATIONVALUE	Organizational Value	Kudos	None, View, Create, Edit, Full
+LIST_OTHERNAME	Other Names	Sales Force Automation	None, View, Create, Edit, Full
+LIST_OUTBOUNDREQUEST	Outbound Request	-	None, View, Create, Edit, Full
+LIST_OVERTIMEPOLICY	Overtime Policies		None, View, Create, Edit, Full
+LIST_PA_RECORDS	Product Analytics Records	-	None, View, Create, Edit, Full
+LIST_PARTNER	Partners	Partner Relationship Management	None, View, Create, Edit, Full
+LIST_PARTNERCOMMISSNRULES	Partner Commission Schedules/Plans	Partner Commissions/Royalties	None, View, Create, Edit, Full
+LIST_PAYCHECK	Paychecks	Payroll	None, View, Create, Edit, Full
+LIST_PAYMENT_CARD	Payment Card	Payment Instruments	None, View, Create, Edit, Full
+LIST_PAYMENT_CARD_TOKEN	Payment Card Token	Payment Instruments	None, View, Create, Edit, Full
+LIST_PAYMENT_INSTRUMENTS	Payment Instruments	Payment Instruments	None, View, Create, Edit, Full
+LIST_PAYMETH	Payment Methods	Order Management	None, View, Create, Edit, Full
+LIST_PAYROLLITEM	Payroll Items	Payroll	None, View, Create, Edit, Full
+LIST_PDFMESSAGE	PDF Messages	Communications	None, View, Create, Edit, Full
+LIST_PDFTEMPLATE	PDF Template	Mail Merge	None, View, Create, Edit, Full
+LIST_PHASEDPROCESS	Phased Processes		None, View, Create, Edit, Full
+LIST_PICKDECOMPOSITION	Units for Pick Decomposition	-	None, View, Create, Edit, Full
+LIST_PICKSTRATEGY	Pick Strategy	Warehouse Management	None, View, Create, Edit, Full
+LIST_PICKTASK	Pick Task	Warehouse Management	None, View, Create, Edit, Full
+LIST_PLANNEDREVENUE	Planned Revenue	Revenue Recognition	None, View, Create, Edit, Full
+LIST_PLANNEDSTANDARDCOST	Planned Standard Cost	Item Record Management	None, View, Create, Edit, Full
+LIST_PRESCATEGORY	Presentation Categories	SuiteCommerce	None, View, Create, Edit, Full
+LIST_PRICEBOOK	Price Books	-	None, View, Create, Edit, Full
+LIST_PRICEPLAN	Price Plans	-	None, View, Create, Edit, Full
+LIST_PRICINGRECORDS	Pricing Records	-	None, View, Create, Edit, Full
+LIST_PROJECT_BUDGET	Project Budget	Advanced Project Budgets	None, View, Create, Edit, Full
+LIST_PROJECTREVENUERULE	Project Revenue Rules	Project Management	None, View, Create, Edit, Full
+LIST_PROJECTTASK	Project Tasks	Project Management	None, View, Create, Edit, Full
+LIST_PROJECTTEMPLATE	Project Templates	Project Management	None, View, Create, Edit, Full
+LIST_PROMOTIONCODE	Promotion	Sales Force Automation	None, View, Create, Edit, Full
+LIST_PUBLISHSEARCH	Publish Search	Publishing Search Results	None, View, Create, Edit, Full
+LIST_QUANTITYPRICINGSCHEDULE	Quantity pricing Schedules	Quantity Pricing	None, View, Create, Edit, Full
+LIST_REALLOCATE_ORDER_ITEM	Reallocate Order Item	Supply Allocation	View, None, Full, Create, Edit
+LIST_RECOGNITIONEVENTTYPE	Custom Recognition Event Type	Advanced Revenue Recognition Or Advanced Expense Management	None, View, Create, Edit, Full
+LIST_RECORDCUSTFIELD	Record Custom Field		None, View, Create, Edit, Full
+LIST_RELATEDITEMS	Related Items	Web Site	None, View, Create, Edit, Full
+LIST_RESOURCE	Resource	Project Management	None, View, Create, Edit, Full
+LIST_RESOURCEGROUP	Resource Groups	Project Management	None, View, Create, Edit, Full
+LIST_REVENUEELEMENT	Revenue Element	Revenue Recognition	None, View, Create, Edit, Full
+LIST_REVENUEPLAN	Revenue Recognition Plan	Revenue Recognition	None, View, Create, Edit, Full
+LIST_REVENUERECOGNITIONRULE	Revenue Recognition Rule	Revenue Recognition	None, View, Create, Edit, Full
+LIST_REVRECSCHEDULE	Revenue Recognition Schedules	Revenue Recognition	None, View, Create, Edit, Full
+LIST_REVRECTREATMENT	Recognition Treatment	-	None, View, Create, Edit, Full
+LIST_REVRECTREATMENTRULE	Recognition Treatment Rule	-	None, View, Create, Edit, Full
+LIST_REVRECFIELDMAPPING	Revenue Recognition Field Mapping	Revenue Recognition	None, View, Create, Edit, Full
+LIST_REVRECVSOE	Revenue Management VSOE	VSOE	None, View, Create, Edit, Full
+LIST_RSRCALLOCATION	Resource Allocations	Project Management	None, View, Create, Edit, Full
+LIST_RSRCALLOCATIONAPPRV	Resource Allocation Approval	Project Management	None, View, Create, Edit, Full
+LIST_RSSFEED	Publish RSS Feeds	-	None, View, Create, Edit, Full
+LIST_SAASMETRIC	SaaS Metric	-	None, View, Create, Edit, Full
+LIST_SALESCAMPAIGN	Sales Campaigns	Sales Campaigns	None, View, Create, Edit, Full
+LIST_SALESROLE	Sales Roles	Team Selling	None, View, Create, Edit, Full
+LIST_SCHEDULEMASSUPDATES	Schedule Mass Updates	-	None, View, Create, Edit, Full
+LIST_SCSNAPSHOT	Supply Chain Snapshot List	-	None, View, Create, Edit, Full
+LIST_SENTEMAIL	Sent Email	Sent Email List	None, View, Create, Edit, Full
+LIST_SHIPITEM	Shipping Items	Accounting	None, View, Create, Edit, Full
+LIST_SHIPPARTPACKAGE	Shipping Partner Package	Order Management	None, View, Create, Edit, Full
+LIST_SHIPPARTREGISTRATION	Shipping Partner Registration	Order Management	None, View, Create, Edit, Full
+LIST_SHIPPARTSHIPMENT	Shipping Partner Shipment	Order Management	None, View, Create, Edit, Full
+LIST_SHORTCUT	Shortcuts	-	None, View, Create, Edit, Full
+LIST_SITEEMAILTEMPLATE	Web Store Email Template	SuiteCommerce	None, View, Create, Edit, Full
+LIST_STANDARDCOSTVERSION	Standard Cost Version	Item Record Management	None, View, Create, Edit, Full
+LIST_STORECATEGORY	Store Categories	Web Store	None, View, Create, Edit, Full
+LIST_STOREITEMLISTLA	Item/Category Layouts	Web Store	None, View, Create, Edit, Full
+LIST_STORETAB	Store Tabs	Web Store	None, View, Create, Edit, Full
+LIST_SUBSCRIPTION	Subscriptions	Advanced Subscription Billing	None, View, Create, Edit, Full
+LIST_SUBSCRIPTIONCHANGEORDER	Subscription Change Orders	Advanced Subscription Billing	None, View, Create, Edit, Full
+LIST_SUBSCRIPTIONPLAN	Subscription Plan	Advanced Subscription Billing	None, View, Create, Edit, Full
+LIST_SUBSIDIARY	Subsidiaries	Subsidiaries	None, View, Create, Edit, Full
+LIST_SUPPLY_REALLOCATION	Allocate Orders	-	None, View, Create, Edit, Full
+LIST_SYSTEMNOTES	System Notes for Analytics and REST	System Notes	None, View
+LIST_SYSTEMEMAILTEMPLATE	System Email Template	Customer Relationship Management	None, View, Create, Edit, Full
+LIST_TALENT_ADMINISTRATION	Talent Administration	-	View, Full
+LIST_TALENT_EMPLOYEE	Talent Employee	-	None, Full
+LIST_TASK	Tasks	Customer Relationship Management	None, View, Create, Edit, Full
+LIST_TAXDETAILSTAB	Tax Details Tab	Tax Overhauling	None, View, Edit, Full
+LIST_TAXENGINESELECTION	Subsidiary Tax Registrations Tab	Tax Overhauling	None, View, Edit, Full
+LIST_TAXITEM	Tax Records	Accounting	None, View, Create, Edit, Full
+LIST_TAXSCHEDULE	Tax Schedules	Advanced Taxes	None, View, Create, Edit, Full
+LIST_TEGATAACCOUNT	Tegata Accounts	Accounting	None, View, Create, Edit, Full
+LIST_TEMPLATE_CATEGORY	Template Categories	Email Marketing Campaigns	None, View, Create, Edit, Full
+LIST_TIMECODE	Time Codes	Overtime	None, View, Create, Edit, Full
+LIST_TIMEOFF	Time-Off	Time-Off Management	None, View, Create, Edit, Full
+LIST_TIMEOFFADMIN	Time-Off Administration	Time-Off Management	None, View, Create, Edit, Full
+LIST_TRANNUMBERAUDITLOG	Access to transaction numbering audit log	Transactions	None, View, Create, Edit, Full
+LIST_UNDELIVEREDEMAIL	Undelivered Emails	-	None, View
+LIST_UNIT	Units	Accounting	None, View, Create, Edit, Full
+LIST_UPSELL	Upsell Assistant	Upsell Manager	None, View, Create, Edit, Full
+LIST_UPSELLWIZARD	Upsell Wizard	Upsell Manager	None, View, Create, Edit, Full
+LIST_USAGE	Usage	Advanced Subscription Billing	None, View, Create, Edit, Full
+LIST_VENDOR	Vendors	Accounting	None, View, Create, Edit, Full
+LIST_VENDOR_ACH	Vendor Automated Clearing House	-	None, View, Create, Edit, Full
+LIST_WBS	Work Breakdown Structure	Advanced Project Budgets	None, View, Create, Edit, Full
+LIST_WEBSITE	Website (External) publisher	Web Site	None, View, Create, Edit, Full
+LIST_WORKASSIGNMENT	Work Assignments	-	View, None, Full, Create, Edit
+LIST_WORKCALENDAR	Work Calendar	Project Management	None, View, Create, Edit, Full
+LIST_WORKPLACE	Workplaces	Payroll	None, View, Create, Edit, Full
+LIST_ZONE	Zone	Warehouse Management	None, View, Create, Edit, Full
+REGT_ACCTPAY	Accounts Payable Register	A/P	None, View, Create, Edit, Full
+REGT_ACCTREC	Accounts Receivable Register	A/R	None, View, Create, Edit, Full
+REGT_BANK	Bank Account Registers	Accounting	None, View, Create, Edit, Full
+REGT_COGS	Cost of Goods Sold Registers	Accounting	None, View, Create, Edit, Full
+REGT_CREDCARD	Credit Card Registers	Accounting	None, View, Create, Edit, Full
+REGT_DEFEREXPENSE	Deferred Expense Registers	Amortization	None, View, Create, Edit, Full
+REGT_DEFERREVENUE	Deferred Revenue Registers	Revenue Recognition	None, View, Create, Edit, Full
+REGT_EQUITY	Equity Registers	Accounting	None, View, Create, Edit, Full
+REGT_EXPENSE	Expense Registers	Accounting	None, View, Create, Edit, Full
+REGT_FIXEDASSET	Fixed Asset Registers	Accounting	None, View, Create, Edit, Full
+REGT_INCOME	Income Registers	Accounting	None, View, Create, Edit, Full
+REGT_LONGTERMLIAB	Long Term Liability Registers	Accounting	None, View, Create, Edit, Full
+REGT_NONPOSTING	Non Posting Registers	Accounting	None, View, Create, Edit, Full
+REGT_OTHASSET	Other Asset Registers	Accounting	None, View, Create, Edit, Full
+REGT_OTHCURRASSET	Other Current Asset Registers	Accounting	None, View, Create, Edit, Full
+REGT_OTHCURRLIAB	Other Current Liability Registers	Accounting	None, View, Create, Edit, Full
+REGT_OTHEXPENSE	Other Expense Registers	Accounting	None, View, Create, Edit, Full
+REGT_OTHINCOME	Other Income Registers	Accounting	None, View, Create, Edit, Full
+REGT_PAYROLL	Run Payroll	Payroll	None, View, Create, Edit, Full
+REGT_STAT	Statistical Account Registers	Statistical Accounting	None, View, Create, Edit, Full
+REGT_UNBILLEDREC	Unbilled Receivable Registers	Revenue Commitments	None, View, Create, Edit, Full
+REPO_1099	Form 1099 - Federal Miscellaneous Income	A/P	None, View, Create, Edit, Full
+REPO_940	Form 940 - Employer's Annual Federal Unemployment Tax Return	Payroll	None, View
+REPO_941	Form 941 - Employer's Quarterly Federal Tax Return	Payroll	None, View
+REPO_ACCOUNTDETAIL	Account Detail	Accounting	None, View
+REPO_AMORTIZATION	Amortization Reports	Amortization	None, View
+REPO_ANALYTICS	SuiteAnalytics Workbook	SuiteAnalytics Workbook	None, Edit
+REPO_AP	Accounts Payable	A/P	None, View
+REPO_AR	Accounts Receivable	A/R	None, View
+REPO_AUTHPARTNERCOMMISSION	Partner Authorized Commission Reports	Partner Commissions/Royalties	None, View
+REPO_BALANCESHEET	Balance Sheet	Accounting	None, View
+REPO_BOOKINGS	Sales Order Reports	Sales Force Automation	None, View
+REPO_BUDGET	Budget	Accounting	None, View
+REPO_CASHFLOW	Cash Flow Statement	Accounting	None, View
+REPO_COMMISSION	Commission Reports	Employee Commissions	None, View
+REPO_CONSOLIDATED_REPORTING	Consolidated Reporting	-	None, View
+REPO_CUSTOMIZATION	Report Customization	Report Customization	None, View
+REPO_DEFERREDEXPENSE	Deferred Expense Reports	-	None, View
+REPO_FINANCIALS	Financial Statements	Accounting	None, View
+REPO_GL	General Ledger	Accounting	None, View
+REPO_GRANT_ACCESS	Granting access to Reports		None, View, Create, Edit, Full
+REPO_GSTSUMMARY	GST Summary Report		None, View
+REPO_INTEGRATION	Integration	SuiteTalk	None, View
+REPO_INVENTORY	Inventory	Inventory	None, View
+REPO_ISSUE	Issue Reports	Issue Management	None, View
+REPO_MARKETING	Marketing Campaign Reports	Marketing Automation	None, View
+REPO_NONPOSTING	Sales Order Transaction Report	Order Management	None, View
+REPO_PANDL	Income Statement	Accounting	None, View
+REPO_PARTNERCOMMISSION	Partner Commission Reports	Partner Commissions/Royalties	None, View
+REPO_PAYCHECKDETAIL	Payroll Check Register	Payroll	None, View
+REPO_PAYROLL	Payroll Summary &amp; Detail Reports	Payroll	None, View
+REPO_PAYROLLHIDEFINEMPINFO	Hide Employee Information on Financial Reports	Payroll	None, View
+REPO_PAYROLLHOURSEARNING	Payroll Hours &amp; Earnings	Payroll	None, View
+REPO_PAYROLLJOURNAL	Payroll Journal Report	Payroll	None, View
+REPO_PAYROLLLIAB	Payroll Liability Report	Payroll	None, View
+REPO_PAYROLLSTATEWITHHOLD	Payroll State Withholding	Payroll	None, View
+REPO_PAYROLLW2	Form W-2 - Wage and Tax Statement	Payroll	None, View, Create, Edit, Full
+REPO_PERIODENDFINANCIALS	Period End Financial Statements	-	None, View
+REPO_PROJECT_ACCOUNTING	Project Accounting	Accounting	None, View
+REPO_PSTSUMMARY	PST Summary Report		None, View
+REPO_PURCHASEORDER	Purchase Order Reports	Purchase Orders	None, View
+REPO_PURCHASES	Purchases	Accounting	None, View
+REPO_QUOTA	Quota Reports	Sales Force Automation	None, View
+REPO_RECONCILE	Reconcile Reporting	Accounting	None, View
+REPO_REMINDEREMPLOYEE	Employee Reminders	Employees	None, View
+REPO_RETURNAUTH	Return Authorization Reports	Return Authorizations	None, View
+REPO_REVREC	Revenue Recognition Reports	Revenue Recognition	None, View
+REPO_RSRCALLOCATION	Resource Allocation Reports	Project Management	None, View
+REPO_SALES	Sales	Sales Force Automation	None, View
+REPO_SALESORDER	Sales Order Fulfillment Reports	Sales Orders	None, View
+REPO_SALES_PARTNER	Sales By Partner	Partner Relationship Management	None, View
+REPO_SALES_PROMO	Sales By Promotion Code	Sales Force Automation	None, View
+REPO_SALES_PROMO	Sales By Promotion	Sales Force Automation	None, View
+REPO_SCHEDULE	Report Scheduling	Reports	None, Full
+REPO_SNAPSHOTCASE	Support Case Snapshot/Reminders	Support	None, View
+REPO_SNAPSHOTLEAD	Lead Snapshot/Reminders	Business	None, View
+REPO_SFA	Sales Force Automation	Customer Relationship Management	None, View
+REPO_SUPPORT	Support	Customer Support and Service	None, View
+REPO_TAX	Tax	Accounting	None, View
+REPO_TAXREPORTS	Tax Reports	Accounting	None, View
+REPO_TIME	Time Tracking	Time Tracking	None, View
+REPO_TRAN	Transaction Detail	Transactions	None, View
+REPO_TRIALBALANCE	Trial Balance	Accounting	None, View
+REPO_UNBILLED	Accounts Receivable Un-Billed	Accounting	None, View
+REPO_W4	Form W4 - Employee's Withholding Allowance Certificate	Payroll	None, View
+REPO_WEBSITE	Web Site Report	Web Site	None, View
+REPO_WEBSTORE	Web Store Report	Web Store	None, View
+REPO_WORKFORCEANALYTICS	Workforce Analytics	Workforce Analytics	View
+TRAN_ADJUSTMENTJOURNAL	Currency Adjustment Journal	Accounting	None, View, Create, Edit, Full
+TRAN_ALLOCSCHEDULE	Create Allocation Schedules	Expense Allocation	None, View, Create, Edit, Full
+TRAN_AMENDW4	Amend W-4	Employees	None, View, Create, Edit, Full
+TRAN_APPROVECOMMISSN	Employee Commission Transaction Approval	Employee Commissions	None, View, Create, Edit, Full
+TRAN_APPROVEDD	Approve Direct Deposit	Direct Deposit	None, View, Create, Edit, Full
+TRAN_APPROVEPARTNERCOMM	Partner Commission Transaction Approval	Partner Commissions/Royalties	None, View, Create, Edit, Full
+TRAN_AUDIT	Audit Trail	Transactions	None, View, Create, Edit, Full
+TRAN_AUTO_CASH	Automated Cash Application	Accounting	None, Full
+TRAN_BALANCEOVERVIEW	Balance Overview	Intercompany Framework	None, View
+TRAN_BALJRNAL	Balancing Journals	-	None, View, Create, Full
+TRAN_BINTRNFR	Bin Transfer	Bin Management	None, View, Create, Edit, Full
+TRAN_BINWKSHT	Bin Putaway Worksheet	Bin Management	None, View, Create, Edit, Full
+TRAN_BLANKORD	Blanket Purchase Order	Purchasing and Receiving	None, View, Create, Edit, Full
+TRAN_BLANKORDAPPRV	Blanket Purchase Order Approval	Purchasing and Receiving	None, View, Create, Edit, Full
+TRAN_BUDGET	Set Up Budgets	Accounting	None, View, Create, Edit, Full
+TRAN_BUILD	Build Assemblies	Assembly Items	None, View, Create, Edit, Full
+TRAN_CARDCHRG	Credit Card	Accounting	None, View, Create, Edit, Full
+TRAN_CARDHOLDERAUTHENTICATION	Cardholder Authentication	Credit Card Payments	None, View, Edit, Full, Create
+TRAN_CARDHOLDERAUTHEVENT	Cardholder Authentication Event	Credit Card Payments	None, View, Edit, Full, Create
+TRAN_CARDRFND	Credit Card Refund	Accounting	None, View, Create, Edit, Full
+TRAN_CASHRFND	Cash Sale Refund	Accounting	None, View, Create, Edit, Full
+TRAN_CASHSALE	Cash Sale	Accounting	None, View, Create, Edit, Full
+TRAN_CHARGE	Charge	Project Management	None, View, Create, Edit, Full
+TRAN_CHARGERULE	Charge Rule	Project Management	None, View, Create, Edit, Full
+TRAN_CHECK	Check	Accounting	None, View, Create, Edit, Full
+TRAN_CLEARHOLD	Override Payment Hold	Order Management	None, View, Create, Edit, Full
+TRAN_COMMISSN	Employee Commission Transaction	Employee Commissions	None, View, Create, Edit, Full
+TRAN_COMMITPAYROLL	Commit Payroll	Payroll	None, View, Create, Edit, Full
+TRAN_COPY_BUDGET	Copy Budgets	Accounting	None, View, Create, Edit, Full
+TRAN_CREATEINVCOUNT	Create Inventory Counts	Inventory Count	None, View, Create, Edit, Full
+TRAN_CUSTAUTH	Customer Payment Authorization	Customer Payment Authorizations	None, View, Create, Edit, Full
+TRAN_CUSTCHRG	Statement Charge	A/R	None, View, Create, Edit, Full
+TRAN_CUSTCRED	Credit Memo	A/R	None, View, Create, Edit, Full
+TRAN_CUSTDEP	Customer Deposit	A/R	None, View, Create, Edit, Full
+TRAN_CUSTINVC	Invoice	A/R	None, View, Create, Edit, Full
+TRAN_CUSTINVCAPPRV	Invoice Approval	Order Management	None, View, Create, Edit, Full
+TRAN_CUSTPYMT	Customer Payment	A/R	None, View, Create, Edit, Full
+TRAN_CUSTRFND	Customer Refund	A/R	None, View, Create, Edit, Full
+TRAN_DEPAPPL	Deposit Application	A/R	None, View, Create, Edit, Full
+TRAN_DEPOSIT	Deposit	Accounting	None, View, Create, Edit, Full
+TRAN_DLTD_TXNS_SUMMARY_SBMSN	Archive and Purge Submissions	-	None, Full
+TRAN_EDITBANKINGINFO	Personal Banking Information	-	None, View, Full
+TRAN_EDITPROFILE	Edit Profile	Employees	None, View, Create, Edit, Full
+TRAN_ESTIMATE	Estimate	Estimates	None, View, Create, Edit, Full
+TRAN_ESTIMATEDCOSTOVERRIDE	Override Estimated Cost on Transactions		None, Full
+TRAN_EXPREPT	Expense Report	Expense Reports	None, View, Create, Edit, Full
+TRAN_FFTREQ	Fulfillment Request	Order Management	None, View, Create, Edit, Full
+TRAN_FINCHRG	Finance Charge	A/R	None, View, Create, Edit, Full
+TRAN_FIND	Find Transaction	Transactions	None, View, Create, Edit, Full
+TRAN_FORECAST	Edit Forecast	Sales Force Automation	None, View, Create, Edit, Full
+TRAN_FXREVAL	Currency Revaluation	Multiple Currencies	None, View, Create, Edit, Full
+TRAN_GST_REFUND	Process GST Refund	Accounting	None, View, Create, Edit, Full
+TRAN_IMPORTOLBFILE	Import Online Banking (QIF) File	Accounting	None, View, Create, Edit, Full
+TRAN_INTERCOADJ	Intercompany Adjustments	Accounting	None, View, Create, Edit, Full
+TRAN_INVADJST	Adjust Inventory	Inventory	None, View, Create, Edit, Full
+TRAN_INVCOUNT	Count Inventory	Advanced Inventory Management	None, View, Create, Edit, Full
+TRAN_INVDISTR	Distribute Inventory	Multi-Location Inventory	None, View, Create, Edit, Full
+TRAN_INVREVAL	Revalue Inventory Cost	Inventory	None, View, Create, Edit, Full
+TRAN_INVTRNFR	Transfer Inventory	Multi-Location Inventory	None, View, Create, Edit, Full
+TRAN_INVWKSHT	Adjust Inventory Worksheet	Inventory	None, View, Create, Edit, Full
+TRAN_ITEMRCPT	Item Receipt	Advanced Receiving	None, View, Create, Edit, Full
+TRAN_ITEMSHIP	Item Fulfillment	Advanced Shipping	None, View, Create, Edit, Full
+TRAN_JOURNAL	Make Journal Entry	Accounting	None, View, Create, Edit, Full
+TRAN_JOURNALAPPRV	Journal Approval	Accounting	None, View, Create, Edit, Full
+TRAN_LIABPYMT	Payroll Liability Payments	Payroll	None, View, Create, Edit, Full
+TRAN_MANAGEPAYROLL	Manage Payroll	Payroll	None, View, Create, Edit, Full
+TRAN_MATCHING_RULES	Matching Rules for Online Banking	Accounting	None, View, Create, Edit, Full
+TRAN_MGRFORECAST	Edit Manager Forecast	Sales Force Automation	None, View, Create, Edit, Full
+TRAN_NETTINGSETTLEMENTAPPRV	Netting Settlement Approval	Intercompany Framework	None, Edit
+TRAN_NETTSTLM	Netting Settlement	Intercompany Framework	None, View, Create, Edit, Full
+TRAN_OPENBAL	Enter Opening Balances	Accounting	None, View, Create, Edit, Full
+TRAN_OPPRTNTY	Opportunity	Opportunities	None, View, Create, Edit, Full
+TRAN_ORDERRESERVATION	Order Reservation	-	None, View, Edit, Full, Create
+TRAN_ORDRESVAPPRV	Approve Order Reservation		None, View, Create, Edit, Full
+TRAN_OWNTRNSF	Ownership Transfer	-	None, View, Create, Edit, Full
+TRAN_PARTNERCOMMISSN	Partner Commission Transaction	Partner Commissions/Royalties	None, View, Create, Edit, Full
+TRAN_PAYCHECK	Individual Paycheck	Payroll	None, View, Create, Edit, Full
+TRAN_PAYMENTAUDIT	Access Payment Audit Log	Order Management	None, View, Create, Edit, Full
+TRAN_PAYMENTEVENT	View Payment Events	Credit Card Payments	None, View, Create, Edit, Full
+TRAN_PAYMENTRESULTPREVIEW	View Payment Result Previews	Credit Card Payments	None, View, Edit, Full, Create
+TRAN_PAYROLLRUN	Process Payroll	Payroll	None, View, Create, Edit, Full
+TRAN_PCHKJRNL	Paycheck Journal	Employees	None, View, Create, Edit, Full
+TRAN_PEJRNL	Period End Journals	-	None, View, Create, Edit, Full
+TRAN_POSTPERIODS	Posting Period on Transactions	Accounting	None, View, Create, Edit, Full
+TRAN_POSTVENDORBILLVARIANCE	Post Vendor Bill Variances	Vendors	None, View, Create, Edit, Full
+TRAN_PRICELIST	Generate Price Lists	Item Record Management	None, View, Create, Edit, Full
+TRAN_PRINTSHIPMENTDOCS	Print Shipment Documents	Shipping Partners	None, View, Create, Edit, Full
+TRAN_PROJECT_IC_CHARGE_REQUEST	Project Intercompany Cross Charge Request	Project Intercompany Cross Charge Request	None, View, Create, Edit, Full
+TRAN_PURCHCON	Purchase Contract	Vendors	None, View, Create, Edit, Full
+TRAN_PURCHCONAPPRV	Purchase Contract Approval	Vendors	None, View, Create, Edit, Full
+TRAN_PURCHORD	Purchase Order	Purchase Orders	None, View, Create, Edit, Full
+TRAN_PURCHORDBILL	Bill Purchase Orders	Advanced Receiving	None, View, Create, Edit, Full
+TRAN_PURCHORDRECEIVE	Receive Order	Purchase Orders	None, View, Create, Edit, Full
+TRAN_PURCHREQ	Requisition	Purchasing and Receiving	None, View, Create, Edit, Full
+TRAN_PURCHREQAPPRV	Requisition Approval	Purchasing and Receiving	None, View, Create, Edit, Full
+TRAN_QUOTA	Establish Quotas	Sales Force Automation	None, View, Create, Edit, Full
+TRAN_RECOG_GIFTCERT_INCOME	Recognize Gift Certificate Income	Accounting	None, View, Create, Edit, Full
+TRAN_RECONCILE	Reconcile	Accounting	None, View, Create, Edit, Full
+TRAN_REVARRNG	Revenue Arrangement	Revenue Recognition	None, View, Create, Edit, Full
+TRAN_REVARRNGAPPRV	Revenue Arrangement Approval	Revenue Recognition	None, View, Create, Edit, Full
+TRAN_REVCOMM	Revenue Commitment	Revenue Commitments	None, View, Create, Edit, Full
+TRAN_REVCOMRV	Revenue Commitment Reversal	Revenue Commitments	None, View, Create, Edit, Full
+TRAN_REVCONTR	Revenue Contracts	Revenue Recognition	None, View, Create, Edit, Full
+TRAN_RFQ	Request For Quote	Purchasing and Receiving	None, View, Create, Edit, Full
+TRAN_RTNAUTH	Return Authorization	Return Authorizations	None, View, Create, Edit, Full
+TRAN_RTNAUTHAPPRV	Return Auth. Approval	Return Authorizations	None, View, Create, Edit, Full
+TRAN_RTNAUTHCREDIT	Refund Returns	Order Management	None, View, Create, Edit, Full
+TRAN_RTNAUTHRECEIVE	Receive Returns	Order Management	None, View, Create, Edit, Full
+TRAN_RTNAUTHREVERSEREVCOMMIT	Generate Revenue Commitment Reversals	Revenue Commitments	None, View, Create, Edit, Full
+TRAN_SALESORD	Sales Order	Sales Orders	None, View, Create, Edit, Full
+TRAN_SALESORDAPPRV	Sales Order Approval	Sales Orders	None, View, Create, Edit, Full
+TRAN_SALESORDCOMMITREVENUE	Generate Revenue Commitment	Revenue Commitments	None, View, Create, Edit, Full
+TRAN_SALESORDFULFILL	Fulfill Orders	Order Management	None, View, Create, Edit, Full
+TRAN_SALESORDINVOICE	Invoice Sales Orders	Advanced Shipping	None, View, Create, Edit, Full
+TRAN_SALESORDREVENUECONTRACT	Generate Single Order Revenue Contracts	Revenue Recognition	None, View, Create, Edit, Full
+TRAN_STATEMENT	Generate Statements	A/R	None, View, Create, Edit, Full
+TRAN_STATCHNG	Inventory Status Change	Inventory Status	None, View, Create, Edit, Full
+TRAN_STATUSDD	Direct Deposit Status	Direct Deposit	None, View, Create, Edit, Full
+TRAN_STPICKUP	Store Pickup Fulfillment	SuiteCommerce InStore	None, View, Create, Edit, Full
+TRAN_SYSJRNL	System Journal	Accounting	None, View, Create, Edit, Full
+TRAN_TAXLIAB	Tax Liability Payment	Accounting	None, View, Create, Edit, Full
+TRAN_TAXPYMT	Pay Sales Tax	Accounting	None, View, Create, Edit, Full
+TRAN_TEGPYBL	Tegata Payable	Accounting	None, View, Create, Edit, Full
+TRAN_TEGRCVBL	Tegata Receivable	Accounting	None, View, Create, Edit, Full
+TRAN_TIMEBILL	Track Time	Time Tracking	None, View, Create, Edit, Full
+TRAN_TIMECALC	Calculate Time	Time Tracking	None, View, Create, Edit, Full
+TRAN_TIMEPOST	Post Time	Project Management	None, View, Create, Edit, Full
+TRAN_TIMER	Timer	Time Tracking	None, View, Create, Edit, Full
+TRAN_TRANSFER	Transfer Funds	Accounting	None, View, Create, Edit, Full
+TRAN_TRNFRORD	Transfer Order	Inventory Management	None, View, Create, Edit, Full
+TRAN_TRNFRORDAPPRV	Transfer Order Approval	Inventory Management	None, View, Create, Edit, Full
+TRAN_UNBUILD	Unbuild Assemblies	Assembly Items	None, View, Create, Edit, Full
+TRAN_VENDAUTH	Vendor Return Authorization	Vendor Return Authorizations	None, View, Create, Edit, Full
+TRAN_VENDAUTHAPPRV	Vendor Return Auth. Approval	Vendor Return Authorizations	None, View, Create, Edit, Full
+TRAN_VENDAUTHCREDIT	Credit Returns	Vendor Returns	None, View, Create, Edit, Full
+TRAN_VENDAUTHRETURN	Vendor Returns	Vendor Return Authorizations	None, View, Create, Edit, Full
+TRAN_VENDBILL	Bills	A/P	None, View, Create, Edit, Full
+TRAN_VENDBILLAPPRV	Vendor Bill Approval	Vendor Bills	None, View, Create, Edit, Full
+TRAN_VENDCRED	Enter Vendor Credits	A/P	None, View, Create, Edit, Full
+TRAN_VENDPYMT	Pay Bills	A/P	None, View, Create, Edit, Full
+TRAN_VENDPYMTAPPRV	Vendor Payment Approval	Vendor Bills	None, View, Create, Edit, Full
+TRAN_VENDRFQ	Vendor Request For Quote	Purchasing and Receiving	None, View, Create, Edit, Full
+TRAN_VPREPAPP	Vendor Prepayment Application	-	None, View, Create, Edit, Full
+TRAN_VPREP	Vendor Prepayment	-	None, View, Create, Edit, Full
+TRAN_WAVE	Wave	-	None, View, Create, Edit, Full
+TRAN_WOCLOSE	Work Order Close	Inventory Management	None, View, Create, Edit, Full
+TRAN_WOCOMPL	Work Order Completion	Inventory Management	None, View, Create, Edit, Full
+TRAN_WOISSUE	Work Order Issue	Inventory Management	None, View, Create, Edit, Full
+TRAN_WORKORD	Work Order	Work Orders	None, View, Create, Edit, Full
+TRAN_WORKORDBUILD	Build Work Orders	Work Orders	None, View, Create, Edit, Full
+TRAN_WORKORDCLOSE	Close Work Orders	Inventory Management	None, View, Create, Edit, Full
+TRAN_WORKORDCOMPLETE	Enter Completions	Inventory Management	None, View, Create, Edit, Full
+TRAN_WORKORDISSUE	Issue Components	Inventory Management	None, View, Create, Edit, Full
+TRAN_WORKORDMARKBUILT	Mark Work Orders Built	Inventory Management	None, View, Create, Edit, Full
+TRAN_WORKORDMARKFIRMED	Mark Work Orders Firmed	Inventory Management	None, View, Create, Edit, Full
+TRAN_WORKORDMARKRELEASED	Mark Work Orders Released	Inventory Management	None, View, Create, Edit, Full
+TRAN_XCHGJRNL	Cross Charge Journal	Intercompany Framework	None, View
+TRAN_YTDADJST	Enter Year-To-Date Payroll Adjustments	Payroll	None, View, Create, Edit, Full

@@ -1,0 +1,151 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "render_gate"
+            ],
+            "timeout": 90,
+            "statusMessage": "Checking drafts for copy tells and UK spellings"
+          }
+        ]
+      },
+      {
+        "matcher": "Read|Write|Edit|NotebookEdit|Glob|Grep",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "scope_gate"
+            ],
+            "timeout": 15,
+            "statusMessage": "Checking client scope"
+          }
+        ]
+      },
+      {
+        "matcher": "Agent|Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "escalation_gate"
+            ],
+            "timeout": 15,
+            "statusMessage": "Checking escalation gate"
+          }
+        ]
+      },
+      {
+        "matcher": ".*ns_(create|update|delete)Record.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "ns_write_gate"
+            ],
+            "timeout": 10,
+            "statusMessage": "Checking Power Cloud write guardrail"
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "memory_gate"
+            ],
+            "timeout": 10,
+            "statusMessage": "Checking memory destination"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "session_brief"
+            ],
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "session_snapshot"
+            ],
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "session_snapshot"
+            ],
+            "timeout": 30,
+            "statusMessage": "Saving session to the folder before compaction"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "-c",
+              "import os,sys,subprocess,pathlib;d=pathlib.Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve();m=[p for p in (d,*d.parents) if (p/'.claude'/'hooks'/'pc_hooks.py').is_file()];sys.exit(subprocess.call([sys.executable,str(m[0]/'.claude'/'hooks'/'pc_hooks.py'),sys.argv[1]],stdin=sys.stdin) if m else 0)",
+              "session_snapshot"
+            ],
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

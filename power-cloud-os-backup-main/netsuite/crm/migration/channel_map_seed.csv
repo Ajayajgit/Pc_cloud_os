@@ -1,0 +1,11 @@
+Name,Class (internal id),Class name,Relationship,Billing Party (internal id),Billing Party name,Active
+Direct,1,Direct,Direct,,,Yes
+Netsuite Alliance,2,Netsuite Alliance,Referral,,,Yes
+Playa Technologies,3,Playa Technologies,Subcontract,6,Playa Technologies,No
+DSWi,4,DSWi,Direct,,,Yes
+Anderson Frank,5,Anderson Frank,Subcontract,136,Anderson Frank,Yes
+Sererra,6,Sererra,Subcontract,198,Sererra,Yes
+Other,7,Other,Direct,,,Yes
+RunDTC,108,RunDTC,Referral,,,Yes
+Referral Rev Share,109,Referral Rev Share,Referral,,,Yes
+SystemsAccountants,110,SystemsAccountants,Subcontract,514,SystemsAccountants,Yes

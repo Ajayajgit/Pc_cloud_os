@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customrecordtype scriptid="customrecord_navan_relay_run">
+    <recordname>Navan Relay Run</recordname>
+    <includename>F</includename>
+    <description>Audit record for each PC Browser Relay invoice-fetch run.</description>
+    <accesstype>NONENEEDED</accesstype>
+    <allowattachments>F</allowattachments>
+    <allowinlineediting>F</allowinlineediting>
+    <allowinlinedeleting>T</allowinlinedeleting>
+    <allowquickadd>F</allowquickadd>
+    <enablenumbering>T</enablenumbering>
+    <numberingprefix>NRELAY-</numberingprefix>
+    <isinactive>F</isinactive>
+    <isordered>F</isordered>
+    <showid>T</showid>
+    <showlastmodified>T</showlastmodified>
+    <showcreationdate>T</showcreationdate>
+    <customrecordcustomfields>
+        <customrecordcustomfield scriptid="custrecord_navan_relay_run_id">
+            <label>Run ID</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_relay_started">
+            <label>Started</label>
+            <fieldtype>DATETIMETZ</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_relay_finished">
+            <label>Finished</label>
+            <fieldtype>DATETIMETZ</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_relay_requested">
+            <label>Requested Count</label>
+            <fieldtype>INTEGER</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_relay_success">
+            <label>Success Count</label>
+            <fieldtype>INTEGER</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_relay_fail">
+            <label>Fail Count</label>
+            <fieldtype>INTEGER</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_relay_status">
+            <label>Status</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+    </customrecordcustomfields>
+</customrecordtype>

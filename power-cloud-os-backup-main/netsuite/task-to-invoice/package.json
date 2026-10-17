@@ -1,0 +1,18 @@
+{
+  "name": "task-to-invoice",
+  "version": "1.0.0",
+  "description": "Power Cloud - carry the time entry Task onto billed invoice lines",
+  "scripts": {
+    "validate": "suitecloud project:validate --server",
+    "deploy": "suitecloud project:deploy"
+  },
+  "keywords": [
+    "netsuite",
+    "suitescript",
+    "sdf",
+    "billing"
+  ],
+  "author": "Power Cloud ERP",
+  "license": "UNLICENSED",
+  "private": true
+}

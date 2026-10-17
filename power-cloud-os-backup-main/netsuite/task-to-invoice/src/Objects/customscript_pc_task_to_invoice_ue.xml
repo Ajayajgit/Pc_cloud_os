@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Power Cloud - Task to Invoice
+  User Event that stamps the Task label at save time.
+
+  TWO DEPLOYMENTS
+    TIMESHEET     - the path that matters. 2,356 of 2,356 billable entries in the last
+                    3 months arrived this way (verified, account 5641465).
+    TIMEBILL      - safety net for direct Time entry, currently 0% of volume.
+
+  EXECUTION CONTEXTS
+    Left unrestricted so timesheet approvals, CSV imports and integrations are all
+    covered. The script is fail-open, so a broken context cannot block a time save.
+-->
+<usereventscript scriptid="customscript_pc_task_to_invoice_ue">
+  <name>PC | UE | Task to Invoice</name>
+  <scriptfile>[/SuiteScripts/PowerCloud/task_to_invoice/pc_task_to_invoice_ue.js]</scriptfile>
+  <description>Stamps custcol_powercloud_task on time lines at save time so the Task reaches the invoice immediately rather than after the nightly sweep.</description>
+  <notifyowner>T</notifyowner>
+
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_pc_t2i_ue_timesheet">
+      <recordtype>TIMESHEET</recordtype>
+      <status>TESTING</status>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <allemployees>T</allemployees>
+    </scriptdeployment>
+
+    <scriptdeployment scriptid="customdeploy_pc_t2i_ue_timebill">
+      <recordtype>TIMEBILL</recordtype>
+      <status>TESTING</status>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <allemployees>T</allemployees>
+    </scriptdeployment>
+  </scriptdeployments>
+</usereventscript>

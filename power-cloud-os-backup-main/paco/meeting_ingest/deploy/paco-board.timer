@@ -1,0 +1,11 @@
+[Unit]
+Description=Queue the Asana board updates every Monday at 10:00 Eastern
+
+[Timer]
+OnCalendar=Mon *-*-* 10:00:00 America/New_York
+RandomizedDelaySec=60
+Persistent=true
+Unit=paco-board.service
+
+[Install]
+WantedBy=timers.target

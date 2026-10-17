@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restlet scriptid="customscript_pc_navan_uber_attach">
+    <name>PowerCloud - Navan Uber Attach</name>
+    <scriptfile>[/SuiteScripts/PowerCloud/navan-expense/scripts/rl_navan_uber_attach.js]</scriptfile>
+    <description>Receives parsed Uber for Business transactions from the PC Browser Relay and creates expense report lines (one line per transaction).</description>
+    <isinactive>F</isinactive>
+    <notifyowner>T</notifyowner>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_pc_navan_uber_attach">
+            <title>PowerCloud Navan Uber Attach</title>
+            <status>RELEASED</status>
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <allroles>T</allroles>
+        </scriptdeployment>
+    </scriptdeployments>
+</restlet>

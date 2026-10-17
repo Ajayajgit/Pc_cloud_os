@@ -1,0 +1,223 @@
+{
+    "tools": [
+        {
+            "name": "readScriptSource",
+            "description": "Read the actual source code of a SuiteScript file in this NetSuite account so it can be reviewed for logic and mistakes. Provide a scriptId (custom script id like 'customscript_pc_foo', the numeric internal id as a string, or the exact script name), OR a direct File Cabinet fileId, OR a filePath. Returns the source as plain text with optional 1-based line-range paging for large or minified files. Read-only; never modifies anything.",
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "scriptId": {
+                        "type": "string",
+                        "description": "Script identifier: custom script id (e.g. 'customscript_pc_foo'), numeric internal id as a string, or the exact script name."
+                    },
+                    "fileId": {
+                        "type": "number",
+                        "description": "Direct File Cabinet internal id of the script .js file. Takes precedence over scriptId and filePath."
+                    },
+                    "filePath": {
+                        "type": "string",
+                        "description": "Full File Cabinet path to the .js file, e.g. '/SuiteScripts/PowerCloud/foo.js'. Used when fileId is not supplied."
+                    },
+                    "startLine": {
+                        "type": "number",
+                        "description": "1-based first line to return. Default 1."
+                    },
+                    "maxLines": {
+                        "type": "number",
+                        "description": "Maximum number of lines to return. Default 2000. Use with startLine to page through large files."
+                    }
+                },
+                "required": [],
+                "nullable": ["scriptId", "fileId", "filePath", "startLine", "maxLines"]
+            },
+            "outputSchema": {
+                "type": "object",
+                "properties": {
+                    "source": { "type": "string", "description": "The (possibly paged) source text." },
+                    "fileName": { "type": "string" },
+                    "fileId": { "type": "number" },
+                    "scriptName": { "type": "string" },
+                    "scriptType": { "type": "string" },
+                    "totalLines": { "type": "number" },
+                    "returnedLines": { "type": "number" },
+                    "startLine": { "type": "number" },
+                    "truncated": { "type": "boolean", "description": "True when fewer than totalLines were returned." },
+                    "error": { "type": "string", "description": "Empty on success; a human-readable message on failure." }
+                },
+                "required": ["source", "error"]
+            },
+            "annotations": {
+                "title": "Read Script Source",
+                "readOnlyHint": true,
+                "idempotentHint": true,
+                "destructiveHint": false,
+                "openWorldHint": false
+            }
+        },
+        {
+            "name": "listScripts",
+            "description": "List SuiteScript records in this NetSuite account with metadata only (no source code), to discover what scripts exist before reading one. Optionally filter by name/id substring and by script type. Returns a JSON-string array in 'scriptsJson'. Read-only.",
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "nameFilter": {
+                        "type": "string",
+                        "description": "Case-insensitive substring matched against script name or custom script id."
+                    },
+                    "scriptType": {
+                        "type": "string",
+                        "description": "Filter by script type code, e.g. 'USEREVENT', 'CLIENT', 'SCHEDULED', 'MAPREDUCE', 'SUITELET', 'RESTLET', 'WORKFLOWACTION', 'MASSUPDATE', 'PORTLET', 'BUNDLEINSTALLATION'."
+                    },
+                    "includeInactive": {
+                        "type": "boolean",
+                        "description": "Include inactive scripts. Default false (active only)."
+                    }
+                },
+                "required": [],
+                "nullable": ["nameFilter", "scriptType", "includeInactive"]
+            },
+            "outputSchema": {
+                "type": "object",
+                "properties": {
+                    "scriptsJson": {
+                        "type": "string",
+                        "description": "JSON-encoded array of { scriptName, scriptId, scriptType, fileId, fileName, isInactive }."
+                    },
+                    "count": { "type": "number" },
+                    "capped": { "type": "boolean", "description": "True when more rows existed than were returned (limit 200)." },
+                    "error": { "type": "string" }
+                },
+                "required": ["scriptsJson", "error"]
+            },
+            "annotations": {
+                "title": "List Scripts",
+                "readOnlyHint": true,
+                "idempotentHint": true,
+                "destructiveHint": false,
+                "openWorldHint": false
+            }
+        },
+        {
+            "name": "readFile",
+            "description": "Read the contents of any text file in the File Cabinet (e.g. XML, JSON, CSV, FreeMarker, HTML, CSS, plain text), not just scripts. Provide a fileId or a filePath. Binary files (images, PDFs, archives) are refused rather than returned as base64. Supports 1-based line-range paging. Read-only.",
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "fileId": {
+                        "type": "number",
+                        "description": "File Cabinet internal id. Takes precedence over filePath."
+                    },
+                    "filePath": {
+                        "type": "string",
+                        "description": "Full File Cabinet path, e.g. '/Templates/config.json'."
+                    },
+                    "startLine": {
+                        "type": "number",
+                        "description": "1-based first line to return. Default 1."
+                    },
+                    "maxLines": {
+                        "type": "number",
+                        "description": "Maximum number of lines to return. Default 2000."
+                    }
+                },
+                "required": [],
+                "nullable": ["fileId", "filePath", "startLine", "maxLines"]
+            },
+            "outputSchema": {
+                "type": "object",
+                "properties": {
+                    "contents": { "type": "string" },
+                    "fileName": { "type": "string" },
+                    "fileId": { "type": "number" },
+                    "fileType": { "type": "string" },
+                    "folder": { "type": "string" },
+                    "totalLines": { "type": "number" },
+                    "returnedLines": { "type": "number" },
+                    "truncated": { "type": "boolean" },
+                    "isBinary": { "type": "boolean", "description": "True when the file type is binary and was not read." },
+                    "error": { "type": "string" }
+                },
+                "required": ["contents", "error"]
+            },
+            "annotations": {
+                "title": "Read File Cabinet File",
+                "readOnlyHint": true,
+                "idempotentHint": true,
+                "destructiveHint": false,
+                "openWorldHint": false
+            }
+        },
+        {
+            "name": "getScriptDeployments",
+            "description": "Return the deployment records for a script, showing how and when it actually runs: status, deployed flag, execution context, record type, and log level. Provide a scriptId (custom id, numeric internal id as string, or name) or a numeric scriptInternalId. Returns a JSON-string array in 'deploymentsJson'. Read-only.",
+            "inputSchema": {
+                "type": "object",
+                "properties": {
+                    "scriptId": {
+                        "type": "string",
+                        "description": "Custom script id, numeric internal id as a string, or exact script name."
+                    },
+                    "scriptInternalId": {
+                        "type": "number",
+                        "description": "Numeric internal id of the script record."
+                    }
+                },
+                "required": [],
+                "nullable": ["scriptId", "scriptInternalId"]
+            },
+            "outputSchema": {
+                "type": "object",
+                "properties": {
+                    "deploymentsJson": {
+                        "type": "string",
+                        "description": "JSON-encoded array of { deploymentId, scriptName, status, isDeployed, executionContext, recordType, logLevel }."
+                    },
+                    "count": { "type": "number" },
+                    "error": { "type": "string" }
+                },
+                "required": ["deploymentsJson", "error"]
+            },
+            "annotations": {
+                "title": "Get Script Deployments",
+                "readOnlyHint": true,
+                "idempotentHint": true,
+                "destructiveHint": false,
+                "openWorldHint": false
+            }
+        },
+        {
+            "name": "getAccountInfo",
+            "description": "Return this NetSuite account's own identity and platform facts: account id, environment type (production/sandbox), NetSuite release version, whether the NetSuite Next runtime API (N/runtime.isNextActive) exists, and, when the role permits, Company Information fields (companyid, company name, legal name, country). Use this first to confirm which account and release you are working against. Read-only; takes no input.",
+            "inputSchema": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            },
+            "outputSchema": {
+                "type": "object",
+                "properties": {
+                    "accountId": { "type": "string", "description": "The account id from N/runtime (e.g. '5641465', '1234567_SB1'). Authoritative." },
+                    "envType": { "type": "string", "description": "PRODUCTION, SANDBOX, BETA, or INTERNAL." },
+                    "version": { "type": "string", "description": "NetSuite release the account runs, e.g. '2026.2'." },
+                    "roleId": { "type": "number", "description": "Internal id of the executing role (diagnostics)." },
+                    "nextApiAvailable": { "type": "boolean", "description": "True when N/runtime.isNextActive exists (NetSuite Next-era release)." },
+                    "isNextActiveForThisRole": { "type": "boolean", "description": "Result of isNextActive() for the executing user, when callable." },
+                    "companyId": { "type": "string", "description": "Company Information ACCOUNT ID field, when readable; cross-check against accountId." },
+                    "companyName": { "type": "string" },
+                    "legalName": { "type": "string" },
+                    "country": { "type": "string" },
+                    "companyInfoSource": { "type": "string", "description": "'config' when Company Information was read; otherwise an explanation." },
+                    "error": { "type": "string", "description": "Empty on success; a human-readable message on failure." }
+                },
+                "required": ["accountId", "error"]
+            },
+            "annotations": {
+                "title": "Get Account Info",
+                "readOnlyHint": true,
+                "idempotentHint": true,
+                "destructiveHint": false,
+                "openWorldHint": false
+            }
+        }
+    ]
+}

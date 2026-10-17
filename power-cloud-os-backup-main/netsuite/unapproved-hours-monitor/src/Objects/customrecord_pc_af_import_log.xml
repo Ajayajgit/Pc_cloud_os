@@ -1,0 +1,248 @@
+<customrecordtype scriptid="customrecord_pc_af_import_log">
+    <accesstype>CUSTRECORDENTRYPERM</accesstype>
+    <allowattachments>T</allowattachments>
+    <allowinlinedeleting>F</allowinlinedeleting>
+    <allowinlinedetaching>F</allowinlinedetaching>
+    <allowinlineediting>F</allowinlineediting>
+    <allowmobileaccess>F</allowmobileaccess>
+    <allownumberingoverride>F</allownumberingoverride>
+    <allowquickadd>F</allowquickadd>
+    <allowquicksearch>T</allowquicksearch>
+    <allowuiaccess>T</allowuiaccess>
+    <description>One record per AF report import. Holds the as-of date that every status on every timesheet record is anchored to, plus the uploaded source file. This is the audit trail - without it a stale dashboard has no way to explain itself.</description>
+    <enablekeywords>F</enablekeywords>
+    <enablenumbering>T</enablenumbering>
+    <enableoptimisticlocking>T</enableoptimisticlocking>
+    <enablesystemnotes>T</enablesystemnotes>
+    <hierarchical>F</hierarchical>
+    <includeinsearchmenu>T</includeinsearchmenu>
+    <includename>F</includename>
+    <isinactive>F</isinactive>
+    <isordered>F</isordered>
+    <numberinginit>1</numberinginit>
+    <numberingmindigits>4</numberingmindigits>
+    <numberingprefix>AFIMP</numberingprefix>
+    <recordname>PC AF Import Log</recordname>
+    <showcreationdate>T</showcreationdate>
+    <showcreationdateonlist>T</showcreationdateonlist>
+    <showid>F</showid>
+    <showlastmodified>F</showlastmodified>
+    <showlastmodifiedonlist>F</showlastmodifiedonlist>
+    <shownotes>T</shownotes>
+    <showowner>T</showowner>
+    <showownerallowchange>F</showownerallowchange>
+    <showowneronlist>T</showowneronlist>
+    <customrecordcustomfields>
+        <customrecordcustomfield scriptid="custrecord_pc_afil_asof">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>The as-of date stamped onto every record this run touched. Everything downstream anchors to this.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>DATE</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>T</ismandatory>
+            <isparent>F</isparent>
+            <label>Report As Of</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afil_file">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>The uploaded CSV, retained in the File Cabinet so any number here can be traced back to what AF actually sent. Uses the DOCUMENT field type, which references a File Cabinet file natively - a SELECT with a guessed selectrecordtype was rejected at runtime.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>DOCUMENT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Source File</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afil_rows">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Total data rows parsed.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>INTEGER</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Rows In File</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afil_matched">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>INTEGER</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Matched To Invoice</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afil_new">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>First-time appearances this run.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>INTEGER</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Newly Unapproved</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afil_flipped">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Previously unapproved rows absent from this report. This is the inferred half of the negative list.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>INTEGER</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Flipped To Approved</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afil_notinv">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Expected for the current period. Informational.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>INTEGER</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Not Yet Invoiced</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afil_except">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Unmatched beyond the grace window, plus any pay-vs-invoice variance. The number to actually look at.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>INTEGER</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Exceptions</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afil_user">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description></description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>SELECT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Imported By</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+            <selectrecordtype>-4</selectrecordtype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afil_notes">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Parser warnings, ambiguous matches, and anything the reviewer overrode at the preview step.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>TEXTAREA</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Run Notes</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+    </customrecordcustomfields>
+</customrecordtype>

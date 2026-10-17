@@ -1,0 +1,1213 @@
+Sales Team Process Interview - Transcript
+
+Speaker:
+This is our sales team interview.
+
+Speaker:
+First question was How a deal enters and what you record today.
+
+Speaker:
+First question: Think of your last new deal.
+
+Speaker:
+Who heard about it first and how?
+
+Speaker:
+Steve Haim normally gets these deals first, including the most recent one.
+
+Speaker:
+These often come in via email, though occasionally from a phone call.
+
+Speaker:
+With our current customer mix, most of our deals are coming
+
+Speaker:
+from Met Suite or from Anderson Frank.
+
+Speaker:
+So there's usually somebody that we have a relationship with that's reaching out.
+
+Speaker:
+At this point, it's rare that a customer is contacting us directly, so we certainly hope that changes
+
+Speaker:
+in the future.
+
+Speaker:
+Moving forward, it definitely could be Steve, though we're hoping Chris McDonald
+
+Speaker:
+also starts to bring some deals in. Question two: What did you do in the first 24
+
+Speaker:
+hours?
+
+Speaker:
+Where did you write anything?
+
+Speaker:
+Down.
+
+Speaker:
+The first twenty four hours is usually handled via email.
+
+Speaker:
+There's usually an email going back out, attempting to schedule a
+
+Speaker:
+meeting to touch base with the customer, especially on deals coming through Net Suite.
+
+Speaker:
+They will often email over some background.
+
+Speaker:
+Sometimes other people will as well.
+
+Speaker:
+But that's usually it.
+
+Speaker:
+We're not usually creating an opportunity this early just yet.
+
+Speaker:
+Three, do you record every prospect call?
+
+Speaker:
+Who runs the recording and what is the meeting titled?
+
+Speaker:
+Every prospect call is recorded in some way.
+
+Speaker:
+If it's Anderson Frank or somebody coming to us direct, we will normally.
+
+Speaker:
+Create the meeting ourselves and record it via Google Meet.
+
+Speaker:
+The titles of those meetings are inconsistent.
+
+Speaker:
+It'll usually have the customer name, though, if it's scheduled through one of our meeting lengths, it may not.
+
+Speaker:
+It just says something like one hour meeting with Steve Haya.
+
+Speaker:
+When jobs come through Net Suite, it's a little more complicated.
+
+Speaker:
+NetSuite is creating the meeting, usually in Zoom.
+
+Speaker:
+They're naming it and inviting everybody.
+
+Speaker:
+These we are capturing on transcript and summary
+
+Speaker:
+via Granola, but we don't actually have the full meeting transcription.
+
+Speaker:
+Sorry, we don't have the full meeting recording.
+
+Speaker:
+We do have the transcription from granola.
+
+Speaker:
+For where is information lived today?
+
+Speaker:
+The presales projects folder, NetSuite, email, your head.
+
+Speaker:
+Which of you, which of those would you sit at the real meeting?
+
+Speaker:
+Today it's really the pre-sales project folder, though we are already started moving over to the PowerCloud OS
+
+Speaker:
+folder.
+
+Speaker:
+Certainly all shared documents, all recordings, we do a pretty good job of getting those put in there.
+
+Speaker:
+Some of us do a good job of
+
+Speaker:
+exporting email as markdown and putting it in there.
+
+Speaker:
+In general, I would say email making it into that folder is not perfect.
+
+Speaker:
+I think we've done a good job of getting things, most things out of our head and onto paper somehow.
+
+Speaker:
+Most effectively through recording calls.
+
+Speaker:
+At what point does a deal get an o Netsuite opportunity?
+
+Speaker:
+Who enters it, and how long after the first call?
+
+Speaker:
+This is a little bit of a gray area and one that I'd like to close, but today
+
+Speaker:
+a deal gets an opportunity in Net Suite.
+
+Speaker:
+Once we feel like It's real, and they're more than just tire kickers, and there's a legitimate conversation happening.
+
+Speaker:
+Steve Haim will usually ask Jason Kramer to
+
+Speaker:
+create the opportunity and provide whatever details he has at that point.
+
+Speaker:
+I'd say it's pretty soon after the first call.
+
+Speaker:
+I think in the future we'd love to get this in even earlier.
+
+Speaker:
+Section B direct versus subcontact contract in whose contact.
+
+Speaker:
+So the last three deals, how many were direct and how many went through a partner?
+
+Speaker:
+All recent deals have gone through some sort of a partner.
+
+Speaker:
+Over eighty percent of our current work is coming through Anderson
+
+Speaker:
+Frank.
+
+Speaker:
+In that case, we bill Anderson Frank, so it is a true subcontract.
+
+Speaker:
+We have a number of deals we are trying to close right now
+
+Speaker:
+with NetSuite.
+
+Speaker:
+Those will ultimately be direct deals, but we are working the deals we are co-selling
+
+Speaker:
+So once we, if we win those deals and create a project.
+
+Speaker:
+Those will be direct bill to the customer.
+
+Speaker:
+The referral will be from NetSuite, but they will turn the customer over to us if and when we win.
+
+Speaker:
+Question two: Which partners are active?
+
+Speaker:
+Anderson Frank, Plyotech, System Accountants, and others.
+
+Speaker:
+Today, Anderson Frank.
+
+Speaker:
+System accountants are active, and again, I'm calling these partners as in these three would be subcontract
+
+Speaker:
+under, and projects would be created in there with them as the customers.
+
+Speaker:
+That would be Anderson Frank, System Accountants.
+
+Speaker:
+Serrera has a few legacies that are out there,
+
+Speaker:
+though we're not pursuing more with them.
+
+Speaker:
+And we get the occasional referral from Run TTC,
+
+Speaker:
+though those customers are billed directly.
+
+Speaker:
+So from a project setup, they would simply be a referrer.
+
+Speaker:
+They would not be a customer that we are billing through.
+
+Speaker:
+Pliya Technologies had this same setup, but they are no longer active.
+
+Speaker:
+Certainly, it's still important for us to understand that
+
+Speaker:
+Run DTC and NetSuite are referring business to us, and that's where the business came from.
+
+Speaker:
+But it is not a subcontract relationship.
+
+Speaker:
+Three, on a subcontract deal, who is the partner at the who is the contact at the partner?
+
+Speaker:
+One person or several.
+
+Speaker:
+For example, a recruiter and account lead who is the contact at the end client.
+
+Speaker:
+So for a subcontract deal, when we begin the sales process, we are usually dealing with one
+
+Speaker:
+sales representative from the partner.
+
+Speaker:
+And that's the same whether it's Anderson Frank and System Accountants who will ultimately be.
+
+Speaker:
+Subcontracting to us, or whether it's NetSuite or Run DTC,
+
+Speaker:
+who, you know, will have a different relationship, but the sales cycle will work similarly.
+
+Speaker:
+At NetSuite, there are definitely more people who come in and out of it,
+
+Speaker:
+but I think the most important one to track is
+
+Speaker:
+the sales rep.
+
+Speaker:
+Sometimes that person's manager, the sales manager, will be involved,
+
+Speaker:
+and often a solutions consultant will be involved as well.
+
+Speaker:
+So from Netsuite, it's very possible there will be three people involved.
+
+Speaker:
+Sometimes even more, especially if they have to bring in specialists.
+
+Speaker:
+Anderson Frank and System accountants, it's generally just one sales rep.
+
+Speaker:
+It is important that we maintain that relationship because as if we have billing problems in the future,
+
+Speaker:
+that is the person that we contact to
+
+Speaker:
+get things resolved, um, and kind of act as an intermediary to the customer.
+
+Speaker:
+Four.
+
+Speaker:
+Who do we invoice on each partner deal?
+
+Speaker:
+Does that ever differ from the name on the opportunity?
+
+Speaker:
+I think we've been inconsistent with how we've done this on opportunities.
+
+Speaker:
+Subcontractor deals, again, I think we identified those as Anderson Frank and System Anderson Frank system accountants in Sorrera.
+
+Speaker:
+We invoiced the partner.
+
+Speaker:
+Net Suite, Run DTC, any direct other direct business we're invoicing the actual
+
+Speaker:
+client themselves, the NetSuite user.
+
+Speaker:
+Usually the opportunity is in the name of the
+
+Speaker:
+end user, just because it's easier for us to see the opportunity, it's easier for it to be named.
+
+Speaker:
+And it's a little simpler.
+
+Speaker:
+Five, when you create an opportunity today, whose name goes in the company field, the end client or the partner, has that been consistent?
+
+Speaker:
+Kind of okay at this, probably not a hundred percent consistent.
+
+Speaker:
+Usually it's the end client that goes in the company field, and then the scripted button that we have will understand.
+
+Speaker:
+From looking at another field that this is an Anderson Frank customer
+
+Speaker:
+and change that when it gets turned into an opportunity.
+
+Speaker:
+Six, what do you track on partner deals beyond the contacts?
+
+Speaker:
+Placement reference, minimums, monthly hours, anything missing?
+
+Speaker:
+Um, yes, so I think.
+
+Speaker:
+This is something we're just starting, but you know, whether this is an hourly customer
+
+Speaker:
+or a time and sorry, an hourly time and materials customer, or whether this is a managed services
+
+Speaker:
+customer, um, there's probably some underlying decision paper besides how we're gonna build
+
+Speaker:
+managed services customers that we probably haven't fully worked out yet.
+
+Speaker:
+Um, we definitely need to.
+
+Speaker:
+If it's a time and materials customer, we definitely need to track a rate.
+
+Speaker:
+Um, and those are probably the biggest, things
+
+Speaker:
+that we're tracking.
+
+Speaker:
+Um, occasionally we'll have.
+
+Speaker:
+Task set up, but I would say that usually comes later
+
+Speaker:
+after the technical people get involved, and we've made a decision
+
+Speaker:
+on how to do that.
+
+Speaker:
+Otherwise, we are tracking some the project type.
+
+Speaker:
+Project type is generally.
+
+Speaker:
+An implementation, a support project where we're just reactively
+
+Speaker:
+doing support.
+
+Speaker:
+We have a rapid assessment in there, which is kind of an in-between where we, you know, the customer is already live on NetSuite, but we do have a large project
+
+Speaker:
+to do.
+
+Speaker:
+And then, of course, a status that goes with that.
+
+Speaker:
+Seven, would you ever look up or report on channel?
+
+Speaker:
+If so, how would you ask the question?
+
+Speaker:
+I think we would like to.
+
+Speaker:
+Really, this becomes more of a revenue question.
+
+Speaker:
+We really want to be able to look at our income statement by channel,
+
+Speaker:
+maybe some close rates.
+
+Speaker:
+By channel, average bill rate by channel, profitability by channel.
+
+Speaker:
+So, so I really think most of this gets to
+
+Speaker:
+make sure that we track this all the way through to the income statement, including when we're posting cost of goods from our time entries,
+
+Speaker:
+which we do via the post time process.
+
+Speaker:
+I don't know that we're doing a lot of project
+
+Speaker:
+reporting based on channel, but it's important that that drives to the underlying financial posting transactions.
+
+Speaker:
+See referrals.
+
+Speaker:
+Namely the last five people who sent us a lead.
+
+Speaker:
+Who are they?
+
+Speaker:
+And which firm are they with?
+
+Speaker:
+I don't have the individual names off the top of my head.
+
+Speaker:
+But it's definitely, we've, we've been running hot with NetSuite
+
+Speaker:
+lately.
+
+Speaker:
+Our last three big deals are all from Net Suite.
+
+Speaker:
+None of those have closed yet, but that's where the leads have come from.
+
+Speaker:
+We just in the last week got a lead from Run DTC.
+
+Speaker:
+Anderson Frank has actually gone pretty quiet, even though that's where most of our active projects have come from.
+
+Speaker:
+Referrals can reach any of those three.
+
+Speaker:
+Question two is How does a referral reach you?
+
+Speaker:
+Email, text, a call, an event.
+
+Speaker:
+It's usually email, text, or call, and that could be any of the three.
+
+Speaker:
+Where do you store?
+
+Speaker:
+Where do you note who sent it today?
+
+Speaker:
+Does anyone check it afterwards?
+
+Speaker:
+When we get the opportunity, we're writing in a free text field.
+
+Speaker:
+I don't think we're doing a good job of maintaining this or checking it at this time.
+
+Speaker:
+Four, does a referrer expect to hear what happened to the deal?
+
+Speaker:
+Who tells them?
+
+Speaker:
+In most cases, the referrer stays through the sales cycle and is very much
+
+Speaker:
+aware of what happened to the deal.
+
+Speaker:
+In that, in the case of Anderson Frank, they certainly stay engaged through the entire life cycle of the project.
+
+Speaker:
+With a pure referrer, which at this point is probably
+
+Speaker:
+only run DTC, they do expect a hear because they do make some commissions on the deal.
+
+Speaker:
+And basically, we have a report that just automatically generates and tells them.
+
+Speaker:
+Five.
+
+Speaker:
+What would a referral contact field need to offer for you to fill it in?
+
+Speaker:
+Not not much.
+
+Speaker:
+I mean, the standard NetSweep contact record should work well.
+
+Speaker:
+First name, last name, email, phone, job title, maybe, or title,
+
+Speaker:
+possibly supervisor, especially when we talk about the NetSweep
+
+Speaker:
+people.
+
+Speaker:
+Though that changes a lot, it may be hard to keep up with.
+
+Speaker:
+Um, I don't think we need a lot more than the basics.
+
+Speaker:
+And of course, for them to, for us to know who the contact was.
+
+Speaker:
+The proposals and who owns the numbers.
+
+Speaker:
+Where did you start?
+
+Speaker:
+What did you copy from?
+
+Speaker:
+This is all happening in PowerCloud OS at this point.
+
+Speaker:
+It has some templates in the OS.
+
+Speaker:
+It listens to the calls and generates the proposal based off the template.
+
+Speaker:
+Who decides hours rate?
+
+Speaker:
+Who checks them?
+
+Speaker:
+Who signs off?
+
+Speaker:
+PowerCloud OS puts in some estimates or standard rates that it has.
+
+Speaker:
+Um, lately, Mike Flynn has been checking the rates
+
+Speaker:
+and adjusting them.
+
+Speaker:
+Um, then there's a discussion with Steve Haim
+
+Speaker:
+about rounding them off and making them palatable
+
+Speaker:
+and and visually appearing.
+
+Speaker:
+So so Mike does the technical check, he assigns
+
+Speaker:
+realistic technical hours.
+
+Speaker:
+Um, Steve looks at it from a sales perspective and
+
+Speaker:
+adds hours where he thinks he might need extra room or might be able to sell a little bit more and builds the commercial offering.
+
+Speaker:
+Three, do you use the MSA and SOW
+
+Speaker:
+library?
+
+Speaker:
+Um, I believe powerful. OS is producing these for us, so I assume it's doing these.
+
+Speaker:
+Occasionally I'll provide a sample, but I don't know that we have a perfect library,
+
+Speaker:
+but there's enough history in PowerCloud OS that it does a good job with these now.
+
+Speaker:
+Where do the numbers end up afterwards?
+
+Speaker:
+The proposal only, also in NetSui.
+
+Speaker:
+Today they end up only in the proposal.
+
+Speaker:
+Truly, we never really go back and add them to NetSuite.
+
+Speaker:
+They do stay in the customer folder for reference,
+
+Speaker:
+but we generally don't break the numbers down
+
+Speaker:
+by task.
+
+Speaker:
+Maybe in a rapid assessment we do, but certainly not in an implementation.
+
+Speaker:
+And even then, we're not really setting up budgets in Net Suite as far as budgeted hours and that stuff.
+
+Speaker:
+We five, do you ever create a net suite estimate when
+
+Speaker:
+inconsistent?
+
+Speaker:
+Sometimes we do.
+
+Speaker:
+I would say not all that often.
+
+Speaker:
+E.
+
+Speaker:
+What happens at a win step by step?
+
+Speaker:
+One, someone says we signed.
+
+Speaker:
+Who hears first?
+
+Speaker:
+Who do they tell?
+
+Speaker:
+Steve usually goes first, whether it's through our partner or directly from the customer.
+
+Speaker:
+And at that point, he will tell Jason
+
+Speaker:
+and our accountant Chris, who's different than Chris McDonald's,
+
+Speaker:
+that we're ready to go, and this meets a project.
+
+Speaker:
+Jason generally changes the opportunity status.
+
+Speaker:
+Um, he will, you know, get it ready.
+
+Speaker:
+He will use all of our different statuses, a waiting project, ready for kickoff, ready for onboarding, kicked off,
+
+Speaker:
+to make sure that he keeps moving the
+
+Speaker:
+opportunity along.
+
+Speaker:
+In that interim phase after they've agreed, but before we've done all of our work.
+
+Speaker:
+This is probably something we can clean up
+
+Speaker:
+for sure.
+
+Speaker:
+But today, because all of our steps are manual, creating an asana
+
+Speaker:
+board, creating a project is semi-manual, getting our kickoff call scheduled.
+
+Speaker:
+Basically, we use these opportunity statuses to make sure that happens.
+
+Speaker:
+Who Chris creates the project today?
+
+Speaker:
+She does use the Create Project button.
+
+Speaker:
+We're generally sometimes filling in resources by hand afterwards,
+
+Speaker:
+um, and just double checking everything.
+
+Speaker:
+We don't need a lot in hand before project creation work.
+
+Speaker:
+Certainly, we're supposed to have our signed.
+
+Speaker:
+Agreement before we create a project.
+
+Speaker:
+Sometimes we have to chase the rate and the resources,
+
+Speaker:
+but not usually much.
+
+Speaker:
+Who sets up Nivan and Uber for the project and when?
+
+Speaker:
+What happens if nobody does?
+
+Speaker:
+This is our biggest gap today.
+
+Speaker:
+Sets these up, but inconsistently so.
+
+Speaker:
+The import, at least for Navan, has to be a full project import, so we have to make sure we
+
+Speaker:
+export the existing list, add the new value to it, and reimport.
+
+Speaker:
+It's kind of a pain.
+
+Speaker:
+I, I think Uber works the same.
+
+Speaker:
+I don't really remember.
+
+Speaker:
+This is getting missed more often than not
+
+Speaker:
+than when people go on.
+
+Speaker:
+Site, they end up using generic values and have to update the expense report to have the right project on it when they get there.
+
+Speaker:
+Jason Kramer Jason generally creates the Asana project.
+
+Speaker:
+He's also the one checking off that it exists on the opportunities.
+
+Speaker:
+This generally works pretty well.
+
+Speaker:
+It could be more automated.
+
+Speaker:
+Steve generally creates the email group in Google.
+
+Speaker:
+There's not a perfectly consistent naming.
+
+Speaker:
+We just try to come up with a short yet identifiable
+
+Speaker:
+email address.
+
+Speaker:
+Something like barbell at powerclouderp. com would be for American Barbell.
+
+Speaker:
+Just to keep it somewhat short.
+
+Speaker:
+Jason generally schedules the kickoff and sends the invite.
+
+Speaker:
+In the past, we haven't done a great job of
+
+Speaker:
+doing handover to the sales team at this point,
+
+Speaker:
+but I do think that that's gotten better with PowerCloud OS and ensuring that all of our recordings end up in there.
+
+Speaker:
+I think this is really helpful.
+
+Speaker:
+F losses.
+
+Speaker:
+When a deal is lost, what do you do with the folder and the opportunity?
+
+Speaker:
+The folder just kind of sits there in perpetuity.
+
+Speaker:
+At this point, we're not doing anything with it.
+
+Speaker:
+It might make sense to.
+
+Speaker:
+The opportunity is marked as closed loss, but we don't really ever do an autopsy
+
+Speaker:
+on it.
+
+Speaker:
+Do we record why, where, there is a lost reason available to us on the opportunity?
+
+Speaker:
+We haven't historically used it.
+
+Speaker:
+Sometimes it's hard to get.
+
+Speaker:
+We're trying to get feedback on a direct customer now, and they're just not responding once they've declined.
+
+Speaker:
+That's probably pretty common.
+
+Speaker:
+But yeah, so no, nobody ever really looks at the reasons afterwards.
+
+Speaker:
+Monday pipeline review.
+
+Speaker:
+This is attended by Mike, Taha, Steve, Jason, and Bhavesh.
+
+Speaker:
+It usually lasts an hour.
+
+Speaker:
+Basically, we look at three things.
+
+Speaker:
+We look at our overall, we look at our pipeline briefly,
+
+Speaker:
+which is simply a look at the opportunities.
+
+Speaker:
+We have a search called PC Opportunity Dashboard, which just pulls up our open
+
+Speaker:
+opportunities.
+
+Speaker:
+And we just work off of that.
+
+Speaker:
+This is usually run by Steve.
+
+Speaker:
+He just updates everybody on what's in the pipeline, what's likely to close, what's out there.
+
+Speaker:
+After that, we generally review open projects.
+
+Speaker:
+Using the Monday morning executive dashboard that we built.
+
+Speaker:
+This looks at total hours billed.
+
+Speaker:
+It pulls in a executive summary that is filled up by the lead of every project about what the temperature of that client is.
+
+Speaker:
+The dashboard does some work to try to reconcile the billable hours plus the customer temperature and.
+
+Speaker:
+Let's us know if there are mismatches.
+
+Speaker:
+Then we kind of look at hourly trends by customer to see if there's anything we need to discuss.
+
+Speaker:
+Is there any customer we were expecting hours for that hasn't been producing?
+
+Speaker:
+Then we look at our consultant alignment and how busy each of our consultants are.
+
+Speaker:
+It's the review is like I said, the first part of the review is a standard NetSuite Safe Search called PT Opportunity dashboard.
+
+Speaker:
+The second one is a, the second part of it where we're looking at existing projects is a
+
+Speaker:
+dashboard that we've built that is auto generated via script every Monday.
+
+Speaker:
+Nobody's really preparing this.
+
+Speaker:
+That's a good thing.
+
+Speaker:
+It is being generated automatically.
+
+Speaker:
+I think we'd have one person continue to prep the whole pipeline.
+
+Speaker:
+But again, the pipeline portion of this report is definitely the-- of this meeting is definitely the shorter person,
+
+Speaker:
+the shorter, um, part of the meeting.
+
+Speaker:
+And it's simply just one saved search that's just looking at opportunities.
+
+Speaker:
+Um, if we, when Emily was here and we had multiple people working opportunities, we would go down the list and each person would just chime in on their own.
+
+Speaker:
+Um, where are you, H, where you work in license access?
+
+Speaker:
+Where does your day go?
+
+Speaker:
+Google chat calls, email, and that's week, quad code session.
+
+Speaker:
+So Chris McDonald's not on boarded yet, so that's a moot point.
+
+Speaker:
+Steve and Jason truly work in Google Chat calls and email.
+
+Speaker:
+They're not doing it.
+
+Speaker:
+They're occasionally touching that suite, but really only in the context we've already discussed.
+
+Speaker:
+It is not there, it's not a place where they do any of the rest of their job.
+
+Speaker:
+They have not truly dipped jumped into cloud code.
+
+Speaker:
+Maybe they dipped their toes in it.
+
+Speaker:
+This is something we expect them to be doing more of unless we decide to pivot and go in a different direction.
+
+Speaker:
+If a chat message could log demo to
+
+Speaker:
+next contacts ten twenty on a deal, would you use it?
+
+Speaker:
+What would stop you?
+
+Speaker:
+Yeah, I, I think we'd use it.
+
+Speaker:
+It actually seems off the top of my head, seems like the most useful way to interact,
+
+Speaker:
+though the way of understanding opening a cloud code session in PowerPlot
+
+Speaker:
+OS would seem okay as well, and the interview function might work.
+
+Speaker:
+Better or equally.
+
+Speaker:
+I'm not really sure there.
+
+Speaker:
+Who needs a NetSuite seat and who only needs to look something up?
+
+Speaker:
+Today, everybody has a NetSuite seat, so I'd like to revisit that in the future.
+
+Speaker:
+Certainly Jason and Chris McDonald.
+
+Speaker:
+What we've talked about earlier in this call is truly all they're really doing.
+
+Speaker:
+Would anybody rather sell with only the folder and let the weekly session carry the netsuite updates?
+
+Speaker:
+I'm not sure how to answer that just yet since we really don't have the process worked out, but I could definitely see that being,
+
+Speaker:
+uh, you know, a path forward, especially if,
+
+Speaker:
+you know, the one thing I think we'd need to figure out is some sort of individual dashboard.
+
+Speaker:
+People may not want to just be looking at a wall of text all the time.
+
+Speaker:
+Sales to delivery and items.
+
+Speaker:
+Who creates the Asana project?
+
+Speaker:
+The email group.
+
+Speaker:
+I think we answered that earlier.
+
+Speaker:
+It's generally the same person every time.
+
+Speaker:
+Does the deal folder start in a shared place or move later?
+
+Speaker:
+In the past, the deal folder started in sales, and then a new folder started
+
+Speaker:
+in the project, directory.
+
+Speaker:
+I think we're already decided that we're gonna start and live and stay in one folder.
+
+Speaker:
+We can use permissioning if we need to, and we have that inside higher
+
+Speaker:
+class.
+
+Speaker:
+We don't have a standard introduction email we reuse.
+
+Speaker:
+It's just typed every time.
+
+Speaker:
+SOWs live in the project folder.
+
+Speaker:
+Well, in the past, it was the pre-sales folder, and they were not in the project folder.
+
+Speaker:
+I think we need a private folder somewhere
+
+Speaker:
+where people can see the SOW without rates or prices on it.
+
+Speaker:
+Not sure how to do that.
+
+Speaker:
+We haven't really worried about it, but it really would be best practice.
+
+Speaker:
+When does MCP access commitment get into the quote or SOW
+
+Speaker:
+wording and who writes it?
+
+Speaker:
+We've put this in our master services agreement, so it should go out with our proposal.
+
+Speaker:
+Open decision.
+
+Speaker:
+Ask each of them.
+
+Speaker:
+Uh, native values.
+
+Speaker:
+Do you fill in projected total lead source opportunity to project line today?
+
+Speaker:
+Would it bother you if Claude set a projected total?
+
+Speaker:
+We don't really use the projected total field.
+
+Speaker:
+Um, not really using it at all.
+
+Speaker:
+So lead source, yes, we manually set the lead source,
+
+Speaker:
+um, although really we use it the same as we use class, so.
+
+Speaker:
+Because class is financial, it's probably the better field.
+
+Speaker:
+Um, the opportunity project link gets set by our script.
+
+Speaker:
+We really don't use NetSuite estimates for anything.
+
+Speaker:
+Um, losses is a status plus a one line reason enough with no folder move.
+
+Speaker:
+I think so.
+
+Speaker:
+Pipeline review, who should run it and why Steve runs a pipeline review.
+
+Speaker:
+I don't see a reason to change that.
+
+Speaker:
+Can we have a better dashboard than just our one save search?
+
+Speaker:
+Maybe.
+
+Speaker:
+Cleanup.
+
+Speaker:
+Um, do you use pre sal?
+
+Speaker:
+Today we do use pre sales folders in the MSASOW
+
+Speaker:
+I don't think a legacy folder would ca read only would cause a problem.
+
+Speaker:
+I do want to get away from, I want to get everything into the OS folders.

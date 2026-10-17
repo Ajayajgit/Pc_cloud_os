@@ -1,0 +1,11 @@
+[Unit]
+Description=Prepare Paco filing previews with a ten-second idle interval
+
+[Timer]
+AccuracySec=1s
+OnBootSec=1min
+OnUnitInactiveSec=10s
+Unit=paco-preview.service
+
+[Install]
+WantedBy=timers.target

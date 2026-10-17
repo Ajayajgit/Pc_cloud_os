@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapreducescript scriptid="customscript_pc_navan_expense_processor">
+    <name>PowerCloud - Navan Expense Processor</name>
+    <scriptfile>[/SuiteScripts/PowerCloud/navan-expense/scripts/mr_navan_expense_processor.js]</scriptfile>
+    <description>Polls Navan for completed bookings and appends each to the appropriate open expense report.</description>
+    <isinactive>F</isinactive>
+    <notifyowner>T</notifyowner>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_pc_navan_expense_processor">
+            <title>PowerCloud Navan Expense Processor</title>
+            <status>SCHEDULED</status>
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <runasrole>ADMINISTRATOR</runasrole>
+            <!-- Schedule (3:00 AM PT) is UI-managed, NOT here: deploying a <recurrence> RESETS the
+                 live schedule (confirmed 2026-05-29). Omitting it keeps the UI schedule intact across
+                 deploys, same as the invoice downloader. -->
+        </scriptdeployment>
+    </scriptdeployments>
+</mapreducescript>

@@ -1,0 +1,13 @@
+{
+  "key_path": "/etc/powercloud/meeting-ingest-service-account.json",
+  "subject": "REPLACE_WITH_MIKES_WORKSPACE_EMAIL",
+  "allowed_organizers": ["REPLACE_WITH_MIKES_WORKSPACE_EMAIL"],
+  "internal_domains": ["REPLACE_WITH_CONFIRMED_INTERNAL_DOMAIN"],
+  "os_root_id": "REPLACE_WITH_POWER_CLOUD_OS_SHARED_DRIVE_ROOT_ID",
+  "time_min": "2026-08-12T00:00:00-04:00",
+  "time_max": "2026-09-11T00:00:00-04:00",
+  "enable_prep_ingress": false,
+  "enable_prep_delivery": false,
+  "prep_subscription": "projects/<project>/subscriptions/<prep-subscription>",
+  "prep_routes": {"<tenant-uuid>": "user@example.com"}
+}

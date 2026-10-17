@@ -1,0 +1,143 @@
+<customrecordtype scriptid="customrecord_pc_op_ledger">
+  <accesstype>USEPERMISSIONLIST</accesstype>
+  <allowattachments>F</allowattachments>
+  <allowinlineediting>F</allowinlineediting>
+  <allowquickadd>F</allowquickadd>
+  <allowquicksearch>F</allowquicksearch>
+  <description>PC | Operation ledger. One row per CRM mutation request, used for idempotency and resume. Name holds the request id.</description>
+  <includename>T</includename>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <recordname>PC | Operation Ledger</recordname>
+  <showcreationdate>T</showcreationdate>
+  <showlastmodified>T</showlastmodified>
+  <shownotes>F</shownotes>
+  <customrecordcustomfields>
+    <customrecordcustomfield scriptid="custrecord_pc_ol_action">
+      <description>PC | Requested action.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <help>The CRM action this request performs.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Action</label>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_pc_ol_hash">
+      <description>PC | Hash of the request payload.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <help>Hash of the request payload. The same request id with a different hash is refused.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Payload Hash</label>
+      <maxlength>64</maxlength>
+      <showinlist>F</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_pc_ol_opp_id">
+      <description>PC | Internal id of the opportunity the request acts on.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>INTEGER</fieldtype>
+      <help>Internal id of the opportunity this request acts on. An integer because a List/Record Transaction field does not accept opportunities (production, 2026-10-09).</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Opportunity ID</label>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_pc_ol_opp">
+      <description>PC | Retired 2026-10-09: a Transaction list field cannot hold an opportunity. See PC | Opportunity ID.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>SELECT</fieldtype>
+      <help>Retired 2026-10-09. Not written by any script; PC | Opportunity ID carries the link. Delete in the UI when convenient.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Opportunity (retired)</label>
+      <selectrecordtype>-30</selectrecordtype>
+      <showinlist>F</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_pc_ol_project">
+      <description>PC | Project the request created or acts on.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>SELECT</fieldtype>
+      <help>The project this request created or acts on.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Project</label>
+      <selectrecordtype>-7</selectrecordtype>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_pc_ol_step">
+      <description>PC | Last step completed.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>INTEGER</fieldtype>
+      <help>Last step completed. A failed request resumes after this step.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Step</label>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_pc_ol_status">
+      <description>PC | Request status.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>SELECT</fieldtype>
+      <help>Pending, Done, Failed or Refused.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Status</label>
+      <selectrecordtype>[scriptid=customlist_pc_ol_status]</selectrecordtype>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_pc_ol_result">
+      <description>PC | Stored result as JSON.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>CLOBTEXT</fieldtype>
+      <help>The result returned for this request, as JSON. A replay returns it unchanged.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Result</label>
+      <showinlist>F</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_pc_ol_role">
+      <description>PC | Role of the requester.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <help>Script id of the role that made the request.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Requester Role</label>
+      <showinlist>F</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_pc_ol_error">
+      <description>PC | Error detail for a failed request.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>CLOBTEXT</fieldtype>
+      <help>Error message and step for a failed request.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Error</label>
+      <showinlist>F</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+  </customrecordcustomfields>
+  <permissions>
+    <permission>
+      <permittedlevel>VIEW</permittedlevel>
+      <permittedrole>[scriptid=customrole_pc_mcp_ai_connection]</permittedrole>
+    </permission>
+    <!-- The sales write role claims, advances and completes ledger rows (create and edit, never delete). The travel
+         read role never reads the ledger and has no grant. -->
+    <permission>
+      <permittedlevel>EDIT</permittedlevel>
+      <permittedrole>[scriptid=customrole_pc_crm_sales_write]</permittedrole>
+    </permission>
+  </permissions>
+</customrecordtype>

@@ -1,0 +1,12 @@
+<toolset scriptid="custtoolset_pc_scriptreader">
+    <name>Power Cloud Script Reader</name>
+    <scriptfile>[/SuiteScripts/PowerCloud/scriptreader/scriptreader_tools.js]</scriptfile>
+    <rpcschema>[/SuiteScripts/PowerCloud/scriptreader/scriptreader_schema.json]</rpcschema>
+    <exposetoaiconnector>T</exposetoaiconnector>
+    <permissions>
+        <permission>
+            <permkey>LIST_FILECABINET</permkey>
+            <permlevel>VIEW</permlevel>
+        </permission>
+    </permissions>
+</toolset>

@@ -1,0 +1,12 @@
+<transactionbodycustomfield scriptid="custbody_pc_referral_contact">
+  <bodyopportunity>T</bodyopportunity>
+  <description>PC | Sales OS phase 1. The person who sent the lead.</description>
+  <displaytype>NORMAL</displaytype>
+  <fieldtype>SELECT</fieldtype>
+  <help>The person at the referring organization who sent the lead. The person must be a contact of the selected Partner; the readiness gate checks it.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>PC | Referral Contact</label>
+  <selectrecordtype>-6</selectrecordtype>
+  <storevalue>T</storevalue>
+</transactionbodycustomfield>

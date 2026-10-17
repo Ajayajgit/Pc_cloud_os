@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_pc_af_match_status">
+    <description>Result of matching an AF report row to a NetSuite invoice. Not Yet Invoiced is expected for the most recent period and is not an exception.</description>
+    <isinactive>F</isinactive>
+    <isordered>T</isordered>
+    <name>PC AF Match Status</name>
+    <customvalues>
+        <customvalue scriptid="val_matched">
+            <isinactive>F</isinactive>
+            <value>Matched</value>
+        </customvalue>
+        <customvalue scriptid="val_not_yet_invoiced">
+            <isinactive>F</isinactive>
+            <value>Not Yet Invoiced</value>
+        </customvalue>
+        <customvalue scriptid="val_unmatched">
+            <isinactive>F</isinactive>
+            <value>Unmatched - Exception</value>
+        </customvalue>
+        <customvalue scriptid="val_ambiguous">
+            <isinactive>F</isinactive>
+            <value>Ambiguous - Multiple Invoices</value>
+        </customvalue>
+    </customvalues>
+</customlist>

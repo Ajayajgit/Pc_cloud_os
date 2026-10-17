@@ -1,0 +1,19 @@
+<suitelet scriptid="customscript_pc_crm_search_installer_sl">
+  <name>PC | Saved Search Installer</name>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/PC/pc_crm_search_installer_sl.js]</scriptfile>
+  <scriptdeployments>
+    <!-- Retired 2026-10-13 after the six T5 searches were created and imported; redeployed and retired again 2026-10-15 for the two-search fix (build_log). Not deployed on purpose. -->
+  <scriptdeployment scriptid="customdeploy_pc_crm_search_installer_sl">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole>ADMINISTRATOR</audslctrole>
+      <isdeployed>F</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <status>TESTING</status>
+      <title>PC | Saved Search Installer</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

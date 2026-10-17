@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_pc_cm_relationship">
+  <description>PC | Relationship between Power Cloud and the party behind a channel (used by PC | Channel Map).</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>PC | Channel Relationship</name>
+  <customvalues>
+    <customvalue scriptid="val_pc_rel_sub">
+      <isinactive>F</isinactive>
+      <value>Subcontract</value>
+    </customvalue>
+    <customvalue scriptid="val_pc_rel_ref">
+      <isinactive>F</isinactive>
+      <value>Referral</value>
+    </customvalue>
+    <customvalue scriptid="val_pc_rel_dir">
+      <isinactive>F</isinactive>
+      <value>Direct</value>
+    </customvalue>
+  </customvalues>
+</customlist>

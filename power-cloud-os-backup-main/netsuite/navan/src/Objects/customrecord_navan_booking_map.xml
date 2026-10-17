@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customrecordtype scriptid="customrecord_navan_booking_map">
+    <recordname>Navan Booking Map</recordname>
+    <includename>T</includename>
+    <description>Maps Navan booking UUIDs to NetSuite expense report lines. Used for dedup and cancellation tracking.</description>
+    <accesstype>NONENEEDED</accesstype>
+    <allowattachments>F</allowattachments>
+    <allowinlineediting>F</allowinlineediting>
+    <allowinlinedeleting>T</allowinlinedeleting>
+    <allowquickadd>F</allowquickadd>
+    <enablenumbering>F</enablenumbering>
+    <isinactive>F</isinactive>
+    <isordered>F</isordered>
+    <showid>T</showid>
+    <showlastmodified>T</showlastmodified>
+    <showcreationdate>T</showcreationdate>
+    <customrecordcustomfields>
+        <customrecordcustomfield scriptid="custrecord_navan_bm_booking_uuid">
+            <label>Booking UUID</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_bm_trip_uuid">
+            <label>Trip UUID</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_bm_expense_report">
+            <label>Expense Report ID</label>
+            <fieldtype>INTEGER</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_bm_line_index">
+            <label>Line Index</label>
+            <fieldtype>INTEGER</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_bm_booking_type">
+            <label>Booking Type</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_bm_amount">
+            <label>Amount</label>
+            <fieldtype>CURRENCY</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_bm_status">
+            <label>Status</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>T</ismandatory>
+            <displaytype>NORMAL</displaytype>
+            <defaultvalue>active</defaultvalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_bm_invoice_url">
+            <label>Invoice URL</label>
+            <fieldtype>TEXT</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_navan_bm_invoice_file_id">
+            <label>Invoice File ID</label>
+            <fieldtype>INTEGER</fieldtype>
+            <ismandatory>F</ismandatory>
+            <displaytype>NORMAL</displaytype>
+        </customrecordcustomfield>
+    </customrecordcustomfields>
+</customrecordtype>

@@ -1,0 +1,271 @@
+id,entityid,companyname,altname,parent,parent_name,jobtype,jobtype_name,entitystatus,status_name,isinactive,class,class_name,end_client,partner_contact,commercial_model,deal_uuid,asana_url,travel_exclude,af_ref,af_contact,af_contact_email,af_contact_phone,principal,externalid,startdate,datecreated
+145,Alastin Skincare,Alastin Skincare,Anderson Frank : Alastin Skincare,136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,P0192890,Erin Pryce,e.pryce@tenthrevolution.com,,4,,7/1/2019,7/25/2019
+148,All One Health,All One Health,Anderson Frank : All One Health,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Taylor Quinn,,,-5,,7/28/2019,7/28/2019
+150,ASI,ASI,Anderson Frank : ASI,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Erin Maher,e.maher@andersonfrank.com,,3,,7/28/2019,7/28/2019
+151,Asure Software,Asure Software,Anderson Frank : Asure Software,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,Christine Leo,,,4,,5/1/2019,7/28/2019
+152,Auto Alert,Auto Alert,Anderson Frank : Auto Alert,136,Anderson Frank,2,Use Case,1,Completed,T,5,Anderson Frank,,,,,,,,Erin Maher,e.maher@andersonfrank.com,,-5,,5/1/2019,7/28/2019
+154,Beverly Hills Polo Club (Blue Ocean Strategies),Beverly Hills Polo Club (Blue Ocean Strategies),Anderson Frank : Beverly Hills Polo Club (Blue Ocean Strategies),136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Steven Masetti,,,3,,5/1/2019,7/28/2019
+155,Ciatti,Ciatti,Anderson Frank : Ciatti,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Adam VanDelinder,,,3,,7/1/2019,7/28/2019
+157,Eminess,Eminess,Anderson Frank : Eminess,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Logan Dubek,,,,,7/1/2019,7/28/2019
+158,Gordon Bros,Gordon Bros,Anderson Frank : Gordon Bros,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Kenneth Rodriguez,K.Rodriguez@andersonfrank.com,,3,,7/1/2019,7/28/2019
+159,ISSI,ISSI,Anderson Frank : ISSI,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Erin Maher,e.maher@andersonfrank.com,,3,,5/1/2019,7/28/2019
+160,My Vape Order,My Vape Order,Anderson Frank : My Vape Order,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Erin Maher,e.maher@andersonfrank.com,,,,5/1/2019,7/28/2019
+161,NextMed,NextMed,Anderson Frank : NextMed,136,Anderson Frank,2,Use Case,1,Completed,T,5,Anderson Frank,,,,,,,,Logan Dubek,,,4,,7/1/2019,7/28/2019
+162,Picarro,Picarro,Anderson Frank : Picarro,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Adam VanDelinder,,,3,,7/1/2019,7/28/2019
+163,Rec Tec Grills,Rec Tec Grills,Anderson Frank : Rec Tec Grills,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Ryan Elliott,r.elliott@andersonfrank.com,,3,,5/1/2019,7/28/2019
+164,Sill Dry (Marcum Technology),Sill Dry (Marcum Technology),Anderson Frank : Sill Dry (Marcum Technology),136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Connor Campbell,,,4,,5/1/2019,7/28/2019
+165,Stance,Stance,Anderson Frank : Stance,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Colin Cosper,C.cosper@andersonfrank.com,,4,,5/1/2019,7/28/2019
+166,The Hydro Source,The Hydro Source,Anderson Frank : The Hydro Source,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Kayla Podwalny,,,,,7/28/2019,7/28/2019
+167,UBTech Robotics,UBTech Robotics,Anderson Frank : UBTech Robotics,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Erin Maher,e.maher@andersonfrank.com,,,,5/1/2019,7/28/2019
+168,Urethane Sciences Implementation,Urethane Sciences Implementation,Anderson Frank : Urethane Sciences Implementation,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Michael Nicholas,,,,,5/1/2019,7/28/2019
+169,Wish (Context Logic),Wish (Context Logic),Anderson Frank : Wish (Context Logic),136,Anderson Frank,,,4,On Hold,T,5,Anderson Frank,,,,,,,,Patrick Skinner,,,,,5/1/2019,7/28/2019
+211,Erin Condren - Time & Expenses,Erin Condren - Time & Expenses,Playa Technologies : Erin Condren - Time & Expenses,6,Playa Technologies,5,Support,1,Completed,T,3,Playa Technologies,,,,,,,,,,,4,,5/1/2019,7/29/2019
+212,Skims - Time & Expenses,Skims - Time & Expenses,Playa Technologies : Skims - Time & Expenses,6,Playa Technologies,5,Support,1,Completed,T,3,Playa Technologies,,,,,,,,,,,3,,5/1/2019,7/29/2019
+213,GLCO Celigo Integration - Time & Expenses,GLCO Celigo Integration - Time & Expenses,Sererra : GLCO Celigo Integration - Time & Expenses,198,Sererra,4,Integration,1,Completed,T,6,Sererra,,,,,,,,,,,4,,5/1/2019,7/29/2019
+214,GLCO Phase 3 - Time & Expenses,GLCO Phase 3 - Time & Expenses,Sererra : GLCO Phase 3 - Time & Expenses,198,Sererra,1,Implementation,1,Completed,T,6,Sererra,,,,,,,,,,,4,,7/29/2019,7/29/2019
+217,Ore - Time & Expenses,Ore - Time & Expenses,Sererra : Ore - Time & Expenses,198,Sererra,1,Implementation,1,Completed,T,6,Sererra,,,,,,,,,,,4,,5/1/2019,7/29/2019
+225,Thrive Market,Thrive Market,Anderson Frank : Thrive Market,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Erin Maher,e.maher@andersonfrank.com,,,,7/28/2019,8/1/2019
+231,Playa Pre-Sales,Playa Pre-Sales,Playa Technologies : Playa Pre-Sales,6,Playa Technologies,,,1,Completed,T,3,Playa Technologies,,,,,,,,,,,-5,,5/1/2019,8/1/2019
+234,Digirad,Digirad,Anderson Frank : Digirad,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,Steven Masetti,,,-5,,5/1/2019,8/5/2019
+240,Marco Fine Arts,Marco Fine Arts,Playa Technologies : Marco Fine Arts,6,Playa Technologies,1,Implementation,1,Completed,T,3,Playa Technologies,,,,,,,,,,,4,,5/1/2019,8/12/2019
+250,OOFOS,OOFOS,Anderson Frank : OOFOS,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Michael Bonitatibus,,,,,9/1/2019,9/9/2019
+254,Ryeco,Ryeco,Anderson Frank : Ryeco,136,Anderson Frank,1,Implementation,4,On Hold,T,5,Anderson Frank,,,,,,,,Ryan Elliott,r.elliott@andersonfrank.com,,4,,10/10/2019,10/16/2019
+255,RainHarvest Systems,RainHarvest Systems,Anderson Frank : RainHarvest Systems,136,Anderson Frank,,,4,On Hold,T,5,Anderson Frank,,,,,,,,Ryan Elliott,r.elliott@andersonfrank.com,,,,10/7/2019,10/16/2019
+258,Load Testing,Load Testing,Manduka : Load Testing,257,Manduka,,,1,Completed,T,1,Direct,,,,,,,,,,,,,10/31/2019,10/31/2019
+260,SKIMs Custom G/L,SKIMs Custom G/L,Playa Technologies : Skims - Time & Expenses : SKIMs Custom G/L,212,Skims - Time & Expenses,2,Use Case,1,Completed,T,3,Playa Technologies,,,,,,,,,,,3,,12/3/2019,12/3/2019
+261,Breathing Color Amazon & Shopify Integration,Breathing Color Amazon & Shopify Integration,Playa Technologies : Breathing Color Amazon & Shopify Integration,6,Playa Technologies,4,Integration,1,Completed,T,3,Playa Technologies,,,,,,,,,,,4,,12/1/2019,12/4/2019
+262,Alastin Skincare Use Case,Alastin Skincare Use Case,Anderson Frank : Alastin Skincare Use Case,136,Anderson Frank,2,Use Case,1,Completed,T,5,Anderson Frank,,,,,,,,,,,4,,12/5/2019,12/10/2019
+263,"Container Centralan, Inc. - A/R Fields","Container Centralan, Inc. - A/R Fields","Anderson Frank : Container Centralan, Inc. - A/R Fields",136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Josh Thomas Brown,j.brown@andersonfrank.com,813-437-6865,3,,12/12/2019,12/12/2019
+272,Kyoto Cooling,Kyoto Cooling,Anderson Frank : Kyoto Cooling,136,Anderson Frank,,,4,On Hold,T,5,Anderson Frank,,,,,,,,Che Kamose,,,4,,12/16/2019,12/18/2019
+276,Follow Beauty,Follow Beauty,Anderson Frank : Follow Beauty,136,Anderson Frank,,,4,On Hold,T,5,Anderson Frank,,,,,,,,Erin Maher,e.maher@andersonfrank.com,,-5,,1/3/2020,1/3/2020
+277,Global Cellular,Global Cellular,Anderson Frank : Global Cellular,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Ryan Elliott,r.elliott@andersonfrank.com,,4,,1/12/2020,1/12/2020
+278,Verishop - Time & Expenses,Verishop - Time & Expenses,Playa Technologies : Verishop - Time & Expenses,6,Playa Technologies,4,Integration,1,Completed,T,3,Playa Technologies,,,,,,,,,,,4,,1/6/2020,1/13/2020
+282,PC Internal Hours,PC Internal Hours,PC Internal Hours,,,7,Travel Placeholder,2,In Progress,F,7,Other,,,,,,,,,,,-5,,1/1/2020,1/16/2020
+283,Skims - Time & Expenses: Use Case for Cash Refunds,Skims - Time & Expenses: Use Case for Cash Refunds,Playa Technologies : Skims - Time & Expenses : Skims - Time & Expenses: Use Case for Cash Refunds,212,Skims - Time & Expenses,2,Use Case,1,Completed,T,3,Playa Technologies,,,,,,,,,,,3,,1/1/2020,1/16/2020
+284,Skims - Time & Expenses: Refund RMAs,Skims - Time & Expenses: Refund RMAs,Playa Technologies : Skims - Time & Expenses : Skims - Time & Expenses: Refund RMAs,212,Skims - Time & Expenses,2,Use Case,1,Completed,T,3,Playa Technologies,,,,,,,,,,,3,,1/17/2020,1/17/2020
+285,Skims - Time & Expenses: Shopify Refund,Skims - Time & Expenses: Shopify Refund,Playa Technologies : Skims - Time & Expenses : Skims - Time & Expenses: Shopify Refund,212,Skims - Time & Expenses,2,Use Case,1,Completed,T,3,Playa Technologies,,,,,,,,,,,3,,1/1/2020,1/17/2020
+292,Urethane Sciences - Project Accounting,Urethane Sciences - Project Accounting,Anderson Frank : Urethane Sciences - Project Accounting,136,Anderson Frank,2,Use Case,1,Completed,T,5,Anderson Frank,,,,,,,,Michael Nicholas,,,3,,2/4/2020,1/23/2020
+293,KBS Homes,KBS Homes,Anderson Frank : Digirad : KBS Homes,234,Digirad,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,Steven Masetti,,,3,,1/23/2020,1/23/2020
+296,Charge Based Test,Charge Based Test,Charge Based Test,,,,,,,T,1,Direct,,,,,,,,,,,,,1/31/2020,1/31/2020
+297,Container Centralan - Netsuite Optimization,Container Centralan - Netsuite Optimization,Anderson Frank : Container Centralan - Netsuite Optimization,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Josh Thomas Brown,j.brown@andersonfrank.com,813-437-6865,3,,1/27/2020,2/3/2020
+298,Trinity Packaging Supply,Trinity Packaging Supply,Anderson Frank : Trinity Packaging Supply,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Michael Nicholas,,,,,2/6/2020,2/7/2020
+301,Trinity Packaging Supply Travel Expenses,Trinity Packaging Supply Travel Expenses,Trinity Packaging Supply : Trinity Packaging Supply Travel Expenses,299,Trinity Packaging Supply,,,1,Completed,T,5,Anderson Frank,,,,,,,,,,,,,2/6/2020,2/11/2020
+303,Lima Consulting,Lima Consulting,Anderson Frank : Lima Consulting,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Michael Nicholas,,,,,2/1/2020,2/14/2020
+306,Habitat Botanicals Time & Expenses,Habitat Botanicals Time & Expenses,Habitat Botanicals : Habitat Botanicals Time & Expenses,305,Habitat Botanicals,1,Implementation,1,Completed,T,1,Direct,,,,,,,,Fuck These Guys,,,4,,2/21/2020,2/21/2020
+308,Lulu's Fashion Lounge,Lulu's Fashion Lounge,Anderson Frank : Lulu's Fashion Lounge,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,,,,,,2/24/2020,2/24/2020
+311,Europe2You,Europe2You,Anderson Frank : Europe2You,136,Anderson Frank,,,4,On Hold,T,5,Anderson Frank,,,,,,,,Matt Fasul,m.fasul@andersonfrank.com,,4,,2/28/2020,2/28/2020
+313,Diff Eyeware,Diff Eyeware,Playa Technologies : Diff Eyeware,6,Playa Technologies,5,Support,1,Completed,T,3,Playa Technologies,,,,,,,,,,,3,,3/4/2020,3/4/2020
+316,Advantage Fitness Products,Advantage Fitness Products,Anderson Frank : Advantage Fitness Products,136,Anderson Frank,,,4,On Hold,T,5,Anderson Frank,,,,,,,,,,,,,3/9/2020,3/12/2020
+320,ACME Cosmetic Components,ACME Cosmetic Components,BSM Group : ACME Cosmetic Components,309,BSM Group,3,Rapid Assessment,1,Completed,T,7,Other,,,,,,,,,,,3,,3/1/2020,3/16/2020
+324,PM Shoes / MetroShoe Warehouse,PM Shoes / MetroShoe Warehouse,PM Shoes Inc. : PM Shoes / MetroShoe Warehouse,322,PM Shoes Inc.,4,Integration,1,Completed,T,1,Direct,,,,,,,,,,,4,,3/31/2020,3/31/2020
+325,Alen,Alen,Anderson Frank : Alen,136,Anderson Frank,3,Rapid Assessment,4,On Hold,T,5,Anderson Frank,,,,,,,,Matthew Fasul,,,4,,4/9/2020,4/9/2020
+329,Landscaping USA,Landscaping USA,Anderson Frank : Landscaping USA,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Matthew Fasul,m.fasul@andersonfrank.com,,4,,5/21/2020,5/21/2020
+334,Rylee & Cru Implementation,Rylee & Cru Implementation,Rylee & Cru Inc. : Rylee & Cru Implementation,333,Rylee & Cru Inc.,1,Implementation,1,Completed,T,2,Netsuite Alliance,,,,,,,,,,,4,,5/28/2020,5/28/2020
+337,Origin Acoustics,Origin Acoustics,Anderson Frank : Origin Acoustics,136,Anderson Frank,6,SuiteCommerce,1,Completed,T,5,Anderson Frank,,,,,,,,Zoe Mirviss,z.mirviss@andersonfrank.com,,3,,6/24/2020,6/11/2020
+339,Sperber Landscape Company,Sperber Landscape Company,Anderson Frank : Sperber Landscape Company,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,Hannah Storey,h.storey@andersonfrank.com,,-5,,6/15/2020,6/18/2020
+341,GLCO Phase 4 - Time & Expenses,GLCO Phase 4 - Time & Expenses,Sererra : GLCO Phase 4 - Time & Expenses,198,Sererra,5,Support,1,Completed,T,6,Sererra,,,,,,,,,,,4,,6/23/2020,6/23/2020
+344,Origin Acoustics Travel Expenses,Origin Acoustics Travel Expenses,Origin Acoustics Travel : Origin Acoustics Travel Expenses,343,Origin Acoustics Travel,7,Travel Placeholder,2,In Progress,T,1,Direct,,,,,,,,,,,3,,6/28/2020,6/28/2020
+360,DVG Implementation,,DVG Design Inc. : DVG Implementation,357,DVG Design Inc.,,,5,Awarded - Pre-Kickoff,T,1,Direct,,,,,,,,,,,,,7/24/2020,7/24/2020
+370,Tracksmith - Netsuite Implementation,Tracksmith - Netsuite Implementation,Tracksmith Trackhouse : Tracksmith - Netsuite Implementation,369,Tracksmith Trackhouse,1,Implementation,1,Completed,T,2,Netsuite Alliance,,,,,,,,,,,3,,8/6/2020,8/6/2020
+373,Flock Freight Netsuite Implementation,Flock Freight Netsuite Implementation,Flock Freight : Flock Freight Netsuite Implementation,365,Flock Freight,5,Support,2,In Progress,F,1,Direct,,,,,,,,,,,4,,8/8/2020,8/8/2020
+374,Good American,Good American,Playa Technologies : Good American,6,Playa Technologies,4,Integration,4,On Hold,T,3,Playa Technologies,,,,,,,,,,,3,,8/11/2020,8/11/2020
+377,Le-Vel,Le-Vel,DSWi : Le-Vel,376,DSWi,1,Implementation,1,Completed,T,4,DSWi,,,,,,,,Lauren Sigmon - DSWi,,aja@dswius.com,4,,8/19/2020,8/19/2020
+379,Ettitude,Ettitude,Anderson Frank : Ettitude,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Erin Maher,e.maher@andersonfrank.com,,4,,8/20/2020,8/20/2020
+385,Shop Safely,Shop Safely,Playa Technologies : Shop Safely,6,Playa Technologies,1,Implementation,1,Completed,T,3,Playa Technologies,,,,,,,,,,,3,,9/22/2020,9/22/2020
+388,Laura of Pembroke - Implementation,Laura of Pembroke - Implementation,Laura of Pembroke : Laura of Pembroke - Implementation,386,Laura of Pembroke,5,Support,2,In Progress,F,2,Netsuite Alliance,,,,,,,,,,,3,,9/25/2020,9/25/2020
+397,Pre-Sales Hrs,Pre-Sales Hrs,Pre-Sales Hrs,,,5,Support,,,F,7,Other,,,,,,,,,,,-5,,10/23/2020,10/23/2020
+399,TSA Rapid Assessment,TSA Rapid Assessment,TSA : TSA Rapid Assessment,398,TSA,5,Support,2,In Progress,T,1,Direct,,,,,,,,,,,3,,10/28/2020,10/28/2020
+402,AllParts - Implementation,AllParts - Implementation,AllParts/Walrus : AllParts - Implementation,401,AllParts/Walrus,1,Implementation,1,Completed,T,1,Direct,,,,,,,,,,,4,,11/1/2020,11/20/2020
+404,Argonauts,Argonauts,Anderson Frank : Argonauts,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,Anna Smith-Johnson,,,4,,12/4/2020,12/11/2020
+407,Glowforge,Glowforge,Playa Technologies : Glowforge,6,Playa Technologies,5,Support,1,Completed,T,3,Playa Technologies,,,,,,,,,,,4,,1/20/2021,1/22/2021
+408,Avance Upscale Moving & Storage,Avance Upscale Moving & Storage,Anderson Frank : Avance Upscale Moving & Storage,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,Jonathan Ozuna,,,3,,1/26/2021,2/1/2021
+409,Better Nutritionals,Better Nutritionals,Anderson Frank : Better Nutritionals,136,Anderson Frank,,,4,On Hold,T,5,Anderson Frank,,,,,,,,Erin Maher Pryce,,,4,,2/4/2021,2/4/2021
+412,FMW Shopify & Paypal Payout Reconcilation,FMW Shopify & Paypal Payout Reconcilation,FMW Fasteners : FMW Shopify & Paypal Payout Reconcilation,411,FMW Fasteners,,,1,Completed,T,1,Direct,,,,,,,,,,,,,2/26/2021,2/26/2021
+414,"CM Squared, Inc.","CM Squared, Inc.","Anderson Frank : CM Squared, Inc.",136,Anderson Frank,1,Implementation,4,On Hold,T,5,Anderson Frank,,,,,,,,Matt Loleng / Patrick Skinner,m.loleng@frankgroup.com,,4,,2/12/2021,3/3/2021
+423,Manduka,Manduka,Manduka : Manduka,257,Manduka,1,Implementation,1,Completed,T,1,Direct,,,,,,,,,,,,,3/12/2021,3/17/2021
+425,Baublebar,Baublebar,Baublebar : Baublebar,424,Baublebar,1,Implementation,1,Completed,T,2,Netsuite Alliance,,,,,,,,,,,3,,3/17/2021,3/17/2021
+430,Ghost Lifestyle,Ghost Lifestyle,Anderson Frank : Ghost Lifestyle,136,Anderson Frank,,,4,On Hold,T,5,Anderson Frank,,,,,,,,,,,,,4/12/2021,3/31/2021
+435,Senreve,Senreve,Senreve : Senreve,433,Senreve,3,Rapid Assessment,4,On Hold,T,7,Other,,,,,,,,,,,3,,4/14/2021,4/14/2021
+441,Technologent,Technologent,Meriture : Technologent,439,Meriture,2,Use Case,1,Completed,T,1,Direct,,,,,,,,,,,4,,4/26/2021,4/29/2021
+442,Mitchell & Ness Nostalgia,Mitchell & Ness Nostalgia,Anderson Frank : Mitchell & Ness Nostalgia,136,Anderson Frank,2,Use Case,1,Completed,T,5,Anderson Frank,,,,,,,, Tyler Quick,T.quick@andersonfrank.com,,3,,5/5/2021,5/4/2021
+446,Labyrinth Learning,Labyrinth Learning,Anderson Frank : Labyrinth Learning,136,Anderson Frank,6,SuiteCommerce,1,Completed,T,5,Anderson Frank,,,,,,,,Erin Maher Pryce,e.maher@andersonfrank.com,,-5,,6/7/2021,6/1/2021
+451,BluJuniper,BluJuniper,Anderson Frank : BluJuniper,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,Tony LaBella,,,,,6/17/2021,6/17/2021
+453,Clarus Integration Project,Clarus Integration Project,Clarus : Clarus Integration Project,452,Clarus,4,Integration,1,Completed,T,1,Direct,,,,,,,,,,,-5,,6/22/2021,6/22/2021
+460,TEST ADMIN SVCS,TEST ADMIN SVCS,Anderson Frank : TEST ADMIN SVCS,136,Anderson Frank,,,,,T,7,Other,,,,,,,,,,,,,7/6/2021,7/6/2021
+464,Mawi DNA Technologies,Mawi DNA Technologies,Anderson Frank : Mawi DNA Technologies,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,John Durst,j.durst@andersonfrank.com,,3,,6/29/2021,7/7/2021
+465,Patrick's Heating and Cooling Supply,Patrick's Heating and Cooling Supply,Anderson Frank : Patrick's Heating and Cooling Supply,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Anthony Vitale,a.vitale1@andersonfrank.com,,891,,7/7/2021,7/9/2021
+467,The Perfumers Apprentice,The Perfumers Apprentice,Anderson Frank : The Perfumers Apprentice,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,Will Dorenbusch,,,,,8/2/2021,7/12/2021
+471,Promier Products Inc.,Promier Products Inc.,Anderson Frank : Promier Products Inc.,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Claudia Ricciardi,,,4,,7/14/2021,7/15/2021
+472,Orchard & Vineyard Supply,Orchard & Vineyard Supply,Anderson Frank : Orchard & Vineyard Supply,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,,,,,,7/19/2021,7/19/2021
+476,HydroJug - Netsuite Integration and Consulting,HydroJug - Netsuite Integration and Consulting,HydroJug : HydroJug - Netsuite Integration and Consulting,477,HydroJug,5,Support,1,Completed,T,1,Direct,,,,,,,,,,,4,,7/23/2021,7/26/2021
+486,Fink's Jewelers Use Case,Fink's Jewelers Use Case,Fink's Jewelers : Fink's Jewelers Use Case,484,Fink's Jewelers,2,Use Case,1,Completed,T,1,Direct,,,,,,,,,,,,,7/30/2021,7/31/2021
+488,Chinook Roofing and Gutters,Chinook Roofing and Gutters,Anderson Frank : Chinook Roofing and Gutters,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,,,,3,,8/30/2021,8/2/2021
+491,Uhuru Design,Uhuru Design,Anderson Frank : Uhuru Design,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Christopher O'Donnell,,,4,,8/23/2021,8/8/2021
+497,Brady Brand,Brady Brand,Playa Technologies : Brady Brand,6,Playa Technologies,1,Implementation,1,Completed,T,3,Playa Technologies,,,,,,,,,,,3,,8/20/2021,8/20/2021
+499,Chalk Couture NetSuite Consulting P0190430,Chalk Couture NetSuite Consulting P0190430,Anderson Frank : Chalk Couture NetSuite Consulting P0190430,136,Anderson Frank,5,Support,1,Completed,F,5,Anderson Frank,,,,,,,,Adam VanDelinder,A.VanDelinder@andersonfrank.com,,4,,8/18/2021,8/24/2021
+505,Juiced Bikes,Juiced Bikes,Anderson Frank : Juiced Bikes,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Anna Smith-Johnson,a.smith-johnson@andersonfrank.com,,4,,9/13/2021,8/30/2021
+518,Agile Off-Road,Agile Off-Road,Anderson Frank : Agile Off-Road,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Anna Smith-Johnson,a.smith-johnson@andersonfrank.com,,4,,9/8/2021,9/8/2021
+521,West Monroe,West Monroe,SystemsAccountants : West Monroe,514,SystemsAccountants,,,1,Completed,T,7,Other,,,,,,,,Kevin Schaffartzik,kevin@systemsaccountants.com,,,,9/1/2021,9/8/2021
+532,Parchment Virtual Admin Services,Parchment Virtual Admin Services,Anderson Frank : Parchment Virtual Admin Services,136,Anderson Frank,8,Virtual Admin,4,On Hold,T,5,Anderson Frank,,,,,,,,Maria Mihaylov,,,-5,,9/24/2021,9/24/2021
+536,Fabulous Furs Implementation,Fabulous Furs Implementation,Fabulous Furs : Fabulous Furs Implementation,534,Fabulous Furs,1,Implementation,1,Completed,T,1,Direct,,,,,,,,,,,4,,9/30/2021,9/30/2021
+540,Vanguard Wines,Vanguard Wines,Vanguard Wines : Vanguard Wines,538,Vanguard Wines,5,Support,1,Completed,T,1,Direct,,,,,,,,,davidclark@vanguardwines.com,,-5,,9/15/2021,9/30/2021
+541,Cision Us,Cision Us,Anderson Frank : Cision Us,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Steven Masetti,s.masetti@andresonfrank.com,,,,9/20/2021,10/5/2021
+542,Audio Precision Admin Services,Audio Precision Admin Services,Anderson Frank : Audio Precision Admin Services,136,Anderson Frank,8,Virtual Admin,1,Completed,T,5,Anderson Frank,,,,,,,,Angelina Martinez,,,-5,,10/4/2021,10/5/2021
+543,Ritual,Ritual,SystemsAccountants : Ritual,514,SystemsAccountants,5,Support,1,Completed,T,7,Other,,,,,,,,,,,3,,10/27/2021,10/7/2021
+545,Agile Off-Road Virtual Admin,Agile Off-Road Virtual Admin,Anderson Frank : Agile Off-Road Virtual Admin,136,Anderson Frank,8,Virtual Admin,1,Completed,T,5,Anderson Frank,,,,,,,,Anna Smith-Johnson,a.smith-johnson@andersonfrank.com,,-5,,10/9/2021,10/25/2021
+546,Denby USA Limited,Denby USA Limited,Anderson Frank : Denby USA Limited,136,Anderson Frank,1,Implementation,4,On Hold,T,5,Anderson Frank,,,,,,,,,,,,,10/22/2021,10/25/2021
+549,TATAA,TATAA,Meriture : TATAA,439,Meriture,3,Rapid Assessment,1,Completed,T,1,Direct,,,,,,,,,,,4,,10/27/2021,10/27/2021
+550,Nurx - Propel Network,Nurx - Propel Network,Anderson Frank : Nurx - Propel Network,136,Anderson Frank,3,Rapid Assessment,4,On Hold,T,5,Anderson Frank,,,,,,,,Adam VanDelinde,,,-5,,11/8/2021,11/1/2021
+558,Ontility,Ontility,"TERREPOWER, LLC (fin/a BBB Industries LLC) / Ontility : Ontility",555,"TERREPOWER, LLC (fin/a BBB Industries LLC) / Ontility",1,Implementation,1,Completed,T,1,Direct,,,,,,,,,,,4,,11/18/2021,11/18/2021
+561,Billing Test Project,Billing Test Project,Anderson Frank : Billing Test Project,136,Anderson Frank,8,Virtual Admin,,,F,5,Anderson Frank,,,,,,,,,,,,,12/7/2021,12/7/2021
+563,NSL Analytical Services,NSL Analytical Services,Anderson Frank : NSL Analytical Services,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Evan Colisto,e.colisto@andersonfrank.com,,3,,1/10/2022,12/13/2021
+569,Parchment NetSuite Implementation,Parchment NetSuite Implementation,Anderson Frank : Parchment NetSuite Implementation,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,,,,4,,12/9/2021,12/20/2021
+573,Reeds,Reeds,Reed's Inc. : Reeds,571,Reed's Inc.,3,Rapid Assessment,1,Completed,T,1,Direct,,,,,,,,,,,4,,1/18/2022,1/18/2022
+578,Walrus Audio,Walrus Audio,Walrus Audio : Walrus Audio,576,Walrus Audio,4,Integration,1,Completed,T,1,Direct,,,,,,,,,,,4,,1/24/2022,1/24/2022
+579,Shopify Payout Template,Shopify Payout Template,Shopify Payout Template,,,,,,,T,5,Anderson Frank,,,,,,,,,,,,,1/25/2022,1/25/2022
+583,LitezAll/Promier Products Virtual Admin,LitezAll/Promier Products Virtual Admin,Anderson Frank : LitezAll/Promier Products Virtual Admin,136,Anderson Frank,8,Virtual Admin,1,Completed,T,5,Anderson Frank,,,,,,,,,,,4,,2/10/2022,2/11/2022
+588,Jaanuu,Jaanuu,Jaanuu : Jaanuu,586,Jaanuu,1,Implementation,17,Post Go Live,F,1,Direct,,,,,,,,,,,4,,2/18/2022,2/18/2022
+590,Digital Lumens,Digital Lumens,Sererra : Digital Lumens,198,Sererra,,,4,On Hold,T,1,Direct,,,,,,,,,,,-5,,2/1/2022,2/21/2022
+591,Sauce Labs (Project),Sauce Labs (Project),Anderson Frank : Sauce Labs (Project),136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,, Maria Mihaylov,,,3,,2/28/2022,2/28/2022
+593,Sauce Labs - Travel Only,Sauce Labs - Travel Only,Sauce Labs Inc. : Sauce Labs - Travel Only,592,Sauce Labs Inc.,7,Travel Placeholder,2,In Progress,T,1,Direct,,,,,,,,,,,,,2/28/2022,2/28/2022
+596,Purple Brand,Purple Brand,Purple Brand : Purple Brand,595,Purple Brand,1,Implementation,1,Completed,T,1,Direct,,,,,,,,,,,3,,3/1/2022,3/1/2022
+599,Calm Virtual Admin,Calm Virtual Admin,Anderson Frank : Calm Virtual Admin,136,Anderson Frank,8,Virtual Admin,1,Completed,T,5,Anderson Frank,,,,,,,P0183523,,,,-5,,3/7/2022,3/7/2022
+600,Prime Time Packaging Ltd.,Prime Time Packaging Ltd.,Anderson Frank : Prime Time Packaging Ltd.,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Anna Smith-Johnson,a.smith-johnson@andersonfrank.com,Scottsdale,-5,,3/3/2022,3/7/2022
+601,Beehive3d,Beehive3d,Anderson Frank : Beehive3d,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,,,,4,,3/28/2022,3/21/2022
+602,TerrePower / Ontility Support,TerrePower / Ontility Support,"TERREPOWER, LLC (fin/a BBB Industries LLC) / Ontility : TerrePower / Ontility Support",555,"TERREPOWER, LLC (fin/a BBB Industries LLC) / Ontility",5,Support,1,Completed,F,1,Direct,,,,,,,,,,,4,,4/1/2022,3/29/2022
+603,Bixbi Pet,Bixbi Pet,Anderson Frank : Bixbi Pet,136,Anderson Frank,5,Support,4,On Hold,F,5,Anderson Frank,,,,,,,,Adam VanDelinder,A.VanDelinder@andersonfrank.com,,3,,3/28/2022,3/29/2022
+604,GLCO Support,GLCO Support,Sererra : GLCO Support,198,Sererra,5,Support,2,In Progress,F,6,Sererra,,,,,,,,,,,4,,4/1/2022,3/30/2022
+607,Barstool Sports,Barstool Sports,Anderson Frank : Barstool Sports,136,Anderson Frank,4,Integration,1,Completed,T,5,Anderson Frank,,,,,,,,Steven Masetti,,,3,,3/24/2022,4/15/2022
+612,DREN Bio,DREN Bio,Anderson Frank : DREN Bio,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Shane Smith,,,-5,,4/18/2022,4/21/2022
+613,Center for the Collaborative Classroom,Center for the Collaborative Classroom,Anderson Frank : Center for the Collaborative Classroom,136,Anderson Frank,5,Support,4,On Hold,T,5,Anderson Frank,,,,,,,,Aida Lowe,,,-5,,4/18/2022,4/26/2022
+626,Parchment,Parchment,Anderson Frank : Parchment,136,Anderson Frank,5,Support,2,In Progress,T,5,Anderson Frank,,,,,,,,,,,,,4/30/2022,5/10/2022
+632,Hanky Panky,Hanky Panky,Investigo : Hanky Panky,630,Investigo,1,Implementation,1,Completed,T,7,Other,,,,,,,,,,,3,,6/1/2022,5/26/2022
+633,Parchment New Subsidiary Implementation,Parchment New Subsidiary Implementation,Anderson Frank : Parchment New Subsidiary Implementation,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,Maria Mihaylov,,,4,,6/2/2022,6/8/2022
+634,Santo Remedio,Santo Remedio,Anderson Frank : Santo Remedio,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,,,,-5,,6/1/2022,6/10/2022
+635,Apartment List,Apartment List,Anderson Frank : Apartment List,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,,,,4,,6/10/2022,6/10/2022
+649,Homefield Apparel,Homefield Apparel,Underdog Apparel LLC dba Homefield : Homefield Apparel,646,Underdog Apparel LLC dba Homefield,1,Implementation,17,Post Go Live,F,2,Netsuite Alliance,,,,,,,,,,,4,,7/6/2022,7/10/2022
+650,Uprise Health,Uprise Health,Anderson Frank : Uprise Health,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Anna Smith-Johnson,,,-5,,7/18/2022,7/15/2022
+654,Topdrawer,Topdrawer,Itoya Topdrawer Corp. : Topdrawer,651,Itoya Topdrawer Corp.,5,Support,1,Completed,T,1,Direct,,,,,,,,,,,,,7/22/2022,7/22/2022
+656,American Barbell,American Barbell,Anderson Frank : American Barbell,136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,P0188250,Adam VanDelinder,A.VanDelinder@andersonfrank.com,,3,,8/1/2022,7/29/2022
+659,Nearly Natural,Nearly Natural,Anderson Frank : Nearly Natural,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,,,,,,8/1/2022,8/2/2022
+660,Ledge Lounger,Ledge Lounger,DSWi : Ledge Lounger,376,DSWi,5,Support,1,Completed,T,4,DSWi,,,,,,,,,,,4,,8/10/2022,8/10/2022
+672,Beach House Group,Beach House Group,Playa Technologies : Beach House Group,6,Playa Technologies,1,Implementation,1,Completed,T,3,Playa Technologies,,,,,,,,,,,3,,8/18/2022,8/18/2022
+673,Seeking Health,Seeking Health,Anderson Frank : Seeking Health,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Colin Cosper,,,891,,8/22/2022,8/22/2022
+674,Meyer Services,Meyer Services,DSWi : Meyer Services,376,DSWi,5,Support,1,Completed,T,4,DSWi,,,,,,,,,,,4,,8/15/2022,8/23/2022
+682,540Brands,540Brands,Anderson Frank : 540Brands,136,Anderson Frank,8,Virtual Admin,1,Completed,T,5,Anderson Frank,,,,,,,,Stephen Rapaport,,,4,,9/19/2022,9/19/2022
+693,Dvele,Dvele,Anderson Frank : Dvele,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,, Maria Mihaylov,m.mihaylov1@andersonfrank.com,,3,,10/24/2022,10/24/2022
+694,Dreamscape Immersive,Dreamscape Immersive,Anderson Frank : Dreamscape Immersive,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Anna Smith-Johnson,,,-5,,11/4/2022,11/8/2022
+698,Bomb Party,Bomb Party,Bomb Party : Bomb Party,695,Bomb Party,1,Implementation,17,Post Go Live,F,1,Direct,,,,,,,,,,,4,,11/8/2022,11/8/2022
+709,540Brands Virtual Admin,540Brands Virtual Admin,Anderson Frank : 540Brands Virtual Admin,136,Anderson Frank,8,Virtual Admin,4,On Hold,T,5,Anderson Frank,,,,,,,,Stephen Rapaport,,,,,12/1/2022,12/1/2022
+712,Sauce Labs VAS,Sauce Labs VAS,Anderson Frank : Sauce Labs VAS,136,Anderson Frank,8,Virtual Admin,1,Completed,F,5,Anderson Frank,,,,,,,,Maria Mihaylov,,,3,,12/19/2022,12/19/2022
+716,Case Worthy,Case Worthy,Anderson Frank : Case Worthy,136,Anderson Frank,5,Support,1,Completed,F,5,Anderson Frank,,,,,,,,Maria Mihaylov,,,4,,1/23/2023,1/18/2023
+718,Indie Semiconductor,Indie Semiconductor,Anderson Frank : Indie Semiconductor,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Anna Smith-Johnson,a.smith-johnson@andersonfrank.com,,,,1/31/2023,1/31/2023
+720,Aggieland Outfitters,Aggieland Outfitters,Kalcorp Enterprises DBA Aggieland Outfitters : Aggieland Outfitters,719,Kalcorp Enterprises DBA Aggieland Outfitters,5,Support,2,In Progress,F,1,Direct,,,,,,,,,,,4,,2/15/2023,2/15/2023
+724,Calm Projects,Calm Projects,Anderson Frank : Calm Projects,136,Anderson Frank,4,Integration,1,Completed,T,5,Anderson Frank,,,,,,,,Maria Mihaylov,,,-5,,2/21/2023,2/27/2023
+728,Fabulous Furs Virtual Admin Services,Fabulous Furs Virtual Admin Services,Fabulous Furs : Fabulous Furs Virtual Admin Services,534,Fabulous Furs,8,Virtual Admin,1,Completed,T,1,Direct,,,,,,,,,,,4,,3/9/2023,3/9/2023
+729,Assouline Publishing,Assouline Publishing,Anderson Frank : Assouline Publishing,136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,P0192901,Steven Masetti,s.masetti@andersonfrank.com,,3,,3/22/2023,3/20/2023
+730,RL Liquidators,RL Liquidators,Anderson Frank : RL Liquidators,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,,,,,,,3/14/2023,3/20/2023
+739,D'Amelio Brands,D'Amelio Brands,Anderson Frank : D'Amelio Brands,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Maria,steve@powerclouderp.com,7148831877,,,3/24/2023,3/24/2023
+743,Thunderbird Entertainment VAS,Thunderbird Entertainment VAS,Anderson Frank : Thunderbird Entertainment VAS,136,Anderson Frank,8,Virtual Admin,1,Completed,F,5,Anderson Frank,,,,,,,,Eugene Boggiano,E.Boggiano@andersonfrank.com,,-5,,4/3/2023,3/28/2023
+746,Palmetto,Palmetto,Anderson Frank : Palmetto,136,Anderson Frank,1,Implementation,1,Completed,T,5,Anderson Frank,,,,,,,, Jared Brownstein,j.brownstein@andersonfrank.com,,3,,4/24/2023,4/6/2023
+747,Gawfco Enterprises,Gawfco Enterprises,Anderson Frank : Gawfco Enterprises,136,Anderson Frank,5,Support,4,On Hold,T,5,Anderson Frank,,,,,,,,Colin Cosper,,,4,,4/11/2023,4/12/2023
+750,Streamline Distributors,Streamline Distributors,Anderson Frank : Streamline Distributors,136,Anderson Frank,4,Integration,1,Completed,T,5,Anderson Frank,,,,,,,,Ava Caruso,,,4,,4/21/2023,4/21/2023
+754,Primary Weapons System,Primary Weapons System,James Scott Group : Primary Weapons System,751,James Scott Group,1,Implementation,4,On Hold,T,7,Other,,,,,,,,,,,3,,4/23/2023,4/23/2023
+755,Lone Wolf,Lone Wolf,James Scott Group : Lone Wolf,751,James Scott Group,5,Support,4,On Hold,T,7,Other,,,,,,,,,,,3,,4/23/2023,4/23/2023
+759,Healthy Spot Celigo Discovery Session,Healthy Spot Celigo Discovery Session,Healthy Spot : Healthy Spot Celigo Discovery Session,758,Healthy Spot,2,Use Case,1,Completed,T,1,Direct,,,,,,,,,,,-5,,4/25/2023,4/25/2023
+773,Celigo Troubleshooting and Repair,Celigo Troubleshooting and Repair,C2Wireless : Celigo Troubleshooting and Repair,772,C2Wireless,,,5,Awarded - Pre-Kickoff,T,1,Direct,,,,,,,,,,,-5,,5/19/2023,5/19/2023
+774,Palmetto VAS,Palmetto VAS,Anderson Frank : Palmetto VAS,136,Anderson Frank,8,Virtual Admin,2,In Progress,T,5,Anderson Frank,,,,,,,,Emmanuel Lewis,e.lewis@andersonfrank.com,813 437 6954 (ext 6954),3,,5/23/2023,5/23/2023
+775,Mint Mobile,Mint Mobile,Anderson Frank : Mint Mobile,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Alyssa Buckner,,,-5,,5/26/2023,5/26/2023
+783,Composite Envisions,Composite Envisions,Anderson Frank : Composite Envisions,136,Anderson Frank,1,Implementation,4,On Hold,T,5,Anderson Frank,,,,,,,,Kayla Podwalny,k.podwalny@andersonfrank.com,,3,,5/5/2023,5/30/2023
+784,Southern Telecom,Southern Telecom,James Scott Group : Southern Telecom,751,James Scott Group,3,Rapid Assessment,4,On Hold,T,7,Other,,,,,,,,,,,4,,5/30/2023,5/30/2023
+794,Electriq Power Inc,Electriq Power Inc,Anderson Frank : Electriq Power Inc,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,,,,4,,6/12/2023,6/8/2023
+797,K-Brand,K-Brand,Playa Technologies : K-Brand,6,Playa Technologies,1,Implementation,1,Completed,T,3,Playa Technologies,,,,,,,,,,,4,,6/13/2023,6/13/2023
+799,Homefield/Underdog Apparel VAS,Homefield/Underdog Apparel VAS,Underdog Apparel LLC dba Homefield : Homefield/Underdog Apparel VAS,646,Underdog Apparel LLC dba Homefield,8,Virtual Admin,1,Completed,F,2,Netsuite Alliance,,,,,,,,,,,4,,7/1/2023,6/27/2023
+800,Procurement Partners,Procurement Partners,Anderson Frank : Procurement Partners,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Claudia Ricciardi,,,,,6/12/2023,6/27/2023
+802,Rowan,Rowan,Anderson Frank : Rowan,136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,P0191920,Christopher O'Donnell,c.odonnell@andersonfrank.com,,4,,7/5/2023,7/5/2023
+806,Jacques Marie Mage,Jacques Marie Mage,Jacques Marie Mage Inc : Jacques Marie Mage,803,Jacques Marie Mage Inc,5,Support,1,Completed,T,1,Direct,,,,,,,,,,,,,7/26/2023,7/26/2023
+812,LA Family Housing,LA Family Housing,Anderson Frank : LA Family Housing,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Anna Smith-Johnson,,,4,,8/7/2023,8/4/2023
+813,FoundRae (Cemayla),FoundRae (Cemayla),Anderson Frank : FoundRae (Cemayla),136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,P0186187,Daniel Gresser,d.gresser@andersonfrank.com,,4,,8/14/2023,8/4/2023
+818,Wildwood,Wildwood,Anderson Frank : Wildwood,136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,P0192247, Josh Brown,j.brown@andersonfrank.com,,3,,8/21/2023,8/21/2023
+825,Doen,Doen,COMMUNUATE LLC dba DÔEN : Doen,822,COMMUNUATE LLC dba DÔEN,3,Rapid Assessment,1,Completed,T,1,Direct,,,,,,,,,,,4,,8/30/2023,8/30/2023
+829,AA Dermatology,AA Dermatology,Meriture : AA Dermatology,439,Meriture,,,4,On Hold,T,1,Direct,,,,,,,,,,,,,9/6/2023,9/6/2023
+831,Solidcore Holdings,Solidcore Holdings,Anderson Frank : Solidcore Holdings,136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,P0191881,Patrick Skinner,p.skinner@andersonfrank.com,,,,9/15/2023,9/15/2023
+832,Solidcore VAS,Solidcore VAS,Anderson Frank : Solidcore VAS,136,Anderson Frank,8,Virtual Admin,1,Completed,T,5,Anderson Frank,,,,,,,,Patrick Skinner,p.skinner@andersonfrank.com,,3,,9/15/2023,9/15/2023
+844,Center Phase Energy,Center Phase Energy,Anderson Frank : Center Phase Energy,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,Steven Masetti,s.masetti@andersonfrank.com,,3,,10/10/2023,10/5/2023
+850,PC Development - Power GL,PC Development - Power GL,PC Development - Power GL,,,,,1,Completed,T,7,Other,,,,,,,,,,,,,10/27/2023,10/27/2023
+853,Qardio,Qardio,Meriture : Qardio,439,Meriture,4,Integration,2,In Progress,T,7,Other,,,,,,,,,,,-5,,11/1/2023,10/30/2023
+856,Delta-Sonic Carwash Systems,Delta-Sonic Carwash Systems,Anderson Frank : Delta-Sonic Carwash Systems,136,Anderson Frank,3,Rapid Assessment,4,On Hold,T,5,Anderson Frank,,,,,,,,Christopher O'Donnell,,,4,,11/13/2023,11/2/2023
+860,Topo Designs,Topo Designs,Anderson Frank : Topo Designs,136,Anderson Frank,5,Support,1,Completed,F,5,Anderson Frank,,,,,,,,Adam VanDelinder,A.VanDelinder@andersonfrank.com,,-5,,12/13/2023,12/12/2023
+861,Phusion Projects,Phusion Projects,Anderson Frank : Phusion Projects,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Claudia Ricciardi,c.ricciardi@andersonfrank.com,,3,,12/18/2023,12/12/2023
+865,Arbiter Sports,Arbiter Sports,Arbiter Sports : Arbiter Sports,864,Arbiter Sports,5,Support,4,On Hold,T,1,Direct,,,,,,,,,,,,,12/20/2023,12/20/2023
+873,Wilshire Industrial Implementation,Wilshire Industrial Implementation,AllParts/Walrus : Wilshire Industrial Implementation,401,AllParts/Walrus,1,Implementation,1,Completed,T,1,Direct,,,,,,,,,,,4,,1/19/2024,1/19/2024
+878,Atomic Cartoon - Thunderbird,Atomic Cartoon - Thunderbird,Anderson Frank : Atomic Cartoon - Thunderbird,136,Anderson Frank,1,Implementation,4,On Hold,T,5,Anderson Frank,,,,,,,,Michael O'Connor,,,,,2/16/2024,2/16/2024
+884,KarmaSuite Inc.,KarmaSuite Inc.,KarmaSuite Inc : KarmaSuite Inc.,880,KarmaSuite Inc,5,Support,1,Completed,T,1,Direct,,,,,,,,,,,4,,2/29/2024,2/29/2024
+888,Wilshire Industrial,Wilshire Industrial,Wilshire Ind. : Wilshire Industrial,885,Wilshire Ind.,1,Implementation,1,Completed,T,1,Direct,,,,,,,,,,,4,,1/19/2024,3/1/2024
+896,Aggieland Outfitters VAS,Aggieland Outfitters VAS,Kalcorp Enterprises DBA Aggieland Outfitters : Aggieland Outfitters VAS,719,Kalcorp Enterprises DBA Aggieland Outfitters,9,Managed Services,2,In Progress,F,1,Direct,,,,,,,,,,,4,,4/1/2024,4/2/2024
+900,ACL Airshop,ACL Airshop,Anderson Frank : ACL Airshop,136,Anderson Frank,1,Implementation,17,Post Go Live,F,5,Anderson Frank,,,,,,,P0192885,Yuv Nichani,y.nichani@nigelfrank.com,y.nichani@nigelfrank.com,4,,4/3/2024,4/5/2024
+904,Esprit,Esprit,Pagasus US Technology LLC dba Esprit : Esprit,876,Pagasus US Technology LLC dba Esprit,1,Implementation,1,Completed,T,1,Direct,,,,,,F,,,,,3,,4/16/2024,4/16/2024
+906,Product Development,Product Development,Product Development,,,,,,,F,7,Other,,,,,,,,,,,,,4/26/2024,4/26/2024
+907,LotusBev,LotusBev,Meriture : LotusBev,439,Meriture,5,Support,2,In Progress,T,1,Direct,,,,,,,,,,,4,,4/30/2024,4/30/2024
+910,Harvest Hope Task Work,Harvest Hope Task Work,Anderson Frank : Harvest Hope Task Work,136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,P0192905,Jared Brownstein,j.brownstein@andersonfrank.com,,3,,5/6/2024,5/8/2024
+916,Cool Tropics,Cool Tropics,Tropical Paradise Inc / Cool Tropics : Cool Tropics,914,Tropical Paradise Inc / Cool Tropics,1,Implementation,1,Completed,T,1,Direct,,,,,,F,,,,,3,,5/31/2024,5/31/2024
+925,Silk Worldwide,Silk Worldwide,"Silk Worldwide, Inc. : Silk Worldwide",921,"Silk Worldwide, Inc.",5,Support,2,In Progress,F,1,Direct,,,,,,,,,,,4,,6/22/2024,6/22/2024
+927,Teacher Created Materials,Teacher Created Materials,Anderson Frank : Teacher Created Materials,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,Maria Mihaylov,m.mihaylov1@andersonfrank.com,,-5,,7/2/2024,7/2/2024
+930,Bose Professional,Bose Professional,"Transom Post OpCo, LLC dba Bose Professional : Bose Professional",928,"Transom Post OpCo, LLC dba Bose Professional",1,Implementation,1,Completed,T,1,Direct,,,,,,F,,,,,,,7/18/2024,7/18/2024
+940,Brixton,Brixton,Anderson Frank : Brixton,136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,P0192903,Maria Mihaylov,m.mihaylov1@andersonfrank.com,,4,,7/29/2024,7/29/2024
+943,RMR Solutions,RMR Solutions,RMR Solutions : RMR Solutions,941,RMR Solutions,1,Implementation,1,Completed,F,2,Netsuite Alliance,,,,,,F,,,,,3,,8/1/2024,8/1/2024
+983,Severn Peanut Company (Hampton Farms),Severn Peanut Company (Hampton Farms),Anderson Frank : Severn Peanut Company (Hampton Farms),136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Jordan Levine,,,,,11/5/2024,11/5/2024
+1001,Appalachian Trail Conservancy,Appalachian Trail Conservancy,Anderson Frank : Appalachian Trail Conservancy,136,Anderson Frank,3,Rapid Assessment,17,Post Go Live,F,5,Anderson Frank,,,,,,,P0192899,Steven Masetti,s.masetti@andersonfrank.com,,4,,12/9/2024,12/2/2024
+1007,Angela Scott,Angela Scott,Office of Angela Scott : Angela Scott,982,Office of Angela Scott,1,Implementation,1,Completed,F,2,Netsuite Alliance,,,,,,,,Steven Masetti,s.masetti@andersonfrank.com,,4,,12/17/2024,12/17/2024
+1012,Lole Brands,Lole Brands,"Lole Brands USA, LLC : Lole Brands",1008,"Lole Brands USA, LLC",3,Rapid Assessment,17,Post Go Live,F,1,Direct,,,,,,,,,,,3,,12/30/2024,12/30/2024
+1076,Flock Freight NSPB Implementation,Flock Freight NSPB Implementation,Flock Freight : Flock Freight NSPB Implementation,365,Flock Freight,1,Implementation,1,Completed,T,1,Direct,,,,,,,,,,,4,,1/28/2025,1/28/2025
+1084,PSG - Premier Solutions Group,PSG - Premier Solutions Group,PSG : PSG - Premier Solutions Group,1062,PSG,1,Implementation,1,Completed,F,2,Netsuite Alliance,,,,,,,,,,,3,,2/11/2025,2/11/2025
+1908,RetroFete,RetroFete,Anderson Frank : RetroFete,136,Anderson Frank,1,Implementation,17,Post Go Live,F,5,Anderson Frank,,,,,,,,Patrick Skinner,p.skinner@andersonfrank.com,,4,,3/31/2025,3/30/2025
+2020,44 Pro Gloves,44 Pro Gloves,"Forty Four Sports, LLC : 44 Pro Gloves",2018,"Forty Four Sports, LLC",1,Implementation,1,Completed,F,108,RunDTC,,,,,,,,,,,4,,7/14/2025,4/30/2025
+2024,Spinelli Kilcollin,Spinelli Kilcollin,Spinelli Kilcollin : Spinelli Kilcollin,1803,Spinelli Kilcollin,1,Implementation,2,In Progress,F,1,Direct,,,,,,F,,,,,4,,4/30/2025,4/30/2025
+2029,New Brew,New Brew,Anderson Frank : New Brew,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,,,,3,,5/5/2025,5/5/2025
+2132,New Brew - Direct,New Brew - Direct,New Brew / The Plant Program Inc : New Brew - Direct,2031,New Brew / The Plant Program Inc,,,1,Completed,T,1,Direct,,,,,,,,,,,3,,5/12/2025,5/12/2025
+2140,National Rural Telecommunications Cooperative  (NRTC),National Rural Telecommunications Cooperative  (NRTC),Anderson Frank : National Rural Telecommunications Cooperative  (NRTC),136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,,,,4,,6/2/2025,5/19/2025
+2150,Visante Inc.,Visante Inc.,Anderson Frank : Visante Inc.,136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,P0192892,Daniel Gresser,d.gresser@andersonfrank.com,,3,,5/19/2025,5/19/2025
+2265,Eyelation Technologies - New Implementation,Eyelation Technologies - New Implementation,Anderson Frank : Eyelation Technologies - New Implementation,136,Anderson Frank,,,1,Completed,T,5,Anderson Frank,,,,,,,,,,,4,,6/16/2025,5/30/2025
+2273,Opp to Project,Opp to Project,Anderson Frank : Opp to Project,136,Anderson Frank,,,5,Awarded - Pre-Kickoff,T,5,Anderson Frank,,,,,,,,,,,4,,6/3/2025,6/3/2025
+2382,Elegen Bio - Rapid Assessment,Elegen Bio - Rapid Assessment,Anderson Frank : Elegen Bio - Rapid Assessment,136,Anderson Frank,,,5,Awarded - Pre-Kickoff,T,5,Anderson Frank,,,,,,,,,,,,,6/23/2025,6/20/2025
+2385,Free Market Health,Free Market Health,Anderson Frank : Free Market Health,136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,P0186190,Patrick Skinner,p.skinner@andersonfrank.com,,3,,6/23/2025,6/23/2025
+2390,Glowforge Support,Glowforge Support,Glowforge Inc : Glowforge Support,2015,Glowforge Inc,5,Support,2,In Progress,F,1,Direct,,,,,,,,,,,,,6/23/2025,6/23/2025
+2395,Test Test Test - Rapid Assessment,Test Test Test - Rapid Assessment,Anderson Frank : Test Test Test - Rapid Assessment,136,Anderson Frank,,,1,Completed,F,5,Anderson Frank,,,,,,,,,,,-5,,6/27/2025,6/27/2025
+2402,Harvest Hope Managed Services,Harvest Hope Managed Services,Anderson Frank : Harvest Hope Managed Services,136,Anderson Frank,9,Managed Services,2,In Progress,F,5,Anderson Frank,,,,,,,,Jared Brownstein,j.brownstein@andersonfrank.com,,3,,7/7/2025,7/7/2025
+2403,Mendocino Farms Managed Services,Mendocino Farms Managed Services,Anderson Frank : Mendocino Farms Managed Services,136,Anderson Frank,9,Managed Services,2,In Progress,F,5,Anderson Frank,,,,,,,P0186854,Jordan Levine,j.levine@andersonfrank.com,,4,,7/7/2025,7/7/2025
+2409,Faucets N' Fixtures,Faucets N' Fixtures,Faucets N' Fixtures : Faucets N' Fixtures,2408,Faucets N' Fixtures,3,Rapid Assessment,2,In Progress,F,1,Direct,,,,,,,,,,,4,,7/14/2025,7/14/2025
+2410,Test Project,Test Project,Anderson Frank : Test Project,136,Anderson Frank,,,1,Completed,F,5,Anderson Frank,,,,,,,,,,,3,,7/16/2025,7/16/2025
+2411,Wild Common,Wild Common,Wild Common : Wild Common,2406,Wild Common,,,4,On Hold,F,1,Direct,,,,,,,,,,,3,,7/18/2025,7/18/2025
+2626,RM Young Company,RM Young Company,Anderson Frank : RM Young Company,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,,,,,4,,8/29/2025,8/29/2025
+2627,New Brew Managed Services,New Brew Managed Services,Anderson Frank : New Brew Managed Services,136,Anderson Frank,9,Managed Services,1,Completed,T,5,Anderson Frank,,,,,,,,Jordan Levine,,,3,,9/2/2025,9/3/2025
+2632,Power Cloud Project Development,Power Cloud Project Development,Power Cloud Project Development,,,5,Support,2,In Progress,T,1,Direct,,,,,,,,,,,,,9/11/2025,9/11/2025
+2936,Mid-Ohio Farming Collective,Mid-Ohio Farming Collective,Anderson Frank : Mid-Ohio Farming Collective,136,Anderson Frank,3,Rapid Assessment,4,On Hold,F,5,Anderson Frank,,,,,,,,Taylor Quinn,t.quinn@andersonfrank.com,,4,,9/25/2025,9/25/2025
+2938,Sugar Beets (Maman),Sugar Beets (Maman),Anderson Frank : Sugar Beets (Maman),136,Anderson Frank,5,Support,1,Completed,F,5,Anderson Frank,,,,,,,,Christopher O'Donnell,c.odonnell@andersonfrank.com,,4,,9/15/2025,9/26/2025
+2942,Antique Rose Emporium,Antique Rose Emporium,Anderson Frank : Antique Rose Emporium,136,Anderson Frank,3,Rapid Assessment,1,Completed,T,5,Anderson Frank,,,,,,,P0179624,,,,4,,10/1/2025,10/1/2025
+3247,Quartzy,Quartzy,Anderson Frank : Quartzy,136,Anderson Frank,5,Support,1,Completed,T,5,Anderson Frank,,,,,,,,Kevin Rae,k.rae@andersonfrank.com,,,,10/30/2025,10/23/2025
+3251,BesTop - Rapid Assessment,BesTop - Rapid Assessment,Anderson Frank : BesTop - Rapid Assessment,136,Anderson Frank,3,Rapid Assessment,4,On Hold,T,5,Anderson Frank,,,,,,,,,,,4,,11/10/2025,11/5/2025
+3256,Clenera - Rapid Assessment,Clenera - Rapid Assessment,Anderson Frank : Clenera - Rapid Assessment,136,Anderson Frank,3,Rapid Assessment,2,In Progress,F,5,Anderson Frank,,,,,,,P0192906,Jordan Levine,j.levine@andersonfrank.com,,3,,11/12/2025,11/12/2025
+3258,Bose NetSuite Avalara Support,Bose NetSuite Avalara Support,"Transom Post OpCo, LLC dba Bose Professional : Bose NetSuite Avalara Support",928,"Transom Post OpCo, LLC dba Bose Professional",5,Support,,,F,1,Direct,,,,,,,,,,,,,11/17/2025,11/17/2025
+3267,Clenera,Clenera,Anderson Frank : Clenera,136,Anderson Frank,3,Rapid Assessment,,,T,5,Anderson Frank,,,,,,,,Jordan Levine,J.levine@andersonfrank.com,,,,12/23/2025,12/23/2025
+3268,Goodheart-Wilcox SCA,Goodheart-Wilcox SCA,Anderson Frank : Goodheart-Wilcox SCA,136,Anderson Frank,,,2,In Progress,F,5,Anderson Frank,,,,,,,P0189882,Kayla Podwalny,K.Podwalny@andersonfrank.com,,-5,,1/8/2026,1/7/2026
+3271,Upward Projects,Upward Projects,Anderson Frank : Upward Projects,136,Anderson Frank,3,Rapid Assessment,2,In Progress,F,5,Anderson Frank,,,,,,,P0192893,Christopher O'Donnell,c.odonnell@andersonfrank.com,,3,,2/15/2026,1/15/2026
+3272,Weathermatic - Telsco,Weathermatic - Telsco,Anderson Frank : Weathermatic - Telsco,136,Anderson Frank,,,4,On Hold,F,5,Anderson Frank,,,,,,,,,,,3,,2/2/2026,1/16/2026
+3273,Onward Reserve - Rapid Assessment,Onward Reserve - Rapid Assessment,Onward Reserve : Onward Reserve - Rapid Assessment,3266,Onward Reserve,,,5,Awarded - Pre-Kickoff,F,2,Netsuite Alliance,,,,,,,,,,,3,,1/16/2026,1/16/2026
+3274,New Avenues for Youth,New Avenues for Youth,Anderson Frank : New Avenues for Youth,136,Anderson Frank,5,Support,2,In Progress,F,5,Anderson Frank,,,,,,,,,,,,,2/2/2026,1/21/2026
+3276,ABSCI - Use Case,ABSCI - Use Case,Anderson Frank : ABSCI - Use Case,136,Anderson Frank,2,Use Case,2,In Progress,F,5,Anderson Frank,,,,,,,P0192898,Eugene Boggiano,E.Boggiano@andersonfrank.com,,3,,1/26/2026,1/28/2026
+3987,Goodheart-Wilcox NSAW,Goodheart-Wilcox NSAW,Anderson Frank : Goodheart-Wilcox NSAW,136,Anderson Frank,,,,,F,5,Anderson Frank,,,,,,,,,,,,,2/16/2026,2/18/2026
+3990,JC Watson / Watson Agriculture,JC Watson / Watson Agriculture,Anderson Frank : JC Watson / Watson Agriculture,136,Anderson Frank,5,Support,4,On Hold,F,5,Anderson Frank,,,,,,,,John Said,,,,,2/18/2026,2/24/2026
+4011,Grinds,Grinds,Anderson Frank : Grinds,136,Anderson Frank,3,Rapid Assessment,1,Completed,F,5,Anderson Frank,,,,,,,,Daniel Gresser,d.gresser@andersonfrank.com,,4,,5/4/2026,3/5/2026
+4017,Goodheart-Wilcox CRM,Goodheart-Wilcox CRM,Anderson Frank : Goodheart-Wilcox CRM,136,Anderson Frank,,,2,In Progress,F,5,Anderson Frank,,,,,,,P0192896,Kayla Podwalny,k.podwalny@andersonfrank.com,,3,,3/10/2026,3/12/2026
+4022,Upper Echelon Products - Project Recovery,Upper Echelon Products - Project Recovery,Upper Echelon Products : Upper Echelon Products - Project Recovery,3248,Upper Echelon Products,,,5,Awarded - Pre-Kickoff,F,1,Direct,,,,,,,,,,,-5,,4/7/2026,4/7/2026
+4029,N. Teppermans Limited,Teppermans Limited,Anderson Frank : N. Teppermans Limited,136,Anderson Frank,3,Rapid Assessment,2,In Progress,F,5,Anderson Frank,,,,,,,P0192109,Daniel Gresser,d.gresser@andersonfrank.com,,4,,5/1/2026,5/1/2026
+4037,AbilityFirst,AbilityFirst,AbilityFirst : AbilityFirst,4027,AbilityFirst,3,Rapid Assessment,2,In Progress,F,1,Direct,,,,,,,,,,,4,,5/12/2026,5/12/2026
+4050,Shinesty - Rapid Assessment,Shinesty - Rapid Assessment,Anderson Frank : Shinesty - Rapid Assessment,136,Anderson Frank,3,Rapid Assessment,2,In Progress,F,5,Anderson Frank,,,,,,,P0191656,,,,4,,6/26/2026,6/26/2026
+4051,Gillespie Coatings,Gillespie Coatings,Anderson Frank : Gillespie Coatings,136,Anderson Frank,3,Rapid Assessment,2,In Progress,F,5,Anderson Frank,,,,,,,P0192904,Steven Masetti,s.masetti@andersonfrank.com,,4,,6/26/2026,6/26/2026
+4057,Atlanta Community Food Bank - Rapid Assessment,Atlanta Community Food Bank - Rapid Assessment,Atlanta Community Food Bank : Atlanta Community Food Bank - Rapid Assessment,4031,Atlanta Community Food Bank,3,Rapid Assessment,2,In Progress,F,1,Direct,,,,,,F,,,,,3,,7/7/2026,7/7/2026
+4069,Mendocino Farms NS-Procore Integration,Mendocino Farms NS-Procore Integration,Anderson Frank : Mendocino Farms NS-Procore Integration,136,Anderson Frank,4,Integration,2,In Progress,F,5,Anderson Frank,,,,,,,P0191940,Jordan Levine,j.levine@andersonfrank.com,,4,,8/10/2026,8/10/2026
+4079,Acme Paper & Supply Co.,Acme Paper & Supply Co.,Anderson Frank : Acme Paper & Supply Co.,136,Anderson Frank,3,Rapid Assessment,2,In Progress,F,5,Anderson Frank,,,,,,,,,,,4,,8/18/2026,8/18/2026
+4596,540Brands,540Brands,540Brands : 540Brands,683,540Brands,,,2,In Progress,F,1,Direct,,,,,,,,,,,3,,9/30/2026,9/30/2026
+4598,Acme Paper & Supply Co - Rapid Assessment,Acme Paper & Supply Co - Rapid Assessment,Anderson Frank : Acme Paper & Supply Co - Rapid Assessment,136,Anderson Frank,,,5,Awarded - Pre-Kickoff,F,5,Anderson Frank,,,,,,,,,,,4,,10/1/2026,10/1/2026

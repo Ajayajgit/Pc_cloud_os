@@ -1,0 +1,12 @@
+<transactionbodycustomfield scriptid="custbody_pc_deal_uuid">
+  <bodyopportunity>T</bodyopportunity>
+  <description>PC | Sales OS phase 1. Idempotency and folder key of the deal.</description>
+  <displaytype>NORMAL</displaytype>
+  <fieldtype>TEXT</fieldtype>
+  <help>Set once by the CRM API. Do not edit.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>PC | Deal UUID</label>
+  <maxlength>36</maxlength>
+  <storevalue>T</storevalue>
+</transactionbodycustomfield>

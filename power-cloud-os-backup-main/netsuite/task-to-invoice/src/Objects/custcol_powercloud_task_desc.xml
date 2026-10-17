@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Power Cloud - Task to Invoice
+  Concatenated "Task | Description" column, for Anderson Frank portal entry.
+
+  WHY THIS EXISTS
+    Anderson Frank (customer 136, parent of 159 projects) is 87% of billable hours and
+    is billed by manually copying description + hours into AF's portal - no API, no CSV.
+    A standalone Task column cannot help there; the task has to be inside the copied
+    text. custcol_powercloud_task stays as the clean column for direct-billed invoices.
+
+  TEXTAREA, NOT TEXT - THIS IS LOAD-BEARING
+    Free-form TEXT caps at 300 characters. Measured across 2,114 AF entries: the longest
+    memo is 1,740 characters and 183 entries exceed 300. A TEXT field would silently
+    truncate ~9% of them mid-sentence, losing billable detail.
+
+  FORMAT
+    Task title, a pipe, then the memo with its leading MM-DD-YYYY stamp removed and
+    line breaks collapsed. Controlled by SEPARATOR / DATE_MODE in lib/pc_task_label.js.
+    Stripping the date saves 13 characters per entry against AF's character limit.
+-->
+<transactioncolumncustomfield scriptid="custcol_powercloud_task_desc">
+  <label>Task + Description</label>
+  <description>Task and work description concatenated for Anderson Frank portal entry. Derived - do not edit. Populated on the Time record and copied to the invoice line at billing.</description>
+  <fieldtype>TEXTAREA</fieldtype>
+
+  <!-- Applies To: Time (source) and the invoice item sublist (destination). -->
+  <coltime>T</coltime>
+  <colsale>T</colsale>
+
+  <!-- Behaviour -->
+  <storevalue>T</storevalue>
+  <displaytype>NORMAL</displaytype>
+  <ismandatory>F</ismandatory>
+  <isformula>F</isformula>
+  <applyformatting>F</applyformatting>
+  <defaultchecked>F</defaultchecked>
+
+  <!-- Access -->
+  <accesslevel>2</accesslevel>
+  <searchlevel>2</searchlevel>
+</transactioncolumncustomfield>

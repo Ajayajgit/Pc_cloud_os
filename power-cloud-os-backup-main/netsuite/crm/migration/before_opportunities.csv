@@ -1,0 +1,185 @@
+id,tranid,trandate,title,entity,entity_name,entitystatus,status_name,class,class_name,partner,partner_name,engagement_type_id,engagement_type,end_client,billing_party,partner_contact,referral_contact,commercial_model,signed_date,deal_uuid,custom_link,native_link,af_contact,af_contact_email,af_contact_phone,kickoff,asana,onboarding_sheet,projectedtotal,rate,externalid,native_status
+6305,OPP0004,10/1/2019,New Development In SE Mass,184,Media Max,14,Closed Lost,,,,,,,,,,,,,,,,,,,,,,1250000,,,D
+11437,OPP0005,12/11/2019,42Chat,136,Anderson Frank,14,Closed Lost,,,,,1,New License Deal,,,,,,,,,,Samantha DeMaio,s.demaio@andersonfrank.com,480-530-2056,,,,0,,,D
+11438,OPP0006,12/11/2019,Container Centralen,136,Anderson Frank,14,Closed Lost,,,,,4,Use Case,,,,,,,,,,Josh Thomas Brown,j.brown@andersonfrank.com,813-437-6974,,,,0,,,D
+11439,OPP0007,12/11/2019,Follow Beauty,136,Anderson Frank,13,Closed Won,,,,,,,,,,,,,,,,Erin Maher,e.maher@andersonfrank.com,,,,,0,,,C
+24078,OPP0008,7/24/2020,DVG Implementation,357,DVG Design Inc.,14,Closed Lost,1,Direct,131,Oracle Netsuite,2,New Implementation,,,,,,,,,,Michael Johnson,michaeljohnson@netsuite.com,603-608-5301,,,,47249,,,D
+24184,OPP0009,7/28/2020,Tracksmith - Netsuite Implementation,369,Tracksmith Trackhouse,13,Closed Won,,,131,Oracle Netsuite,2,New Implementation,,,,,,,,,370,Mike Rock,mrock@netsuite.com,,,,,38875,,,C
+24185,OPP0010,7/30/2020,Use Case - Shopify Order Tag Update,333,Rylee & Cru Inc.,13,Closed Won,,,,,4,Use Case,,,,,,,,,334,,,,,,,55900,,,C
+24186,OPP0011,7/30/2020,Netsuite Implementation.,365,Flock Freight,13,Closed Won,,,,,2,New Implementation,,,,,,,,,,,,,,,,72225,,,C
+24187,OPP0012,7/30/2020,Use Case,136,Anderson Frank,13,Closed Won,,,125,"S. Hyham Consulting, LLC",4,Use Case,,,,,,,,,161,,,,,,,0,,,C
+24912,OPP0014,8/7/2020,Netsuite - Shopify Implementation,371,Bajio Sun,14,Closed Lost,,,131,Oracle Netsuite,2,New Implementation,,,,,,,,,,Mike Rock,mrock@netsuite.com,,,,,40000,,,D
+24913,OPP0015,8/7/2020,Netsuite-Shopify Implementation,372,Blue Delta Denim,14,Closed Lost,,,131,Oracle Netsuite,2,New Implementation,,,,,,,,,,Nick Piker,npiker@netsuite.com,,,,,40000,,,D
+25645,OPP0016,8/19/2020,La-Vel Implementation,376,DSWi,13,Closed Won,,,,,2,New Implementation,,,,,,,,,377,,,,,,,0,,,C
+29975,OPP0017,10/9/2020,Shady Rays - Netsuite Implementation,389,Shady Rays,14,Closed Lost,,,131,Oracle Netsuite,2,New Implementation,,,,,,,,,,,,,,,,40000,,,D
+30606,OPP0018,10/16/2020,Summersalt - Netsuite Implementation,394,Summersalt,14,Closed Lost,,,125,"S. Hyham Consulting, LLC",2,New Implementation,,,,,,,,,,Victoria Dugas,vdugas@netsuite.com,619-955-3655,,,,45000,,,D
+30607,OPP0019,10/16/2020,Cap America - Netsuite Implementation,395,Cap America,14,Closed Lost,,,125,"S. Hyham Consulting, LLC",2,New Implementation,,,,,,,,,,,,,,,,100000,,,D
+110474,OPP0020,7/7/2022,ON Demand Playing Cards,644,On Demand Playing Cards,14,Closed Lost,,,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+146047,OPP0021,4/25/2023,Healthy Spot,758,Healthy Spot,13,Closed Won,,,,,4,Use Case,,,,,,,,,,,,,,,,100,,,C
+207615,OPP0022,10/16/2024,ProCaps - New License Deal,963,Procaps Laboratories,14,Closed Lost,108,RunDTC,,,1,New License Deal,,,,,,,,,,,,,,,,0,,,D
+207616,OPP0023,10/16/2024,Hampton Farms - WMS OnSite Support,964,Hampton Farms Travel Only,13,Closed Won,5,Anderson Frank,,,4,Use Case,,,,,,,,,,,,,,,,0,,,C
+207617,OPP0024,10/16/2024,Appalachian Trail Conservancy - Rapid Assessment,965,Appalachian Trail Conservancy,13,Closed Won,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,,,,,,,,,0,,,C
+207618,OPP0025,10/16/2024,Turtle Box - New Implementation,966,Turtle Box,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,Joseph Kaminski,joseph.kaminski@oracle.com,,,,,0,,,D
+207619,OPP0026,10/16/2024,Dooney and Bourke - New License Deal,967,Dooney & Bourke,14,Closed Lost,108,RunDTC,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+207620,OPP0027,10/16/2024,AFLALO - Start up,968,AFLALO NYC,14,Closed Lost,1,Direct,,,1,New License Deal,,,,,,,,,,,,,,,,0,,,D
+207621,OPP0028,10/16/2024,Made By Gather - New License Deal - Investgo,969,Made By Gather,14,Closed Lost,108,RunDTC,,,3,Rapid Assessment,,,,,,,,,,,,,,,,0,,,D
+207622,OPP0029,10/16/2024,Kurt S. Adler - New License Deal,970,Kurt S. Adler,14,Closed Lost,1,Direct,,,1,New License Deal,,,,,,,,,,,,,,,,0,,,D
+207925,OPP0030,10/17/2024,Composite SCA Project Recovery,136,Anderson Frank,14,Closed Lost,5,Anderson Frank,125,"S. Hyham Consulting, LLC",5,Project Recovery,,,,,,,,,783,,,,,,,0,,,D
+207926,OPP0031,10/18/2024,Chad and Jake - PowerFactoring,973,Chad and Jake,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+207927,OPP0032,10/22/2024,Love and Faith - Net New NS Deal,974,Love and Faith,14,Closed Lost,2,Netsuite Alliance,,,1,New License Deal,,,,,,,,,,Maddy McKay,maddy.mckay@oracle.com,,,,,0,,,D
+208033,OPP0033,10/24/2024,Lasting Impressions,976,Lasting Impressions,14,Closed Lost,2,Netsuite Alliance,,,1,New License Deal,,,,,,,,,,Catherine Morris,catherine.morris@oracle.com,,,,,0,,,D
+208042,OPP0034,10/25/2024,Perfumes Plus - Rapid Assessment,855,Perfumes Plus,14,Closed Lost,,,,,3,Rapid Assessment,,,,,,,,,,,,,,,,0,,,D
+208567,OPP0035,11/1/2024,44Gloves - New License Deal,2018,"Forty Four Sports, LLC",13,Closed Won,108,RunDTC,,,1,New License Deal,,,,,,,,,,,,,,,,0,,,C
+208568,OPP0036,11/1/2024,Composite - Power Labeling,136,Anderson Frank,14,Closed Lost,5,Anderson Frank,125,"S. Hyham Consulting, LLC",1,New License Deal,,,,,,,,,783,,,,,,,3360,,,D
+209827,OPP0037,11/5/2024,The office of Angela Scott - New License Deal,982,Office of Angela Scott,13,Closed Won,2,Netsuite Alliance,,,1,New License Deal,,,,,,,,,,,,,,,,0,,,C
+210790,OPP0038,11/18/2024,Composite - Power Label,136,Anderson Frank,21,On Hold,5,Anderson Frank,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,783,,,,,,,3000,,,A
+212572,OPP0039,12/6/2024,Tail Activewear - New NS Deal,1002,Tail Activewear,14,Closed Lost,2,Netsuite Alliance,,,1,New License Deal,,,,,,,,,,Josh Smilovitz,josh.smilovitz@oracle.com,,,,,0,,,D
+212894,OPP0040,12/10/2024,Jess Lea Boutique - NSPB,1005,Jess Lea Boutique,14,Closed Lost,2,Netsuite Alliance,,,1,New License Deal,,,,,,,,,,Justin Richards@oracle.com,justin.richards@oracle.com,,,,,0,,,D
+212899,OPP0041,12/12/2024,Bose Speakers - NSPB,928,"Transom Post OpCo, LLC dba Bose Professional",13,Closed Won,1,Direct,125,"S. Hyham Consulting, LLC",10,NSPB,,,,,,,,,,,,,,,,0,,,C
+212900,OPP0042,12/12/2024,Lole Brands - Distressed Implementation,1008,"Lole Brands USA, LLC",13,Closed Won,1,Direct,,,5,Project Recovery,,,,,,,,,,,,,,,,0,,,C
+215025,OPP0043,1/9/2025,Marcella - New License Deal,1059,Marcella,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+215241,OPP0044,1/10/2025,PSG - New License Deal,1062,PSG,13,Closed Won,2,Netsuite Alliance,,,1,New License Deal,,,,,,,,,,,,,,,,0,,,C
+215654,OPP0045,1/14/2025,Arc Hero - New License Deal,1063,Arc Hero,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+216477,OPP0046,1/16/2025,Storm Creek - New Implementation,1064,Storm Creek,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,Duy Luu,duy.luu@oracle.com,,,,,0,,,D
+216486,OPP0047,1/20/2025,Effy Jewelry - New Implementation,1065,Effy Jewelry,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+216901,OPP0048,1/22/2025,Delco Sales - New Implementation,1066,Delco Sales,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+217608,OPP0049,1/28/2025,Alpha Zero Global Logistics - Power Factoring,1079,Alpha Zero,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,6000,,,D
+222015,OPP0051,2/19/2025,UNRL - New Implementation,1188,UNRL,14,Closed Lost,2,Netsuite Alliance,,,1,New License Deal,,,,,,,,,,,,,,,,0,,,D
+222016,OPP0052,2/20/2025,American Cable Company - New Implementation,1189,American Cable Company,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+222229,OPP0053,2/27/2025,Jones Coffee Roasters - Rapid Assessment,1690,Jones Coffee Roasters,14,Closed Lost,6,Sererra,,,3,Rapid Assessment,,,,,,,,,,,,,,,,0,,,D
+222673,OPP0054,3/3/2025,Pan-Am Dental Labs - New implimentation,1792,Pan-Am Dental Labs,14,Closed Lost,7,Other,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+222674,OPP0055,3/3/2025,Negative Underwear - NSPB/NSAW,1793,Negative Underwear,14,Closed Lost,5,Anderson Frank,,,10,NSPB,,,,,,,,,,,,,,,,0,,,D
+223192,OPP0056,3/5/2025,SKIMS - PowerCommitment,1187,SKIMS,14,Closed Lost,2,Netsuite Alliance,,,9,Power Cloud Product,,,,,,,,,,,,,,,,4800,,,D
+223296,OPP0057,3/7/2025,HomeField - PowerGL,646,Underdog Apparel LLC dba Homefield,13,Closed Won,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223297,OPP0058,3/7/2025,HomeField - PowerGL - Renewal 2025,646,Underdog Apparel LLC dba Homefield,13,Closed Won,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,3000,,,C
+223298,OPP0059,3/7/2025,Harvest Hope - PowerGL,950,Harvest Hope Travel Only,13,Closed Won,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223299,OPP0060,3/7/2025,Harvest Hope - PowerGL - Renewal - 2025,950,Harvest Hope Travel Only,13,Closed Won,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,6000,,,C
+223300,OPP0061,3/7/2025,Celigo - PowerLabel EDI,245,Celigo,14,Closed Lost,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+223301,OPP0062,3/7/2025,Office of Angela Scott - PowerUtilities,982,Office of Angela Scott,13,Closed Won,2,Netsuite Alliance,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223302,OPP0063,3/7/2025,Office of Angela Scott - PowerGL,982,Office of Angela Scott,13,Closed Won,2,Netsuite Alliance,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223303,OPP0064,3/7/2025,Mitchell & Ness - PowerBulkOrder,447,Mitchell & Ness Nostalgia Travel Only,14,Closed Lost,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,11400,,,D
+223304,OPP0065,3/7/2025,CoolTropics - PowerGL,912,Cool Tropics,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,3000,,,D
+223305,OPP0066,3/7/2025,CoolTropics - PowerUtilities,912,Cool Tropics,13,Closed Won,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223306,OPP0067,3/7/2025,CoolTropics - PowerNetting,912,Cool Tropics,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,6800,,,D
+223307,OPP0068,3/7/2025,LoLe - PowerDiscount,1008,"Lole Brands USA, LLC",13,Closed Won,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,3800,,,C
+223308,OPP0069,3/7/2025,LoLe - BulkOrder,1008,"Lole Brands USA, LLC",14,Closed Lost,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,11400,,,D
+223309,OPP0070,3/7/2025,LoLe - Commitment,1008,"Lole Brands USA, LLC",14,Closed Lost,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,3000,,,D
+223310,OPP0071,3/7/2025,LoLe - PowerUtilities,1008,"Lole Brands USA, LLC",13,Closed Won,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223311,OPP0072,3/7/2025,Homefield - PowerUtilities,646,Underdog Apparel LLC dba Homefield,13,Closed Won,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223312,OPP0073,3/7/2025,Harvest Hope - PowerUtilities,950,Harvest Hope Travel Only,13,Closed Won,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223313,OPP0074,3/7/2025,Composite - PowerUtilities,781,Composite Envisions Travel Only,13,Closed Won,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223314,OPP0075,3/7/2025,Foundrae - PowerUtilities,1087,Foundrae,13,Closed Won,7,Other,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223315,OPP0076,3/7/2025,Delta Sonic - PowerUtilities,1390,Delta Sonic,14,Closed Lost,7,Other,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+223316,OPP0077,3/7/2025,PSG - PowerUtilities,1062,PSG,13,Closed Won,2,Netsuite Alliance,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223317,OPP0078,3/7/2025,RMR - PowerUtilities,941,RMR Solutions,13,Closed Won,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223318,OPP0079,3/7/2025,RMR - PowerUtilities,921,"Silk Worldwide, Inc.",13,Closed Won,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223319,OPP0080,3/7/2025,Brixton - PowerUtilities,1801,Brixton,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+223320,OPP0081,3/7/2025,Brixton - PowerCommitment/PowerFulfillment,1801,Brixton,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+223321,OPP0082,3/7/2025,GoBigBolt - PowerBulkOrder,1802,GoBigBolt,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,11500,,,D
+223322,OPP0083,3/7/2025,GoBigBolt - PowerBulkOrder,1802,GoBigBolt,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,11500,,,D
+223323,OPP0084,3/7/2025,GoBigBolt - PowerUtilities,1802,GoBigBolt,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,11500,,,D
+223324,OPP0085,3/7/2025,Composte - PowerBulkOrder,781,Composite Envisions Travel Only,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,11500,,,D
+223325,OPP0086,3/7/2025,Cool Tropics - PowerBulkOrder,912,Cool Tropics,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,11500,,,D
+223326,OPP0087,3/7/2025,Hanky Panky - PowerBulkOrder,912,Cool Tropics,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,11500,,,D
+223327,OPP0088,3/7/2025,Assouline - PowerCommitment,741,Assouline Publishing Travel Only,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,3000,,,D
+223867,OPP0089,3/17/2025,Spinelli Sync -,1803,Spinelli Kilcollin,13,Closed Won,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,C
+223983,OPP0090,3/17/2025,Kalcorp - PowerUtilties,719,Kalcorp Enterprises DBA Aggieland Outfitters,13,Closed Won,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+223984,OPP0091,3/17/2025,Kalcorp - PowerGL,719,Kalcorp Enterprises DBA Aggieland Outfitters,14,Closed Lost,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+224085,OPP0092,3/19/2025,Atlanata Suite Solutions - PowerFactoring,1904,Atlanta Suite Solutions,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+224190,OPP0093,3/24/2025,Retrofete - Rapid Assessment,1905,RetroFete,13,Closed Won,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,,,,,,,,,0,,,C
+224397,OPP0094,3/28/2025,OrthoFeet - New Implementation,1907,OrthoFeet,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+224841,OPP0095,4/2/2025,Wear Colours  - New Implementation,1913,Wear Colours,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+225355,OPP0096,4/10/2025,Bravo Sports - New Implementation,1914,Bravo Sports,14,Closed Lost,5,Anderson Frank,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+225813,OPP0097,4/21/2025,RetroFete - PowerBulkOrder,1905,RetroFete,13,Closed Won,5,Anderson Frank,,,9,Power Cloud Product,,,,,,,,,,,,,,,,11000,,,C
+226576,OPP0098,5/5/2025,NTWRK - New Implementation,2027,NTWRK,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+226577,OPP0099,5/5/2025,Eyelation Technologies - New Implementation,2028,Eyelation Technologies,13,Closed Won,5,Anderson Frank,,,2,New Implementation,,,,,,,,2265,,,,,6/16/2025,https://app.asana.com/1/89396020630874/project/1210569607030629/overview/1210576048763075,https://drive.google.com/drive/folders/1CGXpV6OAmbF-7e8rvd_9OMn3fxDbcZM1,0,120,,C
+226940,OPP0100,5/9/2025,Silk - PowerDiscount,921,"Silk Worldwide, Inc.",14,Closed Lost,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,925,,,,,,,3500,,,D
+226942,OPP0101,5/9/2025,MGroup - New Implemenation,2030,MGroup,14,Closed Lost,1,Direct,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+226947,OPP0102,5/9/2025,Retrofete - PowerCommitment,1905,RetroFete,13,Closed Won,5,Anderson Frank,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+226948,OPP0103,5/9/2025,RetroFete - PowerGL,1905,RetroFete,13,Closed Won,5,Anderson Frank,,,9,Power Cloud Product,,,,,,,,,,,,,,,,3000,,,C
+226949,OPP0104,5/12/2025,Blackrock Neruotech - New Implementation,2131,Blackrock Neurotech,14,Closed Lost,5,Anderson Frank,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+227091,OPP0105,5/19/2025,Visante  Inc - Rapid Assessment,2133,Visante  Inc,13,Closed Won,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,2150,,,,,5/21/2025,https://app.asana.com/1/89396020630874/project/1210535464598630/list/1210537119088192,https://drive.google.com/drive/folders/1AXGiuyLNXyZMZAuwIf5yGHyWnG141VjM,0,120,,C
+227097,OPP0106,5/19/2025,Elegen Bio - Rapid Assessment,2151,Elegen Bio,14,Closed Lost,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,2382,,j.levine@andersonfrank.com,j.levine@andersonfrank.com,,,https://drive.google.com/drive/folders/1Idrb0fYHVyuZZXAfYFi68Ej8fFIGaveZ?usp=drive_link,https://drive.google.com/drive/folders/0AJjEzU5nhACCUk9PVA,0,,,D
+227204,OPP0107,5/20/2025,Happy Accidents Media LLC - Use Case,2152,Happy Accidents Media LLC,14,Closed Lost,1,Direct,,,4,Use Case,,,,,,,,,,,,,,,,0,,,D
+227829,OPP0108,5/30/2025,Test Opportunity,2254,Test Company,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,6/2/2025,http://asana.com,https://docs.google.com/document/d/14jvL0EZ8Rp88KV4QHKPsTq6-fx_2gUkA/edit?usp=sharing&ouid=103969621441563129313&rtpof=true&sd=true,0,1000,,D
+227833,OPP0109,5/30/2025,Opp to Project,2254,Test Company,14,Closed Lost,5,Anderson Frank,,,1,New License Deal,,,,,,,,2273,,,,,,,,0,600,,D
+228473,OPP0110,6/6/2025,Fear of God - PowerBulkOrder,3246,"Fear of God, LLC",13,Closed Won,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+228474,OPP0111,6/6/2025,Fear of God - PowerCommitment,3246,"Fear of God, LLC",14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+228475,OPP0112,6/6/2025,Brixton - PowerGL,1801,Brixton,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+228579,OPP0113,6/12/2025,Trendm - PowerBulkOrder,2280,Trendm,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+228580,OPP0114,6/12/2025,Trendm - PowerCommitment,2280,Trendm,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+228712,OPP0115,6/19/2025,Carhartt WIP - Rapid Assessment,2381,Carhartt WIP,14,Closed Lost,1,Direct,,,3,Rapid Assessment,,,,,,,,,,,,,,,,0,,,D
+228813,OPP0116,6/23/2025,Free Market Health,2384,Free Market Health,13,Closed Won,5,Anderson Frank,,,4,Use Case,,,,,,,,2385,,Jenna Whitley,J.whitley@andersonfrank.com,,6/23/2025,https://app.asana.com/1/89396020630874/project/1210677830238210/board/1210677854794752,https://drive.google.com/drive/folders/1bBVibOp49zYfVVNsOUKpm6qaHkmrmAUy,0,110,,C
+229148,OPP0119,6/27/2025,Foundrae - PowerGL,951,FoundRae (Cemayla) Travel Only,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+229568,OPP0120,6/30/2025,Giorgio Cosani - New Implementation,2396,Giorgio Cosani,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+229569,OPP0121,6/30/2025,Mendocino farms - Virtual Admin,2397,Mendocino farms,13,Closed Won,5,Anderson Frank,,,8,Managed Services,,,,,,,,2403,,Jordan Levine,j.levine@andersonfrank.com,,7/7/2025,https://app.asana.com/1/89396020630874/project/1210732932049706/list/1210732944651937,https://drive.google.com/drive/folders/1UexSngK3rECvtMahZ4SrKOlwcotoFbbh,0,5000,,C
+230317,OPP0122,7/7/2025,See Kai Run - New Implementation,2401,See Kai Run,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+230422,OPP0123,7/9/2025,Wild Common - Rapid Assessment,2406,Wild Common,13,Closed Won,1,Direct,,,3,Rapid Assessment,,,,,,,,2411,,,,,7/24/2025,https://app.asana.com/1/89396020630874/project/1210823329526559/list,https://drive.google.com/drive/folders/1nbrgLZbnb43qtDUWopSTnE4MlCxy47K2?usp=drive_link,0,3700,,C
+230439,OPP0125,7/14/2025,Faucets N' Fixtures - Rapid Assessment,2408,Faucets N' Fixtures,13,Closed Won,1,Direct,,,3,Rapid Assessment,,,,,,,,2409,,,,,7/15/2025,https://app.asana.com/1/89396020630874/project/1210789485344620/board,https://drive.google.com/drive/folders/1vndEx4gQCPcn6HhHBUNj21qwIBpm0j0k,0,185,,C
+230773,OPP0127,7/18/2025,Spinelli - PowerBulkOrder,1803,Spinelli Kilcollin,14,Closed Lost,2,Netsuite Alliance,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+230774,OPP0128,7/18/2025,Spinelli - PowerGL,1803,Spinelli Kilcollin,19,New Lead,2,Netsuite Alliance,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+230775,OPP0129,7/18/2025,Spinelli - PowerCommitment,1803,Spinelli Kilcollin,14,Closed Lost,2,Netsuite Alliance,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+230776,OPP0130,7/18/2025,Spinelli - PowerNetting,1803,Spinelli Kilcollin,14,Closed Lost,2,Netsuite Alliance,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+230777,OPP0131,7/18/2025,Spinelli - PowerUtilities,1803,Spinelli Kilcollin,13,Closed Won,2,Netsuite Alliance,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+231103,OPP0132,7/28/2025,Cakes Body  - New Implementation,2417,Cakes Body,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+231104,OPP0133,7/28/2025,Integrated Water Services - New Implementation,2418,Integrated Water Services,14,Closed Lost,5,Anderson Frank,,,2,New Implementation,,,,,,,,,,Kayla Podwalny,k.podwalny@andersonfrank.com,,,,,0,,,D
+231532,OPP0134,8/1/2025,Faucets N'Fixtures - PowerDiscounts,2408,Faucets N' Fixtures,21,On Hold,6,Sererra,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,A
+231533,OPP0135,8/1/2025,44 Pro- PowerGL,2018,"Forty Four Sports, LLC",13,Closed Won,108,RunDTC,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+231534,OPP0136,8/1/2025,44 Pro- PowerBulkOrder,2018,"Forty Four Sports, LLC",21,On Hold,108,RunDTC,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+231958,OPP0137,8/4/2025,Corsa Development Group - Rapid Assessment,2420,Corsa Development Group,14,Closed Lost,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,,,,,,,,,0,,,D
+231959,OPP0138,8/4/2025,My Gemma - New Implementation,2421,My Gemma,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+232435,OPP0139,8/19/2025,R.M. Young Company - Rapid Assessment,2524,R.M. Young Company,13,Closed Won,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,2626,,,,,9/6/2025,https://app.asana.com/1/89396020630874/project/1211104689342593/list,https://drive.google.com/drive/folders/1JOIQPe0PCftG5uX0u06_72u_mhAEW4Na,0,106.25,,C
+232436,OPP0140,8/19/2025,Brannen's Inc - New Implementation,2525,Brannen's Inc,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+233624,OPP0141,9/8/2025,Clenera - Rapid Assessment,2631,Clenera,24,Won - Awaiting Project,5,Anderson Frank,,,5,Project Recovery,,,,,,,,3256,,,,,11/21/2025,https://app.asana.com/1/89396020630874/project/1211926039639146/list,https://drive.google.com/drive/folders/1DWumUaMOKQPqZX_B_D2cKF-3vLKfarI7,0,8500,,C
+233858,OPP0142,9/19/2025,American Barbell - PowerDiscount,667,American Barbell Direct,13,Closed Won,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+233859,OPP0143,9/19/2025,44 Pro- PowerDiscount,2018,"Forty Four Sports, LLC",13,Closed Won,108,RunDTC,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,C
+233860,OPP0144,9/19/2025,Mid-Ohio Farming Collective - Rapid Assessment,2834,Mid-Ohio Farming Collective,25,Won - Ready for Kick Off,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,2936,,Taylor Quinn,t.quinn@andersonfrank.com,,9/26/2025,https://app.asana.com/1/89396020630874/project/1211455165947690/list,https://drive.google.com/drive/folders/1NMiEz8NYpw8NOdqtZpJn9xiZCcP9eS0m,0,0,,C
+233861,OPP0145,9/19/2025,Antique Rose Emporium - Rapid Assessment,2835,Antique Rose Emporium,24,Won - Awaiting Project,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,2942,,,,,9/29/2025,https://app.asana.com/1/89396020630874/project/1211516272425248/overview/1211516267938318,https://drive.google.com/drive/folders/1n1SjmtSp3j1pktKhaPDxGRbFxqH7Tmug?usp=drive_link,0,31.25,,C
+234277,OPP0146,9/25/2025,"Sugar Beets, Inc - Use Case",2937,"Sugar Beets, Inc",23,Won - Kicked Off,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,,,,,,10/7/2025,https://app.asana.com/1/89396020630874/project/1211455165947694/list,https://drive.google.com/drive/folders/1rND8C6Gh5lrUq7gM1Cio872yO_pFJgOL,0,120,,C
+234281,OPP0147,9/29/2025,Gill Marine - New Implementation,2939,Gill Marine,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+235693,OPP0148,10/17/2025,FnF - PowerCommitment,2408,Faucets N' Fixtures,14,Closed Lost,6,Sererra,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+235698,OPP0149,10/20/2025,BesTop - Rapid Assessment,3245,BesTop,14,Closed Lost,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,3251,,Daniella Rivera,D.rivera@andersonfrank.com,,11/5/2025,https://app.asana.com/1/89396020630874/project/1211823772583313/list,https://drive.google.com/drive/folders/1ntF3cc7ebcMQPr5JW8Y_ZWCeZzDGdwTR,0,10500,,D
+235907,OPP0150,10/24/2025,Upper Echelon Products - Project Recovery,3248,Upper Echelon Products,24,Won - Awaiting Project,1,Direct,,,5,Project Recovery,,,,,,,,4022,,,,,4/3/2026,https://app.asana.com/1/89396020630874/project/1213964048846470/overview/1213957332219318,https://drive.google.com/drive/folders/1K4OPLAeCzPpsNTceXKEtf2A6DMazdtMj,0,185,,C
+236011,OPP0151,10/27/2025,Colectivo Coffee - Rapid Assessment,3250,Colectivo Coffee,14,Closed Lost,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,,,,,,,,,0,,,D
+238297,OPP0152,11/24/2025,UNRL  - New Implementation,3259,URNL,11,In Negotiation,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,A
+238971,OPP0153,12/8/2025,Goodheart-Willcox - SuiteCommerce,3263,Goodheart-Willcox,23,Won - Kicked Off,5,Anderson Frank,,,7,SuiteCommerce,,,,,,,,,,,,,1/15/2026,https://app.asana.com/1/89396020630874/project/1212840395475465/list/1212840399229208,https://drive.google.com/drive/folders/1nHpS67JdMmdMOUgHrBwlzkWa7gsYMcfr,0,120,,C
+238972,OPP0154,12/8/2025,CatBirdNYC - PM,3264,CatBirdNYC,14,Closed Lost,5,Anderson Frank,,,4,Use Case,,,,,,,,,,,,,,,,0,,,D
+239727,OPP0155,12/19/2025,Onward Reserve - Rapid Assessment,3266,Onward Reserve,24,Won - Awaiting Project,2,Netsuite Alliance,,,3,Rapid Assessment,,,,,,,,3273,,,,,2/9/2026,https://app.asana.com/1/89396020630874/project/1212840806014131/task/1212840806014134,https://drive.google.com/drive/folders/1WoScW74tRimd71r2vMyBplf5oPr8iM9V,0,4250,,C
+240303,OPP0156,1/5/2026,Bose  - Use Case,928,"Transom Post OpCo, LLC dba Bose Professional",14,Closed Lost,1,Direct,125,"S. Hyham Consulting, LLC",4,Use Case,,,,,,,,,,,,,,,,0,,,D
+241099,OPP0157,1/12/2026,Upward Projects - Rapid Assessment,3269,Upward Projects,24,Won - Awaiting Project,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,3271,,,,,2/9/2026,https://app.asana.com/1/89396020630874/project/1212806164665545/task/1212806164665548,https://drive.google.com/drive/folders/0AJjEzU5nhACCUk9PVA,0,4250,,C
+241100,OPP0158,1/12/2026,Weathermatic - Rapid Assessment,3270,Weathermatic,24,Won - Awaiting Project,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,3272,,,,,1/19/2026,https://app.asana.com/1/89396020630874/project/1212841713373553/list/1212842198347930,https://drive.google.com/drive/folders/1lvvyrEVUD_GrB2nQiztVsvhZbZzCfyJR,0,4250,,C
+241530,OPP0159,1/26/2026,ABSCI - Use Case,3275,ABSCI,24,Won - Awaiting Project,5,Anderson Frank,,,4,Use Case,,,,,,,,3276,,,,,1/28/2026,https://app.asana.com/1/89396020630874/project/1213018852606860/board/1213018856303083,https://drive.google.com/drive/folders/1oiLKqZE4CkA7hyyoJL-Nl61PiuSKBMTQ,0,120,,C
+242567,OPP0160,2/2/2026,CSUSA - Use Case,3279,CSUSA,14,Closed Lost,2,Netsuite Alliance,,,4,Use Case,,,,,,,,,,,,,,,,0,,,D
+243003,OPP0161,2/6/2026,FnF - PowerCommitment,2408,Faucets N' Fixtures,21,On Hold,6,Sererra,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+243858,OPP0162,2/20/2026,Shearwater Asia - PowerNetting,3988,Shearwater Asia,14,Closed Lost,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+245280,OPP0163,2/25/2026,ID Supply Co - New Implementation,3991,ID Supply Co,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+245894,OPP0164,2/26/2026,Bruce Bolt - New Implementation,3992,Bruce Bolt,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+246842,OPP0165,3/10/2026,Margart OLeary - New Implementation,4016,Margart OLeary,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+248080,OPP0166,3/26/2026,PowerGL - LoLe,1008,"Lole Brands USA, LLC",10,Proposal,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,A
+248081,OPP0167,3/26/2026,PowerBulkOrder - RM Young,2524,R.M. Young Company,19,New Lead,5,Anderson Frank,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,D
+248082,OPP0168,3/26/2026,PowerCommitment - LoLe,1008,"Lole Brands USA, LLC",19,New Lead,1,Direct,125,"S. Hyham Consulting, LLC",9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,A
+248083,OPP0169,3/26/2026,PowerFactoring - Weathermatic,3270,Weathermatic,19,New Lead,5,Anderson Frank,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,A
+248084,OPP0170,3/26/2026,PowerGL - Upwards Projects,3269,Upward Projects,19,New Lead,1,Direct,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,A
+248396,OPP0171,3/30/2026,Jasco Products - New Implementation,4021,Jasco Products,14,Closed Lost,5,Anderson Frank,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+250219,OPP0172,4/27/2026,Wild Oak Boutique -  New Implementation,4024,Wild Oak Boutique,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+250220,OPP0173,4/27/2026,N. Teppermans Limited - Rapid Assessment,4026,N. Teppermans Limited,24,Won - Awaiting Project,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,4029,,,,,5/1/2026,https://app.asana.com/1/89396020630874/project/1214407556863858/task/1214407557779565,https://drive.google.com/drive/folders/1fUe5hHxWejCKi0IuCTBLBZmAs-eJc_gw,0,8500,,C
+250221,OPP0174,4/27/2026,AbilityFirst - Rapid Assessment,4027,AbilityFirst,24,Won - Awaiting Project,1,Direct,,,3,Rapid Assessment,,,,,,,,4037,,,,,5/7/2026,https://app.asana.com/1/89396020630874/project/1214705593506395/list,https://drive.google.com/drive/folders/1k_oX5qQJdet_ph9R4su9n7GrYCgk5gov,0,8500,,C
+251160,OPP0175,5/5/2026,Atlanta Community Food Bank - Rapid Assessment,4031,Atlanta Community Food Bank,24,Won - Awaiting Project,1,Direct,,,3,Rapid Assessment,,,,,,,,4057,,,,,7/10/2026,https://app.asana.com/1/89396020630874/project/1216219194029032/list,https://drive.google.com/drive/folders/1beN545ORSH76tcKLQtnA6pnV-C1CrFHc,0,8500,,C
+251161,OPP0176,5/5/2026,Blue Coast Accessories - New Implementation,4032,Blue Coast Accessories,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+251678,OPP0177,5/8/2026,Strata - New Implementation,4035,Strata,18,Life Support,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,A
+253424,OPP0178,5/29/2026,Spinelli - PowerLabel,1803,Spinelli Kilcollin,9,Pre-Demo'd Prospect,2,Netsuite Alliance,,,9,Power Cloud Product,,,,,,,,,,,,,,,,0,,,A
+255102,OPP0179,6/8/2026,Blue Tees Golf - Use Case,4044,Blue Tees Golf,11,In Negotiation,1,Direct,,,4,Use Case,,,,,,,,,,,,,,,,0,,,A
+255512,OPP0180,6/15/2026,Left on Friday - New Implementation,4045,Left on Friday,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+256239,OPP0181,6/25/2026,Gillespie Coatings - Rapid Assessment,4048,Gillespie Coatings,24,Won - Awaiting Project,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,4051,,Steven Masetti,s.masetti@andersonfrank.com,,7/7/2026,https://app.asana.com/1/89396020630874/project/1216050353015619/task/1216049948731391,https://drive.google.com/drive/u/0/folders/16NuxA0PRH8l7pZivtotTydH34qz42tJK,0,106.25,,C
+256240,OPP0182,6/25/2026,Shinesty - Rapid Assessment,4049,Shinesty,24,Won - Awaiting Project,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,4050,,,,,7/3/2026,https://app.asana.com/1/89396020630874/project/1216050353015623/list,https://drive.google.com/drive/u/0/folders/15Tqnq1sqpFFdS1wp3CPu8Az9Jk2LT2-C,0,106.25,,C
+257289,OPP0183,7/13/2026,Sierra Brands Group - New Implementation,4060,Sierra Brands Group,14,Closed Lost,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,D
+259195,OPP0184,8/4/2026,MGT Industries - Rapid Assessment,4063,MGT Industries,14,Closed Lost,2,Netsuite Alliance,,,3,Rapid Assessment,,,,,,,,,,,,,,,,0,,,D
+259196,OPP0185,8/4/2026,Zellerfeld Shoe - New Implementation,4065,Zellerfeld Shoe,11,In Negotiation,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,A
+260527,OPP0186,8/19/2026,Acme Paper & Supply Co - Rapid Assessment,4080,Acme Paper & Supply Co,24,Won - Awaiting Project,5,Anderson Frank,,,3,Rapid Assessment,,,,,,,,4598,,,,,8/24/2026,https://app.asana.com/1/89396020630874/project/1217654074042240/list,https://drive.google.com/drive/folders/1F_WbmFTKulrmZU-yJVv23sJvgSKPvwyx,0,8500,,C
+260529,OPP0187,8/20/2026,Preferred Plastics and Packaging Co. Inc - Use Case.,4081,Preferred Plastics and Packaging Co. Inc.,14,Closed Lost,1,Direct,,,4,Use Case,,,,,,,,,,,,,,,,0,,,D
+263465,OPP0199,9/21/2026,Nations Best Sports - New Implementation,4591,Nations Best Sports - NBS,11,In Negotiation,5,Anderson Frank,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,A
+263466,OPP0200,9/21/2026,540 Brands - Use Case,4592,540 Brands,25,Won - Ready for Kick Off,1,Direct,,,4,Use Case,,,,,,,,,,,,,,,,0,,,C
+263681,OPP0201,9/24/2026,Huffman Boots - New Implementation,4594,Huffman Boots,9,Pre-Demo'd Prospect,2,Netsuite Alliance,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,A
+264324,OPP0202,10/2/2026,Stewmac - New Implementation,4599,Stewmac,8,Demo'd Customer,108,RunDTC,,,2,New Implementation,,,,,,,,,,,,,,,,0,,,A
+264325,OPP0203,10/2/2026,Iffy's Refinish Supply Professionals - Project Recovery,4600,Iffy's Refinish Supply Professionals,9,Pre-Demo'd Prospect,7,Other,,,5,Project Recovery,,,,,,,,,,,,,,,,0,,,A
+264430,OPP0204,10/5/2026,Perfumes Plus - Rapid Assessment,855,Perfumes Plus,8,Demo'd Customer,1,Direct,,,3,Rapid Assessment,,,,,,,,,,,,,,,,0,,,A

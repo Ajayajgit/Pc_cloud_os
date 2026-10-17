@@ -1,0 +1,30 @@
+<usereventscript scriptid="customscript_pc_crm_opp_ue">
+  <name>PC | Opportunity CRM Guard</name>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/PC/pc_crm_opp_ue.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_pc_ue_type_support_id">
+      <accesslevel>2</accesslevel>
+      <description>PC | Internal id of the Support value in the engagement type list, created in the UI.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>INTEGER</fieldtype>
+      <help>Internal id of the Support value of the engagement type list. Until it is set, Support deals are reported as unmapped.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Support Type ID</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_pc_crm_opp_ue">
+      <allroles>T</allroles>
+      <executioncontext>USERINTERFACE|WEBSERVICES|RESTWEBSERVICES|RESTLET|CSVIMPORT</executioncontext>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <recordtype>OPPORTUNITY</recordtype>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</usereventscript>

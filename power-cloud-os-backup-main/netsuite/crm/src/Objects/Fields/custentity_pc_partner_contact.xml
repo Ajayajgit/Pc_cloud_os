@@ -1,0 +1,12 @@
+<entitycustomfield scriptid="custentity_pc_partner_contact">
+  <appliestoproject>T</appliestoproject>
+  <description>PC | Sales OS phase 1. The sales rep at the subcontracting firm, copied from the opportunity.</description>
+  <displaytype>NORMAL</displaytype>
+  <fieldtype>SELECT</fieldtype>
+  <help>The sales rep at the subcontracting firm. Copied from the opportunity when the project is created.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>PC | Partner Contact</label>
+  <selectrecordtype>-6</selectrecordtype>
+  <storevalue>T</storevalue>
+</entitycustomfield>

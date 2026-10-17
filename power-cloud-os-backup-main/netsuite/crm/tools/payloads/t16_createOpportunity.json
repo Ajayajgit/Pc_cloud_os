@@ -1,0 +1,13 @@
+{
+  "dealUUID": "e2364ad7-360f-4c23-9af4-1ce8693c2a7c",
+  "title": "ZZ TEST API Deal 2 - Rapid Assessment",
+  "entityId": 5305,
+  "classId": 1,
+  "engagementTypeId": 3,
+  "commercialModelId": 1,
+  "principalId": 3,
+  "seniorConsultantId": 4,
+  "rate": 205,
+  "entityStatusId": 9,
+  "memo": "T3 runbook test 16"
+}

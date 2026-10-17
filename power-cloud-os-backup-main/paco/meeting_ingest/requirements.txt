@@ -1,0 +1,2 @@
+# Only needed for a live read-only survey. Offline CLI/tests use the standard library.
+google-auth[requests]>=2.0,<3

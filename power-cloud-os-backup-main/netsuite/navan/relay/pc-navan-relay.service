@@ -1,0 +1,28 @@
+# systemd unit for the PC Navan Relay.
+# Install: copy to /etc/systemd/system/pc-navan-relay.service
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now pc-navan-relay
+# Logs: journalctl -u pc-navan-relay -f
+
+[Unit]
+Description=PC Navan Relay (Navan invoice PDF fetcher)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pcrelay
+WorkingDirectory=/opt/pc-navan-relay
+EnvironmentFile=/etc/pc-navan-relay/relay.env
+ExecStart=/usr/bin/node src/server.js
+Restart=on-failure
+RestartSec=5
+# Hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/pc-navan-relay
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

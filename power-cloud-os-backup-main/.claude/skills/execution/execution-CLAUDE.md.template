@@ -1,0 +1,25 @@
+# {Client} — Execution
+
+You are in the **execution phase** for {Client}. Copy this file to `{Client}/execution/CLAUDE.md` and fill the placeholders. The read-only assessment rule does **not** apply here; writes are permitted under the guardrails below. The workflow is the `execution` skill.
+
+Discovery history is one level up and is **read-only reference**: `../CONTEXT.md`, `../deliverables/{Client}_Execution_Plan.md` (the build spec, the technical source of truth for how to build), `../working/` (evidence, verification), `../source/` (transcripts). Read it freely; do not edit it. Execution artifacts (the SDF project, `build_log.md`) live here in `execution/`.
+
+## Guardrails (these do not bend)
+
+- **Sandbox-first, always.** Every change is deployed and tested in sandbox before production. Never deploy or write to production without an explicit human approval, given per deploy.
+- **SDF is the default change mechanism**: version-controlled in git, reviewable as a diff, revertible. Prefer an SDF object over an ad-hoc MCP write wherever the change can be an SDF object. SDF deploys via its own token, not the MCP write tools.
+- **MCP data-writes target the sandbox connection.** A production data-write needs explicit human go-ahead and a stated reason.
+- **Two human gates per task:** approve the implementation plan, and approve the production deploy. Everything between is automated.
+- **Worker agents author; they never validate, deploy, or query.** `pc-sdf-author` and `pc-code-chores` (root `.claude/agents/`) write files under `execution/sdf/` from the approved plan. You run validate, you deploy under the two gates, you review every Handback. A worker has no shell and no NetSuite tools by design.
+- **Rollback note per task** before it promotes to production (the execution-plan block carries one).
+- Follow each task's execution-plan block: its classification (SDF-deployable / scripted data fix / manual config), acceptance criteria, and test plan.
+
+## Connection posture
+
+- Sandbox (write / deploy target): {sandbox account ID and MCP/SDF connection name, or "not yet wired — SDF-to-sandbox only until a sandbox connection exists"}
+- Production: human-gated deploys only; the discovery prod connection stays read-only.
+
+## Notes
+
+- Engagement mode: {rescue/optimization (work the backlog) / new implementation (implementation cadence: setup derivation, then per-area design sessions; working files at `setup_checklist.md`, `design/`, `config_backlog.md`)}
+- {NetSuite release, SDF project structure decision (one project with a module per task, or per-task projects), Asana project link, and anything engagement-specific}

@@ -1,0 +1,22 @@
+<transactionbodycustomfield scriptid="custbody_pc_af_status_asof">
+    <applyformatting>F</applyformatting>
+    <defaultchecked>F</defaultchecked>
+    <defaultvalue></defaultvalue>
+    <description>The report date on which this status BECAME what it is. It moves only when the status moves, not on every run - staleness is a property of the system, answered once by the newest import log record, not stored 3,500 times.</description>
+    <displaytype>LOCKED</displaytype>
+    <fieldtype>DATE</fieldtype>
+    <help>Maintained by the AF Unapproved Hours import. Do not edit manually.</help>
+    <label>AF Status Established</label>
+    <storevalue>T</storevalue>
+    <accesslevel>2</accesslevel>
+    <checkspelling>F</checkspelling>
+    <encryptatrest>F</encryptatrest>
+    <globalsearch>F</globalsearch>
+    <isformula>F</isformula>
+    <ismandatory>F</ismandatory>
+    <searchlevel>2</searchlevel>
+    <showinlist>F</showinlist>
+    <isparent>F</isparent>
+    <subtab>[scriptid=custtab_pc_af]</subtab>
+    <bodysale>T</bodysale>
+</transactionbodycustomfield>

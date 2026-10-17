@@ -1,0 +1,8 @@
+# Caddy reverse proxy with automatic Let's Encrypt TLS.
+# Place at /etc/caddy/Caddyfile, then: systemctl reload caddy
+# DNS A record for relay.powerclouderp.com must point at this VM's static IP first.
+
+relay.powerclouderp.com {
+    encode gzip
+    reverse_proxy 127.0.0.1:8787
+}

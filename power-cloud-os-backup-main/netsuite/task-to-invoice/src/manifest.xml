@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+  <projectname>Power Cloud - Task to Invoice</projectname>
+  <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <!-- Required by the Map/Reduce and User Event scripts. -->
+      <feature required="true">SERVERSIDESCRIPTING</feature>
+      <!-- Required by custcol_powercloud_task's coltime (Applies To: Time). -->
+      <feature required="true">TIMETRACKING</feature>
+    </features>
+  </dependencies>
+</manifest>

@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Render / tooling artifacts
+.playwright-mcp/
+*.log
+hero-*.png
+toc.png
+footer.png
+
+# SuiteCloud / SDF local state (developer-specific default auth alias)
+project.json
+**/.authids
+
+# Raw object:import scratch — the role's source of truth lives in roles/
+MCP Role SDF/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/

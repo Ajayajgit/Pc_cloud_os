@@ -1,0 +1,1 @@
+Payloads for docs/T3_acceptance_runbook.md, numbered by test. UUIDs generated once on 2026-10-09; placeholders in angle brackets are filled from earlier test results before the call. ZZ TEST data only, no secrets.

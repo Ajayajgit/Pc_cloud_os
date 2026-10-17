@@ -1,0 +1,34 @@
+<suitelet scriptid="customscript_pc_af_import_sl">
+    <description>Uploads the Anderson Frank unapproved timesheet export, shows exactly what it would change, and writes only after explicit confirmation.</description>
+    <isinactive>F</isinactive>
+    <name>PC AF Unapproved Hours Import</name>
+    <notifyadmins>F</notifyadmins>
+    <notifyowner>T</notifyowner>
+    <notifyuser>F</notifyuser>
+    <scriptfile>[/SuiteScripts/PowerCloud/af_unapproved_hours/scripts/pc_af_import_sl.js]</scriptfile>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_pc_af_import_sl">
+            <allemployees>F</allemployees>
+            <allroles>F</allroles>
+            <audslctrole>ADMINISTRATOR|[scriptid=customrole1000]</audslctrole>
+            <isdeployed>T</isdeployed>
+            <isonline>F</isonline>
+            <loglevel>AUDIT</loglevel>
+            <runasrole>ADMINISTRATOR</runasrole>
+            <status>RELEASED</status>
+            <title>PC AF Unapproved Hours Import</title>
+            <links>
+                <link>
+                    <linkcategory>ACCOUNTCENTERCUSTOMERSCUSTOM</linkcategory>
+                    <linklabel>AF Unapproved Hours Import</linklabel>
+                    <linktasktype>SCRIPT</linktasktype>
+                </link>
+                <link>
+                    <linkcategory>BASICTRANSACTIONSCUSTOMERS</linkcategory>
+                    <linklabel>AF Unapproved Hours Import</linklabel>
+                    <linktasktype>SCRIPT</linktasktype>
+                </link>
+            </links>
+        </scriptdeployment>
+    </scriptdeployments>
+</suitelet>

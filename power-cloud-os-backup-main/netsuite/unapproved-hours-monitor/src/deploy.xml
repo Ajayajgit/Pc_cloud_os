@@ -1,0 +1,13 @@
+<deploy>
+    <files>
+        <!-- Deployed deliberately path-by-path so tests/ and its fixtures stay
+             in the repo and never reach the production File Cabinet.
+             `*` would recurse into tests/, so the deployable directories are
+             listed one by one instead. -->
+        <path>~/FileCabinet/SuiteScripts/PowerCloud/af_unapproved_hours/lib/*</path>
+        <path>~/FileCabinet/SuiteScripts/PowerCloud/af_unapproved_hours/scripts/*</path>
+    </files>
+    <objects>
+        <path>~/Objects/*</path>
+    </objects>
+</deploy>

@@ -1,0 +1,108 @@
+<role scriptid="customrole_pc_crm_sales_write">
+  <centertype>BASIC</centertype>
+  <coreadminpermission>F</coreadminpermission>
+  <employeerestriction>NONE</employeerestriction>
+  <employeeselectionunrestricted>T</employeeselectionunrestricted>
+  <isinactive>F</isinactive>
+  <issalesrole>F</issalesrole>
+  <issinglesignononly>F</issinglesignononly>
+  <issupportrole>F</issupportrole>
+  <name>PC | CRM Sales Write</name>
+  <restrictbydevice>F</restrictbydevice>
+  <restricttimeandexpenses>F</restricttimeandexpenses>
+  <tfaduration>0</tfaduration>
+  <tfarequired>OFF</tfarequired>
+  <permissions>
+    <!-- Opportunities: create, update, close (EDIT: no delete). -->
+    <permission>
+      <permkey>TRAN_OPPRTNTY</permkey>
+      <permlevel>EDIT</permlevel>
+    </permission>
+    <!-- End clients (customers): create and update (EDIT: no delete). -->
+    <permission>
+      <permkey>LIST_CUSTJOB</permkey>
+      <permlevel>EDIT</permlevel>
+    </permission>
+    <!-- Projects: create and update (EDIT: no delete). -->
+    <permission>
+      <permkey>LIST_JOB</permkey>
+      <permlevel>EDIT</permlevel>
+    </permission>
+    <!-- End client contacts: create and update (EDIT: no delete). -->
+    <permission>
+      <permkey>LIST_CONTACT</permkey>
+      <permlevel>EDIT</permlevel>
+    </permission>
+    <!-- Phone calls written by the logTouch action (EDIT: no delete). -->
+    <permission>
+      <permkey>LIST_CALL</permkey>
+      <permlevel>EDIT</permlevel>
+    </permission>
+    <!-- Partner lookups on referral deals. -->
+    <permission>
+      <permkey>LIST_PARTNER</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+    <!-- Channel (class) lookups. -->
+    <permission>
+      <permkey>LIST_CLASS</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+    <!-- Project tasks created by the project builder (EDIT: no delete). -->
+    <permission>
+      <permkey>LIST_PROJECTTASK</permkey>
+      <permlevel>EDIT</permlevel>
+    </permission>
+    <!-- Perform Search (the plan's LIST_SEARCH). -->
+    <permission>
+      <permkey>LIST_FIND</permkey>
+      <permlevel>FULL</permlevel>
+    </permission>
+    <!-- Staffing lookups. -->
+    <!-- Added 2026-10-09 (build_log, test 8): the permission shown as "Employee Search" in the UI (SDF id LIST_OTHER_ADDRESS,
+         not on Oracle's published list). Without it any employee lookup under this role fails with
+         YOU_CANNOT_PERFORM_THIS_SEARCH_BECAUSE_YOU_DO_NOT_HAVE_PERMISSION_TO_ACCESS_EMPLOYEE_DATA. Deployed 2026-10-12 on Mike's word. -->
+    <permission>
+      <permkey>LIST_OTHER_ADDRESS</permkey>
+      <permlevel>FULL</permlevel>
+    </permission>
+    <!-- Added 2026-10-09 (build_log, test 20): CRM Lists (ADMI_CRMLIST, Oracle id list) at VIEW; the win/loss reason lookup
+         in closeOpportunity lost fails without it (INSUFFICIENT_PERMISSION "You need the 'CRM Lists' permission"). Deployed 2026-10-12 on Mike's word. -->
+    <permission>
+      <permkey>ADMI_CRMLIST</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+    <!-- Added 2026-10-12 (build_log, test 16): Employee Record View. With Employees View and Employee Search in place the
+         employee lookup in createOpportunity still failed with the employee-data permission error; the travel role, which
+         reads employees, differs only by this permission. Lowest level. -->
+    <permission>
+      <permkey>LIST_EMPLOYEE_RECORD</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+    <permission>
+      <permkey>LIST_EMPLOYEE</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+    <!-- Task service items (the plan's LIST_SERVICEITEM). -->
+    <permission>
+      <permkey>LIST_ITEM</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+    <!-- OAuth 2.0 client credentials login. -->
+    <permission>
+      <permkey>ADMI_LOGIN_OAUTH2</permkey>
+      <permlevel>FULL</permlevel>
+    </permission>
+    <!-- SuiteScript (the plan's ADMI_SUITESCRIPT); VIEW is the lowest level, raised only with a ledger note. -->
+    <permission>
+      <permkey>ADMI_CUSTOMSCRIPT</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+    <!-- PC | Operation Ledger: claim, advance and complete rows (EDIT: no delete). Custom record permissions sit in the
+         same list as standard ones, keyed by the record's script id. -->
+    <permission>
+      <permkey>[scriptid=customrecord_pc_op_ledger]</permkey>
+      <permlevel>EDIT</permlevel>
+    </permission>
+  </permissions>
+</role>

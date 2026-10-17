@@ -1,0 +1,565 @@
+<customrecordtype scriptid="customrecord_pc_af_timesheet">
+    <accesstype>CUSTRECORDENTRYPERM</accesstype>
+    <allowattachments>F</allowattachments>
+    <allowinlinedeleting>F</allowinlinedeleting>
+    <allowinlinedetaching>F</allowinlinedetaching>
+    <allowinlineediting>F</allowinlineediting>
+    <allowmobileaccess>F</allowmobileaccess>
+    <allownumberingoverride>F</allownumberingoverride>
+    <allowquickadd>F</allowquickadd>
+    <allowquicksearch>T</allowquicksearch>
+    <allowuiaccess>T</allowuiaccess>
+    <description>One record per Anderson Frank timesheet ID. The record name IS the AF timesheet ID - it is the natural key from the AF report. Survives rows that never match an invoice, which is the whole reason this exists as a record rather than only as invoice fields.</description>
+    <enablekeywords>T</enablekeywords>
+    <enablenumbering>F</enablenumbering>
+    <enableoptimisticlocking>T</enableoptimisticlocking>
+    <enablesystemnotes>T</enablesystemnotes>
+    <hierarchical>F</hierarchical>
+    <includeinsearchmenu>T</includeinsearchmenu>
+    <includename>T</includename>
+    <isinactive>F</isinactive>
+    <isordered>F</isordered>
+    <recordname>PC AF Timesheet</recordname>
+    <showcreationdate>F</showcreationdate>
+    <showcreationdateonlist>F</showcreationdateonlist>
+    <showid>F</showid>
+    <showlastmodified>T</showlastmodified>
+    <showlastmodifiedonlist>F</showlastmodifiedonlist>
+    <shownotes>T</shownotes>
+    <showowner>F</showowner>
+    <showownerallowchange>F</showownerallowchange>
+    <showowneronlist>F</showowneronlist>
+    <customrecordcustomfields>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_contractor">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Contractor column from the AF report.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>TEXT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Contractor</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_client">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Client column as AF spells it. This is AF's string, not our customer or project name - matching to our project is done via the invoice.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>TEXT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>AF Client Name</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_placement">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>AF placement reference, e.g. P0189275.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>TEXT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Placement</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_place_start">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Placement Start from the AF report.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>DATE</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Placement Start</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_place_end">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Placement End from the AF report.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>DATE</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Placement End</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_period_end">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Week ending date for these hours. Drives the Not Yet Invoiced vs genuine exception decision.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>DATE</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>T</ismandatory>
+            <isparent>F</isparent>
+            <label>Period Ending</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_af_status">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Status column verbatim from AF, e.g. Submitted. Captured in case AF ever widens the export.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>TEXT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>AF Reported Status</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_hours">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Hours from the AF report, converted from HH:MM:SS to decimal.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>FLOAT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Hours</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_pay">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Pay amount from the AF report.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>FLOAT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Pay</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_pay_ccy">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Pay Currency from the AF report.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>TEXT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Pay Currency</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_status">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Unapproved while on the report, Approved once it drops off. Meaningless without Last Seen On Report.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>SELECT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>T</ismandatory>
+            <isparent>F</isparent>
+            <label>Status</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+            <selectrecordtype>[scriptid=customlist_pc_af_ts_status]</selectrecordtype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_match">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Not Yet Invoiced is normal for the most recent period and must not be treated as an exception.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>SELECT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Match Status</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+            <selectrecordtype>[scriptid=customlist_pc_af_match_status]</selectrecordtype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_invoice">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Matched NetSuite invoice. Empty is expected for the current week.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>SELECT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Invoice</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+            <selectrecordtype>-30</selectrecordtype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_project">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Project from the matched invoice. Carries the AF contact used for the nudge.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>SELECT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Project</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+            <selectrecordtype>-7</selectrecordtype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_variance">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>AF Pay minus invoice total. Non-zero is an exception worth chasing - this is where money leaks.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>FLOAT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Pay vs Invoice Variance</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_first_seen">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>First report this ever appeared on. SET ONCE, NEVER OVERWRITTEN. All aging derives from this.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>DATE</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>First Seen Unapproved</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_last_seen">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Date of the most recent import that still listed this row. The staleness guard - a status older than about 10 days is not trustworthy.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>DATE</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Last Seen On Report</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_approved_on">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Date of the import on which this dropped off the report. Inferred, not stated by AF.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>DATE</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Approved On</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_import">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Import run that last touched this record.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>SELECT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Last Import</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+            <selectrecordtype>[scriptid=customrecord_pc_af_import_log]</selectrecordtype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_contact_email">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Snapshot of the AF contact email at nudge time, for audit. Live value lives on the project.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>EMAIL</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>AF Contact Email</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_nudge_count">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>How many times we have chased this. Drives which tone variant the draft uses.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>INTEGER</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Nudge Count</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_last_nudged">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Date of the last nudge that actually went out.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>DATE</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Last Nudged</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>T</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_nudged_by">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Who triggered the send.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>SELECT</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Last Nudged By</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+            <selectrecordtype>-4</selectrecordtype>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_snoozed_until">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Suppress from the review screen until this date. Rep on PTO, client mid-close.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>DATE</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Snoozed Until</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+        <customrecordcustomfield scriptid="custrecord_pc_afts_nudge_log">
+            <accesslevel>2</accesslevel>
+            <allowquickadd>F</allowquickadd>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Append-only log of what was actually sent and when. Lets next week's draft know what was already said.</description>
+            <displaytype>NORMAL</displaytype>
+            <encryptatrest>F</encryptatrest>
+            <fieldtype>TEXTAREA</fieldtype>
+            <globalsearch>F</globalsearch>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <isparent>F</isparent>
+            <label>Nudge History</label>
+            <rolerestrict>F</rolerestrict>
+            <searchlevel>2</searchlevel>
+            <showinlist>F</showinlist>
+            <storevalue>T</storevalue>
+        </customrecordcustomfield>
+    </customrecordcustomfields>
+</customrecordtype>

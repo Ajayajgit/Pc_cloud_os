@@ -1,0 +1,12 @@
+{
+  "clientUUID": "b6f0af31-14e4-4842-8e74-5535afbdd33a",
+  "companyName": "ZZ TEST Cutover Client",
+  "revenueSourceId": 1,
+  "contacts": [
+    {
+      "firstName": "Cora",
+      "lastName": "Tester",
+      "email": "cora@zztest.example.com"
+    }
+  ]
+}

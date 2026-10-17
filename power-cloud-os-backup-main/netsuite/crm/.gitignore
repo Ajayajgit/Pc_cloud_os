@@ -1,0 +1,8 @@
+node_modules/
+.suitecloud/
+*.log
+tools/crm_api.local.json
+tools/*.key
+tools/*.pem
+tools/runbook_log.jsonl
+tools/.token_cache.json

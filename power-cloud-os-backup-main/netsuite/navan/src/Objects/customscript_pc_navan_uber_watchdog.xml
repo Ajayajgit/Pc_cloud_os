@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheduledscript scriptid="customscript_pc_navan_uber_watchdog">
+    <name>PowerCloud - Navan Uber Watchdog</name>
+    <scriptfile>[/SuiteScripts/PowerCloud/navan-expense/scripts/ss_navan_uber_watchdog.js]</scriptfile>
+    <description>Emails the config Alert Email when the relay's Uber poll hasn't checked in (Uber Poll Last Check-in) within the threshold. Catches token/role failures, a down relay box, or a stopped timer.</description>
+    <isinactive>F</isinactive>
+    <notifyowner>T</notifyowner>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_pc_navan_uber_watchdog">
+            <title>PowerCloud Navan Uber Watchdog</title>
+            <status>SCHEDULED</status>
+            <isdeployed>T</isdeployed>
+            <loglevel>AUDIT</loglevel>
+            <!-- Daily schedule is set in the NetSuite UI, NOT here: SDF rejects a scheduled-script
+                 recurrence, and deploying one would reset the live schedule anyway. Run it after
+                 the 5 AM PT Uber poll (e.g. 9 AM PT). -->
+        </scriptdeployment>
+    </scriptdeployments>
+</scheduledscript>

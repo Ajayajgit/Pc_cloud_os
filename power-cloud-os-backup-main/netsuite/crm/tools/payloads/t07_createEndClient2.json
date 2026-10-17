@@ -1,0 +1,11 @@
+{
+  "clientUUID": "604c04e2-52f3-4a6a-89b8-cf26e8d31f21",
+  "companyName": "ZZ TEST API Client 2",
+  "revenueSourceId": 1,
+  "contacts": [
+    {
+      "firstName": "Zack",
+      "lastName": "Tester"
+    }
+  ]
+}

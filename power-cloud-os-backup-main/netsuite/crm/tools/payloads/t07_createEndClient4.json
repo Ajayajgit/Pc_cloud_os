@@ -1,0 +1,16 @@
+{
+  "clientUUID": "7e3f8201-b35b-4b62-ba0e-03ec9f02aa2f",
+  "companyName": "ZZ TEST API Client 4",
+  "revenueSourceId": 1,
+  "contacts": [
+    {
+      "firstName": "Zara",
+      "lastName": "Tester",
+      "email": "zara@zztest.example.com"
+    },
+    {
+      "firstName": "Zane",
+      "lastName": "Tester"
+    }
+  ]
+}

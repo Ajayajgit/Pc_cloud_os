@@ -1,0 +1,12 @@
+<transactionbodycustomfield scriptid="custbody_pc_billing_party">
+  <bodyopportunity>T</bodyopportunity>
+  <description>PC | Sales OS phase 1. Billing party resolved from the channel map.</description>
+  <displaytype>NORMAL</displaytype>
+  <fieldtype>SELECT</fieldtype>
+  <help>The customer Power Cloud bills for this deal. Set automatically from the class through the channel map on every save; a typed value is overwritten.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>PC | Billing Party</label>
+  <selectrecordtype>-2</selectrecordtype>
+  <storevalue>T</storevalue>
+</transactionbodycustomfield>

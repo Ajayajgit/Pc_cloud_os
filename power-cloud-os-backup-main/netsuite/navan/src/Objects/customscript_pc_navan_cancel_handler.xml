@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapreducescript scriptid="customscript_pc_navan_cancel_handler">
+    <name>PowerCloud - Navan Cancellation Handler</name>
+    <scriptfile>[/SuiteScripts/PowerCloud/navan-expense/scripts/mr_navan_cancellation_handler.js]</scriptfile>
+    <description>Polls Navan for canceled bookings and removes matching expense report lines.</description>
+    <isinactive>F</isinactive>
+    <notifyowner>T</notifyowner>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_pc_navan_cancel_handler">
+            <title>PowerCloud Navan Cancellation Handler</title>
+            <status>SCHEDULED</status>
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <runasrole>ADMINISTRATOR</runasrole>
+            <!-- Schedule (3:30 AM PT) is UI-managed, NOT here: deploying a <recurrence> RESETS the
+                 live schedule (confirmed 2026-05-29). Omitting it keeps the UI schedule intact across
+                 deploys, same as the invoice downloader. -->
+        </scriptdeployment>
+    </scriptdeployments>
+</mapreducescript>

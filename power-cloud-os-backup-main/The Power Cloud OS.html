@@ -1,0 +1,965 @@
+<title>The Power Cloud OS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --ground:#F4F7FA;
+  --surface:#FFFFFF;
+  --surface-2:#EAF0F6;
+  --ink:#0F212E;
+  --ink-2:#445C6E;
+  --ink-3:#71899A;
+  --line:#D8E2EA;
+  --line-strong:#B7C7D4;
+  --deep:#002F59;
+  --deep-ink:#FFFFFF;
+  --sky:#31A4F3;
+  --sky-ink:#0B6BB5;
+  --sky-wash:#E6F2FC;
+  --green-ink:#2A7C2E;
+  --green-wash:#E4F4E5;
+  --amber-ink:#8A6100;
+  --amber-wash:#FBEFD2;
+  --shadow:0 1px 2px rgba(15,33,46,.05), 0 8px 24px -16px rgba(15,33,46,.3);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#08151F;
+    --surface:#0E202D;
+    --surface-2:#142B3A;
+    --ink:#E4EDF4;
+    --ink-2:#A3B8C7;
+    --ink-3:#7A93A4;
+    --line:#1D3446;
+    --line-strong:#2E4E63;
+    --deep:#0A2A47;
+    --deep-ink:#EAF3FA;
+    --sky:#5CB9F7;
+    --sky-ink:#7FCBFA;
+    --sky-wash:#0E2C42;
+    --green-ink:#74D178;
+    --green-wash:#12301F;
+    --amber-ink:#F3C54B;
+    --amber-wash:#33280A;
+    --shadow:0 1px 2px rgba(0,0,0,.35), 0 8px 24px -16px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#08151F;
+  --surface:#0E202D;
+  --surface-2:#142B3A;
+  --ink:#E4EDF4;
+  --ink-2:#A3B8C7;
+  --ink-3:#7A93A4;
+  --line:#1D3446;
+  --line-strong:#2E4E63;
+  --deep:#0A2A47;
+  --deep-ink:#EAF3FA;
+  --sky:#5CB9F7;
+  --sky-ink:#7FCBFA;
+  --sky-wash:#0E2C42;
+  --green-ink:#74D178;
+  --green-wash:#12301F;
+  --amber-ink:#F3C54B;
+  --amber-wash:#33280A;
+  --shadow:0 1px 2px rgba(0,0,0,.35), 0 8px 24px -16px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size:16.5px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:"Montserrat", system-ui, sans-serif; text-wrap:balance; margin:0}
+p{margin:0}
+a{color:var(--sky-ink)}
+a:focus-visible{outline:2px solid var(--sky); outline-offset:3px; border-radius:2px}
+
+.masthead{background:var(--deep); color:var(--deep-ink); padding:44px 24px 0}
+.masthead-in{max-width:1180px; margin:0 auto; padding-bottom:38px}
+.eyebrow{
+  font-family:"Barlow", sans-serif; font-weight:600; font-size:11.5px;
+  letter-spacing:.19em; text-transform:uppercase; color:#8FC9F2; margin-bottom:18px;
+}
+.masthead h1{font-size:clamp(2.1rem,4.6vw,3.35rem); font-weight:700; letter-spacing:-.02em; line-height:1.08; color:var(--deep-ink)}
+.masthead .lede{
+  margin-top:16px; max-width:62ch; font-size:1.12rem; line-height:1.6; color:#C6DDF0; font-weight:400;
+}
+.masthead-meta{
+  margin-top:26px; display:flex; flex-wrap:wrap; gap:8px 26px;
+  font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color:#7FB5DC; font-weight:600;
+}
+.gradbar{height:3px; background:linear-gradient(90deg,#3FA3ED 0%,#49B953 100%)}
+
+.shell{max-width:1180px; margin:0 auto; padding:0 24px 90px; display:grid; gap:56px; grid-template-columns:1fr}
+@media (min-width:1060px){ .shell{grid-template-columns:214px minmax(0,1fr); gap:60px} }
+
+.nav{display:none}
+@media (min-width:1060px){
+  .nav{display:block; position:sticky; top:28px; align-self:start; padding-top:52px; max-height:calc(100vh - 56px); overflow-y:auto}
+}
+.nav-title{
+  font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-3);
+  font-weight:700; margin-bottom:12px;
+}
+.nav ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1px}
+.nav a{
+  display:block; padding:6px 0 6px 13px; border-left:2px solid var(--line);
+  color:var(--ink-2); text-decoration:none; font-size:14px; line-height:1.35;
+}
+.nav a:hover{color:var(--sky-ink); border-left-color:var(--sky)}
+
+main{padding-top:52px; min-width:0}
+section{scroll-margin-top:24px}
+section + section{margin-top:60px}
+
+h2{font-size:clamp(1.32rem,2.3vw,1.68rem); font-weight:700; letter-spacing:-.012em}
+h3{font-size:1.06rem; font-weight:600; letter-spacing:-.005em; margin:30px 0 8px}
+h4{font-size:.87rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); margin:0 0 10px}
+.sec-rule{height:2px; background:var(--line-strong); margin:9px 0 22px; max-width:44px; border-radius:2px}
+
+p + p{margin-top:14px}
+.body{max-width:68ch}
+ul.plain{margin:16px 0 0; padding-left:20px; max-width:68ch; display:flex; flex-direction:column; gap:10px}
+ul.plain li::marker{color:var(--ink-3)}
+strong{font-weight:600; color:var(--ink)}
+em{font-style:italic}
+code{
+  font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:.85em;
+  background:var(--surface-2); padding:1px 5px; border-radius:3px; color:var(--ink-2);
+}
+
+.card{
+  background:var(--surface); border:1px solid var(--line); border-radius:8px;
+  padding:20px 22px; box-shadow:var(--shadow);
+}
+.grid2{display:grid; gap:16px; grid-template-columns:1fr; margin-top:20px}
+@media (min-width:720px){ .grid2{grid-template-columns:1fr 1fr} }
+.grid3{display:grid; gap:16px; grid-template-columns:1fr; margin-top:20px}
+@media (min-width:860px){ .grid3{grid-template-columns:repeat(3,1fr)} }
+.tl{margin-top:24px; display:flex; flex-direction:column}
+.tl-step{display:grid; grid-template-columns:34px minmax(0,1fr); gap:0; position:relative}
+.tl-step:not(:last-child)::before{
+  content:""; position:absolute; left:16px; top:26px; bottom:-4px; width:2px; background:var(--line);
+}
+.tl-dot{
+  width:34px; padding-top:3px; font-family:"IBM Plex Mono",monospace; font-size:.72rem;
+  font-weight:600; color:var(--ink-3); font-variant-numeric:tabular-nums; z-index:1;
+}
+.tl-dot span{
+  display:inline-flex; align-items:center; justify-content:center; width:23px; height:23px;
+  border-radius:50%; background:var(--surface-2); border:1px solid var(--line-strong);
+}
+.tl-body{padding:0 0 26px 14px; min-width:0}
+.tl-body h3{margin:0 0 3px; font-size:1rem}
+.tl-body p{font-size:.94rem; color:var(--ink-2); max-width:64ch}
+.tl-who{
+  display:inline-block; font-family:"Barlow",sans-serif; font-size:10px; font-weight:700;
+  letter-spacing:.12em; text-transform:uppercase; padding:2px 7px; border-radius:3px;
+  margin-bottom:7px; background:var(--surface-2); color:var(--ink-3);
+}
+.tl-who.c{background:var(--sky-wash); color:var(--sky-ink)}
+.tl-who.h{background:var(--amber-wash); color:var(--amber-ink)}
+.tl-who.x{background:var(--green-wash); color:var(--green-ink)}
+.tl-out{
+  margin-top:8px; font-family:"IBM Plex Mono",monospace; font-size:.76rem; color:var(--ink-3);
+  line-height:1.7; overflow-x:auto;
+}
+.flow{display:grid; gap:2px; grid-template-columns:1fr; margin-top:22px; background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden}
+@media (min-width:840px){ .flow{grid-template-columns:repeat(4,1fr)} }
+.flow > div{background:var(--surface); padding:16px 18px}
+.flow h4{color:var(--sky-ink); margin-bottom:7px}
+.flow p{font-size:.9rem; color:var(--ink-2)}
+.tcard{border-top:3px solid var(--sky)}
+.tcard .who{font-size:.88rem; color:var(--ink-3); margin:0 0 10px}
+.tcard .ships{
+  margin-top:12px; padding-top:11px; border-top:1px solid var(--line);
+  font-size:.85rem; color:var(--ink-2);
+}
+.tcard .ships b{
+  display:block; font-family:"Barlow",sans-serif; font-size:10.5px; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--ink-3); margin-bottom:5px; font-weight:700;
+}
+.card h3{margin:0 0 6px; font-size:1rem}
+.card p{color:var(--ink-2); font-size:.95rem}
+
+.pull{
+  margin-top:22px; padding:16px 20px; background:var(--surface);
+  border:1px solid var(--line); border-left:3px solid var(--sky); border-radius:0 6px 6px 0;
+  max-width:68ch;
+}
+.pull.gate{border-left-color:var(--amber-ink)}
+.pull.hard{border-left-color:var(--sky-ink)}
+.pull h4{margin-bottom:6px}
+.pull p{font-size:.96rem; color:var(--ink-2)}
+
+.tw{overflow-x:auto; margin-top:20px; border:1px solid var(--line); border-radius:8px; background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:560px; font-size:.93rem}
+th,td{text-align:left; padding:11px 15px; border-bottom:1px solid var(--line); vertical-align:top}
+thead th{
+  font-family:"Barlow",sans-serif; font-size:11px; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--ink-3); font-weight:700; background:var(--surface-2); border-bottom:1px solid var(--line-strong);
+  white-space:nowrap;
+}
+tbody tr:last-child td{border-bottom:none}
+td.k{font-weight:600; color:var(--ink); white-space:nowrap}
+td.m{font-family:"IBM Plex Mono",monospace; font-size:.84rem; color:var(--ink-2); white-space:nowrap}
+
+.tiers{display:grid; gap:12px; grid-template-columns:1fr; margin-top:20px}
+@media (min-width:720px){ .tiers{grid-template-columns:repeat(3,1fr)} }
+.tier{border:1px solid var(--line); border-radius:8px; padding:15px 17px; background:var(--surface)}
+.chip{
+  display:inline-block; font-family:"Barlow",sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.12em; text-transform:uppercase; padding:3px 9px; border-radius:3px; margin-bottom:9px;
+}
+.chip.v{background:var(--green-wash); color:var(--green-ink)}
+.chip.r{background:var(--sky-wash); color:var(--sky-ink)}
+.chip.i{background:var(--surface-2); color:var(--ink-3)}
+.tier p{font-size:.92rem; color:var(--ink-2)}
+
+.pipe{margin-top:22px; display:flex; flex-direction:column; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--surface)}
+.step{display:grid; grid-template-columns:46px minmax(0,1fr); border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:none}
+.step-n{
+  font-family:"IBM Plex Mono",monospace; font-size:.78rem; font-weight:600; color:var(--ink-3);
+  padding:16px 0 0; text-align:center; background:var(--surface-2); border-right:1px solid var(--line);
+  font-variant-numeric:tabular-nums;
+}
+.step-b{padding:14px 18px 16px}
+.step-b h3{margin:0 0 3px; font-size:.99rem}
+.step-b p{font-size:.92rem; color:var(--ink-2)}
+.step-out{margin-top:8px; font-family:"IBM Plex Mono",monospace; font-size:.77rem; color:var(--ink-3)}
+.flag{
+  display:inline-block; margin-top:10px; font-size:11px; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--amber-ink); background:var(--amber-wash);
+  padding:3px 9px; border-radius:3px;
+}
+
+.tree{
+  margin-top:20px; background:var(--surface); border:1px solid var(--line); border-radius:8px;
+  padding:18px 20px; overflow-x:auto;
+}
+.tree pre{
+  margin:0; font-family:"IBM Plex Mono",monospace; font-size:.84rem; line-height:1.9;
+  color:var(--ink-2); white-space:pre;
+}
+.tree b{color:var(--ink); font-weight:600}
+.tree i{color:var(--ink-3); font-style:normal}
+
+.stats{display:grid; gap:14px; grid-template-columns:repeat(2,1fr); margin-top:20px}
+@media (min-width:760px){ .stats{grid-template-columns:repeat(4,1fr)} }
+.stat{background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:15px 17px}
+.stat .n{
+  font-family:"Montserrat",sans-serif; font-size:1.85rem; font-weight:700; line-height:1;
+  color:var(--sky-ink); font-variant-numeric:tabular-nums; letter-spacing:-.02em;
+}
+.stat .l{margin-top:8px; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); font-weight:600; line-height:1.35}
+
+footer{
+  max-width:1180px; margin:0 auto; padding:26px 24px 60px; border-top:1px solid var(--line);
+  color:var(--ink-3); font-size:.87rem;
+}
+@media (prefers-reduced-motion:reduce){ *{animation:none !important; transition:none !important} }
+</style>
+
+<div class="masthead">
+  <div class="masthead-in">
+    <div class="eyebrow">Power Cloud Consulting &nbsp;/&nbsp; Internal &nbsp;/&nbsp; Partner briefing</div>
+    <h1>The Power Cloud OS</h1>
+    <p class="lede">How the delivery system is put together today: the strategy behind it, how a consultant actually works at it day to day, the skills and methods that make the output defensible, and the places a human still has to sign.</p>
+    <div class="masthead-meta">
+      <span>Current as of 22 Aug 2026</span>
+      <span>Present state only</span>
+    </div>
+  </div>
+</div>
+<div class="gradbar"></div>
+
+<div class="shell">
+  <nav class="nav" aria-label="Sections">
+    <div class="nav-title">Contents</div>
+    <ol>
+      <li><a href="#idea">The one idea</a></li>
+      <li><a href="#workbench">At the workbench</a></li>
+      <li><a href="#types">The three engagement types</a></li>
+      <li><a href="#own">What we own, what we rent</a></li>
+      <li><a href="#instruction">How instruction loads</a></li>
+      <li><a href="#folder">The client folder</a></li>
+      <li><a href="#skills">The skills</a></li>
+      <li><a href="#pipeline">The assessment pipeline</a></li>
+      <li><a href="#deliverables">What always ships</a></li>
+      <li><a href="#methods">The methods</a></li>
+      <li><a href="#stack">The connected stack</a></li>
+      <li><a href="#gates">Where humans sign</a></li>
+      <li><a href="#enforced">Enforced, not trusted</a></li>
+      <li><a href="#execution">Executing the work</a></li>
+      <li><a href="#ongoing">Ongoing work</a></li>
+      <li><a href="#learning">The learning loop</a></li>
+      <li><a href="#story">One engagement, end to end</a></li>
+      <li><a href="#library">The shared library</a></li>
+      <li><a href="#limits">Honest limits</a></li>
+      <li><a href="#state">Where it stands</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="idea">
+      <h2>The one idea</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p><strong>The folder is the memory.</strong> Everything about a client lives in that client's folder: the raw source material, the working evidence, the finished deliverables, the build work. Nothing important lives in a chat history, in a consultant's head, or in a model's context.</p>
+        <p>The consequence is the whole point. Any consultant who opens a client folder and starts a session is talking to something that already understands the engagement. The context does not have to be rebuilt, re-explained, or remembered. A session can be cleared, a machine can be swapped, a week can pass, and the state survives, because the state is on disk.</p>
+        <p>Everything below is machinery in service of that one idea.</p>
+      </div>
+    </section>
+
+    <section id="workbench">
+      <h2>At the workbench</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>The engagement types below describe how work gets <em>shaped</em>. Most of the actual week is spent somewhere else: at the bench, with one specific piece of work in hand.</p>
+        <p>The habit is the same every time. Anything to be strategized, planned, or executed starts by opening Claude inside that customer's folder. Brainstorm there, plan there, and wherever the work allows, build and deliver from there too. There is no thinking tool and separate doing tool, and no point where work leaves the client's folder to happen somewhere else. That is what makes the folder worth treating as the memory.</p>
+      </div>
+      <div class="flow">
+        <div><h4>Brainstorm</h4><p>Bring the problem and the constraint, not a preferred answer. Naming a solution up front is how you lose the second option.</p></div>
+        <div><h4>Plan</h4><p>Nothing gets built without a written plan: approach, assumptions, and what will be tested to prove them. House policy, not preference.</p></div>
+        <div><h4>Execute</h4><p>Sandbox first, version-controlled, with a human at the plan and again at production.</p></div>
+        <div><h4>Deliver</h4><p>The artifact renders from the same folder, branded, and every client-facing sentence gets human eyes before it leaves.</p></div>
+      </div>
+
+      <h3>How a session behaves</h3>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Habit</th><th>Why it exists</th></tr></thead>
+          <tbody>
+            <tr><td class="k">One task, one session</td><td>Keeps context on the job in hand. A new task gets a clean session rather than a longer one.</td></tr>
+            <tr><td class="k">Always from inside the client folder</td><td>Never from the root or a personal folder. The session inherits that client's context and the workspace rules by starting there.</td></tr>
+            <tr><td class="k">Clearing a session loses nothing</td><td>Everything written to the folder persists. Clearing erases conversation memory, not work. This is the practical payoff of folder-as-memory.</td></tr>
+            <tr><td class="k">Sessions named client plus environment</td><td>"Teppermans SB suitelet fix", not "work session". Generic titles have already caused production and sandbox confusion, and named sessions are what make running several at once manageable.</td></tr>
+            <tr><td class="k">"Pick up where you left off" works</td><td>Reopen the folder and say it. Preferred over re-explaining, because the state was never in the conversation to begin with.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pull">
+        <h4>The stance: managing, not typing</h4>
+        <p>Hand over a substantial chunk and step away, with the license to use judgment and log the decision rather than wait, stopping only for anything that touches a client system. Then check in the way you would on a colleague you delegated to: read what it did, correct course, hand over the next chunk. Watching it work is not billable, so the parallel work gets lined up first. Cost discipline is part of the same habit: the default model for routine work, escalation to the frontier model only for genuinely hard reasoning, and straight back down afterward.</p>
+      </div>
+
+      <h3>Asking in a way that gets honest answers</h3>
+      <div class="body">
+        <p>These are written down because they were expensive to learn, and because the difference between a good answer and a confident wrong one is usually in how the question was put.</p>
+        <ul class="plain">
+          <li><strong>Context without leading.</strong> Give everything you know, but not your preferred answer. Once your idea is in the prompt, the objectivity is gone.</li>
+          <li><strong>Current state before design.</strong> Make it explain how the thing works today before it proposes anything. Skipping this produces confident redesigns of a system it never understood.</li>
+          <li><strong>"What's your source?"</strong> For any claim that smells off, ask exactly that. A claim that traces back to a stretch dies before it reaches a client. Never open with "are you sure?", which just invites apologetic reversal.</li>
+          <li><strong>Do not hand it the escape hatch.</strong> Say "we can always check with the customer" and it will take that exit instead of reasoning. Make it commit to a recommendation; you decide afterward whether the client needs to weigh in.</li>
+          <li><strong>Steelman the alternative.</strong> After it proposes one approach, ask for the strongest case for a completely different one. One prompt, and there is a real comparison instead of a single track.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="types">
+      <h2>The three engagement types</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>Everything we take on is one of three kinds of work. The type is declared in the client's <code>CONTEXT.md</code> at setup, and it decides which workflow runs, which skill owns it, and what the client receives. It is asked at intake rather than inferred, because getting it wrong sends the whole engagement down the wrong track.</p>
+      </div>
+      <div class="grid3">
+        <div class="card tcard">
+          <h4>Type one</h4>
+          <h3>Rapid Assessment / Recovery</h3>
+          <p class="who">An existing NetSuite customer having a difficult time.</p>
+          <p>We come in, find what is actually wrong, and produce the prioritized menu of work that gets them running again. Discovery-led, six stages.</p>
+          <div class="ships"><b>Ships</b>Assessment, Presentation deck, Execution Plan</div>
+        </div>
+        <div class="card tcard">
+          <h4>Type two</h4>
+          <h3>Implementation</h3>
+          <p class="who">A blank NetSuite account, configured from scratch.</p>
+          <p>Same discovery machinery, but the output points at a target state rather than a remediation list. Build runs as base setup first, then design sessions per process area.</p>
+          <div class="ships"><b>Ships</b>Implementation Roadmap, Presentation deck, Execution Plan</div>
+        </div>
+        <div class="card tcard">
+          <h4>Type three</h4>
+          <h3>Custom Project</h3>
+          <p class="who">Hired for one specific thing, usually custom development.</p>
+          <p>Scope is a named function, so discovery is scoped to just that area. No full assessment, no work-item menu. The client signs off on the approach before anything is built.</p>
+          <div class="ships"><b>Ships</b>Use Case up front, then the FDD &amp; TDD handover</div>
+        </div>
+      </div>
+      <div class="pull hard">
+        <h4>Commercial framing is a separate question</h4>
+        <p>Whether a deliverable carries LOE, hours and billing terms depends on commercial posture, not on the type. Pre-agreement work gets the full commercial treatment, because its job is to help the client decide what to fund. Work already under agreement gets none of it: effort still tracks internally, it just never becomes a client-facing number on something that is not being sold. Any of the three types can be either, so both fields get read before a document is framed.</p>
+      </div>
+    </section>
+
+    <section id="own">
+      <h2>What we own, and what we rent</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>The system has two layers, and they are worth keeping separate in your head, because only one of them is ours.</p>
+      </div>
+      <div class="grid2">
+        <div class="card">
+          <h4>Layer one</h4>
+          <h3>The methodology</h3>
+          <p>The folder structure, the skills, the reference files, the checkpoints, the evidence tiers. Written down, versioned, and improved after every engagement. It is the reason the output comes up the same way regardless of who runs it. This layer is the asset.</p>
+        </div>
+        <div class="card">
+          <h4>Layer two</h4>
+          <h3>The engine</h3>
+          <p>Claude Code plus the MCP connections into NetSuite, Celigo, Asana and Google. Rented, swappable, and model-portable on purpose. If a better engine appears, the methodology moves onto it without being rewritten.</p>
+        </div>
+      </div>
+      <div class="pull hard">
+        <h4>Why the split matters</h4>
+        <p>The competitive position is not "we use AI." Anyone can rent the engine. The position is that our discovery process is written down in a form a machine executes the same way every time, with evidence discipline most firms do not apply even manually.</p>
+      </div>
+    </section>
+
+    <section id="instruction">
+      <h2>How instruction loads</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>One way to build a system like this is to write a single enormous instruction file and hope it all gets read. That fails, and it fails quietly. The OS instead hands over exactly what is needed at the moment it is needed, in three tiers.</p>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Tier</th><th>What it holds</th><th>When it loads</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="k">Always on</td>
+              <td>Root <code>CLAUDE.md</code>: folder layout, session start, the non-negotiable rules, brand, checkpoints, known traps.</td>
+              <td class="m">Every session</td>
+            </tr>
+            <tr>
+              <td class="k">On demand</td>
+              <td>Skills. The procedure for one kind of work, kept out of context until that work starts.</td>
+              <td class="m">When the task matches</td>
+            </tr>
+            <tr>
+              <td class="k">One at a time</td>
+              <td>Stage files inside a skill. Each is a self-contained contract: inputs, references, outputs, human check.</td>
+              <td class="m">At that stage</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="body">
+        <p style="margin-top:18px">The assessment skill is explicit about it: read exactly one stage file at a time, and never work a stage without its file open. Attention stays on the current job instead of being spread thin across the whole process, and each stage names only the reference files it actually needs.</p>
+      </div>
+    </section>
+
+    <section id="folder">
+      <h2>The client folder</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>Every client folder is stamped from a template, not assembled by hand, so the shape is identical everywhere. The separation between the four folders is doing real work. It keeps the client's own words untouched, keeps half-finished thinking out of the deliverables folder, and walls write-enabled build work off from read-only discovery.</p>
+      </div>
+      <div class="tree">
+<pre><b>{ClientName}/</b>
+├── <b>CONTEXT.md</b>       <i>living fact sheet: accounts, contacts, status, decisions, open questions</i>
+├── <b>.claude/</b>         <i>per-client settings, installs the render gate</i>
+├── <b>source/</b>          <i>the client's material. Read-only. Never edited, only copied from.</i>
+├── <b>working/</b>         <i>the audit trail: evidence, verification, candidates, drafts, LOE log</i>
+├── <b>deliverables/</b>    <i>finals only. Nothing in progress.</i>
+└── <b>execution/</b>       <i>build work, active from the execution phase onward</i></pre>
+      </div>
+      <div class="body">
+        <p style="margin-top:18px"><code>CONTEXT.md</code> is the file that makes a folder self-explaining. It carries the NetSuite account IDs for production and sandbox, the sandbox refresh estimate, which connection was verified and when, the engagement type, what was promised to the client, key contacts, dated decisions, and open questions. A session reads it first, every time.</p>
+        <p><code>working/</code> deserves its own note. It holds the evidence log, the verification log, the candidate register, the drafts and the LOE log. It is not scratch paper. It is the record of how a conclusion was reached, and it is what makes a finding defensible months later when a client's admin questions a number.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>The skills</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>A skill is a written procedure that loads when the work matches it. They live in one place, they carry a changelog, and anything several consultants run gets reviewed before it changes. Client specifics never get hard-coded into a shared skill; they live in that client's <code>CONTEXT.md</code>.</p>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Skill</th><th>What it does</th><th>Fires when</th></tr></thead>
+          <tbody>
+            <tr><td class="k">new-engagement</td><td>Stands a client up. Files loose documents, interviews the consultant, checks for an existing Asana project and folder before creating anything, pre-fills CONTEXT.md, drafts the access and consent pack.</td><td>A bare or unfiled folder</td></tr>
+            <tr><td class="k">rapid-assessment</td><td>The discovery engine for Recovery and Implementation. Onsite prep, evidence mining, account verification, solution research, and the three deliverables. Six stages.</td><td>Transcripts are in <code>source/</code></td></tr>
+            <tr><td class="k">custom-project</td><td>The third engagement type. Thin by design: the folder shape and the scoped discovery that replaces a full assessment.</td><td>Type is Custom Project</td></tr>
+            <tr><td class="k">customization-docs</td><td>The Use Case and the handover, for any customization in any engagement type. Writes the Use Case from transcripts, discovery and a consultant interview; writes the handover from what was actually built.</td><td>Custom development is scoped or shipping</td></tr>
+            <tr><td class="k">execution</td><td>The build phase after sign-off, in three modes matching the three types. Backlog sync, per-task planning, routing, sandbox-first build, production gates, actual hours back to the baselines.</td><td>Work is approved to build</td></tr>
+            <tr><td class="k">celigo</td><td>The client's integration layer. Read-only inventory during discovery, error triage that separates real failures from noise, and flow changes under the production gate. Inventories rather than assumes, because flows are customer-specific.</td><td>Celigo is in the stack</td></tr>
+            <tr><td class="k">customer-exec-summary</td><td>The recurring customer status document. Asana, NetSuite hours, email, Drive and meeting notes, plus the cross-reference that catches meeting commitments never logged as tasks.</td><td>Someone asks for a status update</td></tr>
+            <tr><td class="k">sdf-scaffold</td><td>Creates a SuiteCloud project to Power Cloud standards.</td><td>First build on an engagement</td></tr>
+            <tr><td class="k">sdf-deploy</td><td>Validates and deploys to NetSuite, sandbox first, with an account identity check and a human-gated production step.</td><td>A build is ready to land</td></tr>
+            <tr><td class="k">humanizer</td><td>Strips the mechanical tells out of client-facing drafts, with a deterministic scanner behind it. Numbers, LOE, billing language and quotes are untouchable.</td><td>Before every draft review</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="pipeline">
+      <h2>The assessment pipeline</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>This is the machinery behind the two discovery-led types, Recovery and Implementation. A Custom Project runs the scoped version described above instead.</p>
+        <p>Discovery runs as six stages. Each has a single job, named inputs, named outputs, and a stated place where a human checks the work or does not. The numbering is real: the stages depend on each other in order.</p>
+      </div>
+      <div class="pipe">
+        <div class="step"><div class="step-n">01</div><div class="step-b">
+          <h3>Pre-onsite prep</h3>
+          <p>A full read-only pass over the account before anyone walks in, so the question list is grounded in what the account shows rather than a generic checklist. Gaps between what was said and what is configured go to the top of the agenda.</p>
+          <div class="step-out">produces working/onsite_prep.md and a one-page client agenda</div>
+          <span class="flag">Checkpoint 1</span>
+        </div></div>
+        <div class="step"><div class="step-n">02</div><div class="step-b">
+          <h3>Evidence mining and the candidate register</h3>
+          <p>Every material claim from every source, logged with its file, timestamp and speaker. Then an exhaustive sweep for candidate work items at a deliberately low threshold: every pain point, passing complaint, manual workaround, and every anomaly found in the account itself.</p>
+          <div class="step-out">produces working/evidence.md and working/candidates.md</div>
+        </div></div>
+        <div class="step"><div class="step-n">03</div><div class="step-b">
+          <h3>Verification and product fits</h3>
+          <p>Read-only queries against the live account to confirm or refute each claim, with every query and result logged. Findings map to Power Cloud products where they fit, always with a native or third-party alternative named alongside.</p>
+          <div class="step-out">produces working/verification.md</div>
+          <span class="flag">Checkpoint 2 &middot; findings review</span>
+        </div></div>
+        <div class="step"><div class="step-n">04</div><div class="step-b">
+          <h3>Drafting</h3>
+          <p>Approved findings become three markdown drafts. Nothing renders yet. The writing standards get read before a word of client-facing content is written.</p>
+          <div class="step-out">produces three drafts in working/</div>
+        </div></div>
+        <div class="step"><div class="step-n">05</div><div class="step-b">
+          <h3>Humanize, review, render</h3>
+          <p>The humanize pass runs first, so the human reviews finished prose rather than raw output. Then the draft review and the line-by-line LOE review. Only after both pass does anything render to branded .docx and .pptx.</p>
+          <div class="step-out">produces working/loe_log.md and the finals in deliverables/</div>
+          <span class="flag">Checkpoints 3 and 4</span>
+        </div></div>
+        <div class="step"><div class="step-n">06</div><div class="step-b">
+          <h3>Retro and learnings triage</h3>
+          <p>What the engagement taught the practice gets harvested and walked with a human. Every learning gets a decision: promote to doctrine, keep engagement-specific, or discard.</p>
+          <div class="step-out">produces working/retro.md and approved updates to the shared library</div>
+          <span class="flag">Human decision on every entry</span>
+        </div></div>
+      </div>
+    </section>
+
+    <section id="deliverables">
+      <h2>What always ships</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>On a Recovery or an Implementation, three files, with deliberately different jobs. The split exists because a twenty-page PDF cannot be reviewed live in a meeting, and a deck cannot serve as the record of what was promised. A Custom Project ships the Use Case and the combined FDD &amp; TDD handover instead, on the same principle that each artifact has exactly one job.</p>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Deliverable</th><th>Job</th><th>Shape</th></tr></thead>
+          <tbody>
+            <tr><td class="k">Assessment</td><td>The source of truth. Findings, evidence, the complete work-item menu with effort and priorities, phasing, and the commercial framing.</td><td class="m">.docx + PDF</td></tr>
+            <tr><td class="k">Presentation</td><td>The meeting vehicle. Selective, leading with the two or three highest-impact issues and the dollar signal. Talking points live in speaker notes, not on the slide.</td><td class="m">.pptx + PDF</td></tr>
+            <tr><td class="k">Execution plan</td><td>The technical artifact a future session builds from. Per task: problem, affected objects, build classification, steps, acceptance criteria, sandbox test plan, rollback.</td><td class="m">.md, internal</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="body">
+        <h3>Customization documents itself, in every type</h3>
+        <p>Separately from all of the above, <strong>any net-new custom development</strong> carries two documents, whichever engagement it happens inside. A <strong>Use Case</strong> the client signs before build, which doubles as the SOW and states the problem, the approach, the objects involved, the assumptions and the effort. Then an <strong>FDD &amp; TDD handover</strong> when it ships: one document whose functional half explains what the solution does and deliberately does not do, and whose technical half carries the IDs, mappings and design decisions for whoever maintains it later.</p>
+        <p>Scripts, custom applications and new integrations trigger the pair. A custom field inside a larger configuration project does not. Inside a bigger engagement it is scoped to the work item, sitting alongside the assessment rather than replacing it. The Use Case signature comes before build approval and the handover is a condition of closing the task, so a customization cannot quietly ship undocumented.</p>
+        <p style="margin-top:18px">The assessment document and the implementation roadmap are largely the same document wearing different framing. Identical evidence work, identical task tables per process area. The roadmap reframes phasing as a project plan of milestones, sequencing and dependencies pointed at a target state, rather than a menu of remediation priced for a funding decision.</p>
+      </div>
+    </section>
+
+    <section id="methods">
+      <h2>The methods</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>This is the part that separates a consultant's document from a transcription. Five habits carry most of the weight.</p>
+      </div>
+
+      <h3>1. Every claim is tiered</h3>
+      <div class="body"><p>Nothing reaches a client without a stated basis. The tiers are internal furniture and do not clutter the client's document, but they govern what may be asserted.</p></div>
+      <div class="tiers">
+        <div class="tier"><span class="chip v">Verified</span><p>Confirmed by a read-only query against the account. The query and its result are logged.</p></div>
+        <div class="tier"><span class="chip r">Reported</span><p>Stated on a call or in a client document. Not confirmed. Never presented as fact.</p></div>
+        <div class="tier"><span class="chip i">Inferred</span><p>Our analysis, or an industry pattern applied. Reasoning, not evidence.</p></div>
+      </div>
+      <div class="pull">
+        <h4>The disagreement rule</h4>
+        <p>Where a call claim and the account disagree, that gap is itself a finding and gets called out rather than quietly reconciled. People misremember their own configurations. Finding the gap is often the most valuable thing discovery produces.</p>
+      </div>
+
+      <h3>2. We query the account rather than take the call at face value</h3>
+      <div class="body">
+        <p>Access runs through NetSuite's MCP connector on a standardized read-only role, plus a small Power Cloud toolset that lets a session read the actual body of a script instead of just its name. That distinction matters more than it sounds: without it, any claim about what a script <em>does</em> is Reported at best, never Verified.</p>
+        <p>Any number a person repeated casually, a script count, a volume, a percentage, gets checked before it ships. The client's own admin can check ours.</p>
+        <p>The same posture extends past NetSuite to the rest of the stack, which the next section covers.</p>
+      </div>
+
+      <h3>3. Nothing falls off the list silently</h3>
+      <div class="body">
+        <p>Surfacing every potential work item is the single highest priority of the process, and it must never depend on a consultant happening to remember something or on a transcript being complete. So candidates are captured at a low threshold from every source, and a candidate can leave the register in exactly three ways: it becomes a work item, it moves to fast-follow, or it is dropped with a written reason. It may never simply be absent.</p>
+        <p>Materiality then becomes a human decision applied to a complete list at the findings review, instead of a silent call made during extraction. On top of that sits a pattern-based backstop: a per-process-area completeness checklist that forces an explicit "not discussed" or "not applicable" for anything the sources never covered.</p>
+      </div>
+
+      <h3>4. Research, do not recall</h3>
+      <div class="body">
+        <p>Two research obligations are mandatory rather than optional. The client's public website gets researched to build the business overview: founding, ownership, what they sell, how they operate. And any claim about what NetSuite can or cannot do natively gets checked against Oracle's documentation before it ships, with conflicts resolved in Oracle's favor. That second rule exists because a confident, wrong "NetSuite cannot do X" is the most expensive kind of error we can put in front of a client.</p>
+        <p>Client data never goes into a web query. Public identity research does.</p>
+      </div>
+
+      <h3>5. Ask rather than guess</h3>
+      <div class="body">
+        <p>The consultant is in the loop continuously, not only at checkpoints. When the process hits a material gap, a thin inference, or a conflict between what was reported and what was verified, it stops and interviews the consultant instead of writing a plausible sentence. A speculative read is a question for a human, never an assertion in a document.</p>
+      </div>
+    </section>
+
+    <section id="stack">
+      <h2>The connected stack</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>Verification is only ever as good as what we can actually reach. NetSuite is the one we lean on hardest, but a client's operation rarely lives in one system, and the integration layer and the systems feeding it are where a surprising share of the real problems sit.</p>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>System</th><th>What we can do</th><th>Where it stands</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="k">NetSuite</td>
+              <td>Full read: records, SuiteQL, saved searches, metadata, scripts and their deployments, error logs. With our own reader tooling, the actual body of a script rather than just its name.</td>
+              <td>Standard on every engagement, proven repeatedly on live client accounts.</td>
+            </tr>
+            <tr>
+              <td class="k">Celigo</td>
+              <td>Read the integration layer directly: flows and whether they are switched on, schedules and cadence, connections, mappings, and error and job history.</td>
+              <td>Used wherever a connection exists. One boundary still unconfirmed: how much of a prebuilt Integration App's settings the API actually exposes.</td>
+            </tr>
+            <tr>
+              <td class="k">Shopify</td>
+              <td>Read catalog, variants and options, customers and orders, and profile the whole shape of it.</td>
+              <td>Proven end to end on our own development store. The route for a client's store, where their admin creates a read-only app for us, is written but has not yet been run on a live merchant.</td>
+            </tr>
+            <tr>
+              <td class="k">QuickBooks Online</td>
+              <td>Read and profile the entities, including chart-of-accounts structure and how completely fields are actually filled in.</td>
+              <td>Proven end to end against a developer sandbox, read-only enforced at the server. The production credential for a real client is the remaining step.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Why the extraction matters</h3>
+      <div class="body">
+        <p>Reading a source system is not the interesting part. Profiling it is. A standard read-only pass produces entity counts, how completely fields are populated, chart-of-accounts distribution, variant and option structure, and parent-child usage, and lands as an artifact in the client's folder.</p>
+        <p>The point of that artifact is that it converts the questions nobody wants to answer in the abstract into concrete, evidenced items: how items are really identified when SKUs are sparse, whether customers have a hierarchy in practice, what the chart of accounts would need consolidating into. Those become candidate work items carrying a Verified tier, because we read the system rather than asking about it. It replaces "send us a spreadsheet and we will take a look", which is slower and produces a worse answer.</p>
+      </div>
+
+      <h3>The same rules apply to all of them</h3>
+      <div class="body">
+        <ul class="plain">
+          <li><strong>Consent is recorded before the first query</strong>, with the date and who approved it, exactly as for NetSuite.</li>
+          <li><strong>Identity check first.</strong> Confirm the connected company or store actually belongs to this client before anything else. A connector has pointed at the wrong account before.</li>
+          <li><strong>Read-only during discovery</strong>, enforced where the platform allows it. The QuickBooks server is configured so write tools never load at all.</li>
+          <li><strong>Credentials never touch the shared drive.</strong> They live on the connection holder's machine, one folder per client. The client's folder gets the artifacts, never the keys.</li>
+          <li><strong>The credential is torn down at engagement close</strong>, and the revocation date recorded. A dormant connection into a client's systems is risk with no revenue attached to it.</li>
+        </ul>
+      </div>
+      <div class="pull gate">
+        <h4>Read-only is not the default, and that cost us nothing only because we checked</h4>
+        <p>When the Shopify connection was first proven, an unconfigured app came back holding write access to products, orders, customers and themes, plus about ninety more permissions nobody had asked for. Nothing was written and nothing broke, but the lesson went straight into the capability register: treat any credential whose granted scopes have not been read as a write-capable key, and scope it down before it goes anywhere near a client.</p>
+      </div>
+
+      <h3>And our own systems</h3>
+      <div class="body">
+        <p>One connection points inward rather than at a client. A scheduled job reads Power Cloud's own NetSuite every Monday for the hours logged against each customer, and drops each client's slice into their folder so the status reporting has real numbers behind it. It authenticates as an integration rather than as a person, which matters: an ordinary connection consumes a full NetSuite seat and cannot be carried by the Employee Center licences most consultants hold. Routing it through a scheduled job means nobody needs a licence upgrade to get hours in a document, and nobody handles a credential to read them.</p>
+        <p>Time entries are not reliably submitted until the Monday after the week they cover, so the hours in any summary stop at the most recent completed week while everything else runs to the minute. That is a stated window rather than missing data, and the documents say so.</p>
+      </div>
+
+      <h3>Capability we borrowed rather than built</h3>
+      <div class="body">
+        <p>Shopify publishes its own set of skills for exactly this kind of tooling: API and schema lookup, query validation, theme templating, store management through their CLI. Seventeen of them are installed and available in every session.</p>
+        <p>We deliberately did not write a Power Cloud version. A vendor maintains their own platform's documentation better than we can, and two skills competing to answer the same question is worse than one good one. What we build is the part nobody else will: how their platform meets NetSuite in a real client's operation, and the access discipline around getting into it.</p>
+      </div>
+    </section>
+
+    <section id="gates">
+      <h2>Where humans sign</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>The gates sit where the liability sits. Four in discovery, and two more per task in execution.</p>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Gate</th><th>What is being approved</th><th>Why here</th></tr></thead>
+          <tbody>
+            <tr><td class="k">1 &middot; Agenda</td><td>The onsite one-pager, before it reaches the client.</td><td>First thing the client sees</td></tr>
+            <tr><td class="k">2 &middot; Findings</td><td>The complete candidate register, evidence log and verification log, before a word is drafted.</td><td>Materiality is a human judgment</td></tr>
+            <tr><td class="k">3 &middot; Draft</td><td>The humanized drafts, reconciled against the candidate register so nothing captured has quietly vanished.</td><td>Last look before it becomes a file</td></tr>
+            <tr><td class="k">4 &middot; LOE and commercial</td><td>Every hours figure, every priority, and the billing language, line by line.</td><td>Numbers become binding once sent</td></tr>
+            <tr><td class="k">Execution &middot; plan</td><td>The implementation plan for a task, before any build starts.</td><td>Design risk</td></tr>
+            <tr><td class="k">Execution &middot; production</td><td>Each production deploy, individually.</td><td>Live-account risk</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pull gate">
+        <h4>On estimates</h4>
+        <p>Claude drafts LOE, a human owns it. Every line is logged with the drafted figure, the approved figure, and a reason for any change. Figures with no prior basis are flagged as such and get attention first. That log doubles as the calibration feed, which is how the baselines get more accurate over time instead of drifting.</p>
+      </div>
+    </section>
+
+    <section id="enforced">
+      <h2>Enforced, not trusted</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>Some rules are too important to leave as written instructions a session could plausibly talk itself past. Those have mechanical backstops.</p>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Mechanism</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td class="k">Write guardrail</td><td>Intercepts every NetSuite create, update and delete call. A sandbox connection passes through normally. A production connection forces an explicit human confirmation on every single write, even if the tool was previously allowed. A connection whose environment cannot be identified from its name also stops for confirmation. No production write can happen silently.</td></tr>
+            <tr><td class="k">Render gate</td><td>Blocks a deliverable from rendering while the client-facing drafts still carry mechanical copy tells. Installed per client folder. The internal execution plan is deliberately exempt. It fails open, because a broken gate must never stop a delivery.</td></tr>
+            <tr><td class="k">Copy scanner</td><td>A deterministic scan behind the humanize pass. Every hit is cleared or consciously waived with a reason, and a waived hit gets raised at the review.</td></tr>
+            <tr><td class="k">Engagement log</td><td>Generated from what each engagement actually wrote to disk, never hand-maintained. Status reflects work done rather than a field somebody remembered to update, and it flags folders that have drifted from the standard shape.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="body">
+        <p style="margin-top:18px">The read-only rule during discovery is absolute and sits in the always-loaded instructions: queries, record reads and metadata only, no exceptions, even on a live production account. Writes are legitimate, but they belong to execution, which is a separately declared phase with its own guardrails, and that permission never carries back into a discovery session.</p>
+      </div>
+    </section>
+
+    <section id="execution">
+      <h2>Executing the work</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>After sign-off the work moves into a subfolder of the same client folder, so all of the discovery history sits one level up and stays reachable. It runs write-enabled, sandbox first, always.</p>
+        <p>It has three modes, one per engagement type. A Recovery works the approved backlog, since discovery already identified every task. An Implementation derives base setup first, then runs design sessions per process area that each produce configuration tasks. A Custom Project builds one signed Use Case as one or a few tasks, with no backlog and no phasing invented around a single named deliverable.</p>
+        <p>Work starts when a person names what to work on: specific task IDs, or a phase. The tool pulls those blocks from the execution plan and works the selection rather than re-scoping the whole plan. That is deliberate, because a plan that gets silently re-opened every session is not a plan.</p>
+        <p>The step with judgment in it is planning a task, and it has three honest exits rather than one. Either enough is known and it proceeds to build, or there are open questions only the client can answer and it produces a targeted question list and pauses, or the approach itself is undecided and it builds a throwaway in the sandbox to demo before committing. Guessing a design decision is not one of the options.</p>
+        <p>Once planned, each task routes by how the change should actually be made. The preference order is deliberate: anything that can be a version-controlled, reviewable, revertible object should be one.</p>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>Route</th><th>Used for</th></tr></thead>
+          <tbody>
+            <tr><td class="k">SDF object</td><td>Scripts, workflows, custom records and fields, forms, saved searches, roles, feature enablement. The default, because it is versioned, diffable and revertible.</td></tr>
+            <tr><td class="k">Config script</td><td>Accounting and general preferences, company information, periods. Not deployable as objects, but settable programmatically and therefore auditable and repeatable from sandbox to production.</td></tr>
+            <tr><td class="k">Integration change</td><td>Celigo flow configuration, mappings, schedules. A change to a live production flow counts as a production deploy and gets its own gate.</td></tr>
+            <tr><td class="k">Data fix</td><td>Query plus import, or a scripted job. Sandbox first, without exception.</td></tr>
+            <tr><td class="k">Manual</td><td>The genuine residue, things no programmatic path reaches. Produces a click-by-click checklist. This bucket is meant to stay small, and anything landing here has to be confirmed unreachable by the routes above.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="body">
+        <h3 style="margin-top:26px">Two ways a task gets worked</h3>
+        <p>Anything carrying design judgment or production risk runs <strong>interactive</strong>, with a human at both gates. A queue of well-specified, low-risk, similar tasks (form simplifications, field adds, small validations) can instead run as a <strong>bounded autonomous batch</strong>: build, validate and sandbox-test across the set, then hand back the whole batch for review.</p>
+        <p>That autonomy stops at the sandbox. Production stays one human approval per deploy, every time, and anything the batch dropped or deferred gets logged rather than quietly skipped.</p>
+        <p>When a task closes, actual hours get recorded against it and the gap from the estimate is logged. Only delivered, human-approved work feeds the baselines.</p>
+      </div>
+    </section>
+
+    <section id="ongoing">
+      <h2>Ongoing work</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>A client relationship is not only projects. Between and around them sit support tickets, dev requests, small fixes, data work, status reporting and client correspondence. All of it happens at the same bench, in the same client folder, under the same session habits and the same guardrails.</p>
+        <p>The shape holds: a folder for the piece of work, its own <code>CONTEXT.md</code>, the client's material in <code>source/</code>, the thinking in <code>working/</code>, and finals in <code>deliverables/</code>. A support engagement that starts as one call transcript and ends as a tested fix plus a customer recap has left exactly the same trail as an assessment, just shorter. Naming the Custom Project type gave a lot of this work a formal home it did not previously have.</p>
+        <p>Asana carries human-facing status while the execution plan stays the source of truth for how something is built. The two are kept in sync as tasks close. The conventions behind that (a real status on every task including "not started", an owner, hours billed to the specific task rather than a general bucket, deliverables attached to the task, next steps in the latest comment) exist because the status reporting runs on that data, and every reporting defect has traced back to input hygiene rather than to the report.</p>
+      </div>
+      <div class="pull gate">
+        <h4>The honest part</h4>
+        <p>Status reporting is now a defined skill, and the hours behind it arrive on a schedule. The rest of ongoing work is not: ticket intake, client correspondence and small fixes still run on the shared habits, the folder convention, and consultant judgment rather than a written workflow. It works, and the trail it leaves is real, but it is convention rather than machinery. Of everything described here, that remainder is the part most worth deciding whether to formalize next.</p>
+      </div>
+    </section>
+
+    <section id="learning">
+      <h2>The learning loop</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>The system is built to improve between engagements rather than stay still, and the mechanism is deliberately slow at exactly one point.</p>
+        <p>Learnings get captured at the moment of discovery, never reconstructed from memory at the end. When a build proves an assumption about the tooling right or wrong, that goes into a dated register immediately, marked unreviewed. When a notable design or business decision gets made, it is logged as a candidate best practice.</p>
+        <p>Then, at the retro, every entry is walked with a human and gets a disposition: confirmed into the capability register, promoted into the domain playbook as practice, kept as engagement-specific, or discarded. Nothing becomes doctrine without someone saying so, and nothing disappears without a reason. That gate is why the shared library stays trustworthy as it grows.</p>
+        <p>That loop improves the domain knowledge: what we know about NetSuite, and how we work an engagement. A second, separate loop improves the OS itself. Anything about the tooling that got in your way, broke, or should exist and does not, goes into a feedback inbox: say &ldquo;log this as feedback&rdquo; in any session, or type <code>/feedback</code>. Claude drafts the entry from what just happened in the session and asks only what it cannot work out on its own, which is how much time it cost you, whether you were blocked, and whether it happens every time. Fifteen seconds, not a form. It will also offer, once, when it notices friction it caused.</p>
+        <p>Those entries are ranked by cost and frequency and worked through periodically. An item leaves the inbox as a change to the system, or as a decline with a reason written down. It never leaves silently. The one thing that kills this is politeness: an inbox with nothing in it is a finding about whether people feel able to complain, not evidence that nothing is wrong.</p>
+      </div>
+      <div class="pull">
+        <h4>The same shape shows up everywhere</h4>
+        <p>Capture exhaustively and cheaply, then let a human dispose of a complete list. It governs candidate work items, LOE figures, and practice learnings alike. The machine's job is to make sure nothing is missing. The human's job is to decide what matters.</p>
+      </div>
+    </section>
+
+    <section id="story">
+      <h2>One engagement, end to end</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>Everything above describes parts. This is the whole arc for one client, from the handover out of sales to the point where what was learned changes how the next engagement runs. The client here is a composite, and the artifacts named are the real ones the system writes.</p>
+        <p>Read the badges as who is acting: <span class="tl-who c">tool</span> where Claude does the work, <span class="tl-who h">human</span> where a person decides or signs, <span class="tl-who x">client</span> where the customer has to act.</p>
+      </div>
+
+      <div class="tl">
+
+        <div class="tl-step"><div class="tl-dot"><span>1</span></div><div class="tl-body">
+          <span class="tl-who c">tool</span><span class="tl-who h">human</span>
+          <h3>Sales hands over a footwear brand in trouble</h3>
+          <p>A consultant creates the folder and opens Claude inside it. Because there is no <code>CONTEXT.md</code>, the setup skill takes over: it checks whether a folder or an Asana project already exists before creating anything, interviews the consultant on engagement type and commercial posture, files the loose sales material, and stamps the standard shape.</p>
+          <div class="tl-out">CONTEXT.md &middot; source/ working/ deliverables/ execution/ &middot; working/access_pack_draft.md</div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>2</span></div><div class="tl-body">
+          <span class="tl-who h">human</span><span class="tl-who x">client</span>
+          <h3>One email starts every clock at once</h3>
+          <p>The access and consent pack goes out as a single request: the disclosure that we use AI and will connect via MCP, production and sandbox NetSuite, the reader-tool install, the connector role. These all have lead time, so they leave together rather than trickling. The written yes is logged with its date, because consent is a record rather than a memory.</p>
+          <div class="tl-out">CONTEXT.md &rarr; Access &amp; consent block, dated</div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>3</span></div><div class="tl-body">
+          <span class="tl-who c">tool</span><span class="tl-who h">human</span>
+          <h3>Before anyone flies out</h3>
+          <p>A full read-only pass over the account. Not a scan: enabled features, the script estate read at source rather than by name, the integration layer inventoried, volumes counted. The question list is built from what the account actually shows, and the places where the sales call and the configuration disagree go to the top of the agenda, because those are the most productive two minutes of any onsite.</p>
+          <div class="tl-out">working/verification.md &middot; working/onsite_prep.md &middot; deliverables/..._Onsite_Agenda.docx &middot; <b>checkpoint 1</b></div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>4</span></div><div class="tl-body">
+          <span class="tl-who h">human</span>
+          <h3>Two days on site</h3>
+          <p>The consultant runs the room. Recordings become transcripts and land in <code>source/</code>, which is read-only from that moment: the client's words are never edited, only copied from.</p>
+          <div class="tl-out">source/*.txt</div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>5</span></div><div class="tl-body">
+          <span class="tl-who c">tool</span>
+          <h3>Mining, at a deliberately low threshold</h3>
+          <p>Every material claim is logged with its file, timestamp and speaker. Then the sweep for candidate work items catches everything: pain points, passing complaints, manual workarounds, and the anomalies nobody mentioned that turned up in the account. A source that is suspiciously short for its size gets flagged before mining rather than quietly producing a thin result.</p>
+          <div class="tl-out">working/evidence.md &middot; working/candidates.md</div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>6</span></div><div class="tl-body">
+          <span class="tl-who c">tool</span><span class="tl-who h">human</span>
+          <h3>Verify, then walk the whole list</h3>
+          <p>Read-only queries confirm or refute each claim, and every query is logged. A number someone repeated casually gets checked before it ships, because the client's own admin can check ours. Then the consultant walks the complete candidate register and rules on each one. Materiality is a human judgment applied to a complete list, which is the opposite of hoping nobody forgot anything.</p>
+          <div class="tl-out">working/verification.md &middot; dispositions on every candidate &middot; <b>checkpoint 2</b></div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>7</span></div><div class="tl-body">
+          <span class="tl-who c">tool</span>
+          <h3>Three documents, three jobs</h3>
+          <p>The assessment as the record, the deck as the meeting vehicle, the execution plan as the build spec. Work items that are net-new custom development get flagged in the plan now, so the documentation they will owe at build time is visible from the start rather than remembered later.</p>
+          <div class="tl-out">working/draft_assessment.md &middot; draft_proposal_deck.md &middot; draft_execution_plan.md</div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>8</span></div><div class="tl-body">
+          <span class="tl-who c">tool</span><span class="tl-who h">human</span>
+          <h3>Humanize, then the numbers, then render</h3>
+          <p>The humanize pass runs first so the consultant reviews finished prose rather than raw output, and a mechanical scanner blocks the render while copy tells remain. Then every hours figure and the billing language get line-by-line confirmation and are logged. Only after both reviews pass does anything become a branded file.</p>
+          <div class="tl-out">working/loe_log.md &middot; deliverables/*.docx *.pptx *.pdf &middot; <b>checkpoints 3 and 4</b></div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>9</span></div><div class="tl-body">
+          <span class="tl-who x">client</span><span class="tl-who h">human</span>
+          <h3>They fund the first phase</h3>
+          <p>Work moves into <code>execution/</code>, a subfolder of the same client folder, so all of the discovery history stays one level up and reachable. Approved items sync to Asana for human-facing status while the execution plan remains the source of truth for how to build.</p>
+          <div class="tl-out">execution/ &middot; Asana tickets linked back to their plan blocks</div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>10</span></div><div class="tl-body">
+          <span class="tl-who c">tool</span><span class="tl-who h">human</span>
+          <h3>Building, one task at a time</h3>
+          <p>Each task is planned before it is built, and planning has three honest exits: build it, go back to the client with a targeted question list, or spike a throwaway in the sandbox when the approach itself is undecided. Then it routes by how the change should actually be made, preferring anything that can be a version-controlled object. Sandbox first, always, with a human at the plan and again at production.</p>
+          <div class="tl-out">execution/build_log.md &middot; SDF objects in git &middot; <b>two gates per task</b></div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>11</span></div><div class="tl-body">
+          <span class="tl-who c">tool</span><span class="tl-who x">client</span>
+          <h3>One item turns out to be real development</h3>
+          <p>A bulk approval screen, flagged back at step 7. Before any code, a Use Case is written from the discovery transcript plus a scoped read of the affected area, and the client signs it: problem, approach, objects touched, assumptions, effort. It doubles as the SOW. When the build ships, a combined handover follows, explaining what it does in the customer's language and how it is built for whoever maintains it in two years.</p>
+          <div class="tl-out">deliverables/Use_Case_-_....docx &middot; deliverables/FDD &amp; TDD - ....docx</div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>12</span></div><div class="tl-body">
+          <span class="tl-who c">tool</span><span class="tl-who h">human</span>
+          <h3>Then it becomes an ongoing relationship</h3>
+          <p>Every Monday a scheduled job pulls the firm's hours and drops this client's slice into their folder. When anyone asks for a status update, the summary assembles from Asana, those hours, email, the Drive folder and meeting notes, and cross-references the meetings against Asana to surface commitments nobody logged. The candid version stays internal; the client sees the reviewed one.</p>
+          <div class="tl-out">working/time_entries_*.json &middot; working/exec_summary_*.md &middot; deliverables/..._Executive_Summary.docx</div>
+        </div></div>
+
+        <div class="tl-step"><div class="tl-dot"><span>13</span></div><div class="tl-body">
+          <span class="tl-who h">human</span>
+          <h3>What the engagement taught the practice</h3>
+          <p>At the retro every learning captured along the way gets a decision: promoted into the playbook as practice, kept engagement-specific, or discarded. Actual hours feed the baselines, so the next estimate for similar work is anchored in what this one really took. Nothing becomes doctrine without someone saying so, and nothing disappears without a reason.</p>
+          <div class="tl-out">working/retro.md &rarr; NETSUITE_PLAYBOOK.md &middot; LOE_BASELINES.md &middot; CAPABILITIES.md</div>
+        </div></div>
+
+      </div>
+
+      <div class="pull hard">
+        <h4>What the arc is actually doing</h4>
+        <p>Read it as a whole and one pattern repeats at every stage: capture exhaustively and cheaply, then put a human at the point where judgment or liability sits. The machine's job is to make sure nothing is missing. The person's job is to decide what matters, what it costs, and what goes to the client. Step 13 is what stops the whole thing being thirteen steps that produce the same quality forever.</p>
+      </div>
+    </section>
+
+    <section id="library">
+      <h2>The shared library</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>Cross-engagement knowledge lives in root files, and only in root files. A session working an engagement never reads another client's folder, because sibling folders are other clients' confidential material. Anything worth carrying between clients has to be generalized into the library first.</p>
+      </div>
+      <div class="tw">
+        <table>
+          <thead><tr><th>File</th><th>What it carries</th></tr></thead>
+          <tbody>
+            <tr><td class="k">NetSuite playbook</td><td>Domain patterns per process area across apparel, DTC, wholesale, retail and nonprofit distribution. What good looks like, the signals, the checks, the solution shapes, plus the completeness checklist.</td></tr>
+            <tr><td class="k">Writing standards</td><td>How client-facing content reads. Voice, length budget, layout, quote limits, the no-overreach rule, and the rule that verification stays internal.</td></tr>
+            <tr><td class="k">LOE baselines</td><td>Hours anchors by work type. An estimate cites the baseline it used, or is explicitly marked as having no prior basis.</td></tr>
+            <tr><td class="k">Products</td><td>The Power Cloud catalog and its fit signals, with a firm line between what ships and what does not yet.</td></tr>
+            <tr><td class="k">QA checklist</td><td>The section run before each checkpoint. Failures get fixed first, and anything unfixable gets named when presenting.</td></tr>
+            <tr><td class="k">Capabilities</td><td>The dated register of what the tooling can and cannot actually do, with evidence. It wins over assumption until something is re-tested.</td></tr>
+            <tr><td class="k">Brand guidelines</td><td>Fonts, colors and layout for anything rendered. Read before any client-facing file is produced.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="limits">
+      <h2>Honest limits</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>Worth knowing plainly, because overselling this internally would be the fastest way to lose confidence in it.</p>
+        <ul class="plain">
+          <li><strong>Access is an onboarding project, not a switch.</strong> Every engagement needs a client admin to install the connector app and stand up a dedicated role. Where that has not happened, the honest answer is that setup is the blocker, not that we proceed unverified.</li>
+          <li><strong>Sandbox data lies about the present.</strong> It is frozen at its last refresh, integrations are usually disconnected, and scheduled scripts may not be deployed. Absence of activity in sandbox is not evidence of a production problem. Production is preferred for discovery precisely because the read-only rule removes the risk of using it.</li>
+          <li><strong>Human review is the real bottleneck.</strong> The system produces drafts far faster than a person can vet them, and vetting is the only defense against a confident error. The checkpoints are not ceremony, they are the constraint.</li>
+          <li><strong>Some things have no programmatic path.</strong> Third-party bundle installs, certain gated features, and subsidiary creation still need a person clicking. The system routes those to a checklist rather than pretending otherwise.</li>
+          <li><strong>Group-call attribution is unreliable.</strong> Speaker labels on room recordings are approximate, so a name gets attached to a client-facing quote only when both the substance and the speaker are clear.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="state">
+      <h2>Where it stands</h2>
+      <div class="sec-rule"></div>
+      <div class="body">
+        <p>From the generated engagement log, as of 22 August 2026.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="n">9</div><div class="l">Engagement records</div></div>
+        <div class="stat"><div class="n">22</div><div class="l">Finals shipped, across 6 engagements</div></div>
+        <div class="stat"><div class="n">5</div><div class="l">In the execution phase</div></div>
+        <div class="stat"><div class="n">12</div><div class="l">Skills in the shared registry</div></div>
+      </div>
+      <div class="body">
+        <p style="margin-top:20px">The log is generated rather than maintained, so those numbers describe what the pipeline actually wrote to disk. It also surfaces its own gaps: folders predating the current template, execution work happening without the matching state files, and engagements that still owe a retro. That self-reporting is intentional. A system that quietly hides its own drift is worse than one that names it.</p>
+        <p>Two of those nine records only became visible when the log learned to look one level deeper for custom projects. They had been running as real client work all along, just outside anything the OS could see or count. That is the practical argument for naming all three engagement types explicitly: work the system has no category for is work it cannot help with, report on, or learn from.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Power Cloud Consulting, internal. Describes the OS as configured on 22 August 2026. Where this summary and the system's own reference files disagree, the reference files are the authority.
+</footer>

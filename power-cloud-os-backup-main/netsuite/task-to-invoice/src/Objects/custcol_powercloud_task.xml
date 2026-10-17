@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Power Cloud - Task to Invoice
+  Transaction Column Field carrying the source time entry's Task onto the invoice line.
+
+  MECHANISM
+    Populated on the Time record by customscript_pc_task_to_invoice_mr, then copied
+    to the invoice item line by NetSuite's native billable-time -> invoice-line copy
+    of custom transaction column fields. Proven in this account by custcol_pc_emp_name.
+
+  APPLIES TO
+    coltime = T  -> the field exists on the Time record (the source)
+    colsale = T  -> the field exists on the invoice item sublist (the destination)
+    Both are required. Dropping either breaks the copy.
+
+  NO SOURCING
+    sourcelist/sourcefrom are deliberately empty. Native sourcing cannot express
+    "Invoice Label || title" or strip the " (Project Task)" suffix, and casetaskevent
+    is a union field (Project Task / CRM Task / Case / Calendar Event) that may not be
+    offered as a Source List at all. The Map/Reduce owns population instead.
+-->
+<transactioncolumncustomfield scriptid="custcol_powercloud_task">
+  <label>Task</label>
+  <description>Task from the source time entry. Populated on the Time record and copied to the invoice line when billable time is billed. Derived - do not edit on the Time record.</description>
+  <fieldtype>TEXT</fieldtype>
+
+  <!-- Applies To -->
+  <coltime>T</coltime>
+  <colsale>T</colsale>
+
+  <!-- Behaviour -->
+  <storevalue>T</storevalue>
+  <displaytype>NORMAL</displaytype>
+  <ismandatory>F</ismandatory>
+  <isformula>F</isformula>
+  <applyformatting>F</applyformatting>
+  <defaultchecked>F</defaultchecked>
+
+  <!--
+    Sourcing intentionally omitted entirely (no sourcelist / sourcefrom elements).
+    Population is owned by customscript_pc_task_to_invoice_ue and _mr.
+  -->
+
+  <!-- Access -->
+  <accesslevel>2</accesslevel>
+  <searchlevel>2</searchlevel>
+</transactioncolumncustomfield>

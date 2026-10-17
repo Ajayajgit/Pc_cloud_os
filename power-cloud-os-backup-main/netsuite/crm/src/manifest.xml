@@ -1,0 +1,18 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+    <projectname>Power Cloud - CRM</projectname>
+    <frameworkversion>1.0</frameworkversion>
+    <dependencies>
+        <features>
+            <feature required="true">CUSTOMRECORDS</feature>
+            <feature required="true">SERVERSIDESCRIPTING</feature>
+            <feature required="true">JOBS</feature>
+            <feature required="true">OPPORTUNITIES</feature>
+            <feature required="true">CRM</feature>
+            <feature required="true">ADVANCEDJOBS</feature>
+        </features>
+        <objects>
+            <object>customrole_pc_mcp_ai_connection</object>
+            <object>custentity_cus_rev_src</object>
+        </objects>
+    </dependencies>
+</manifest>

@@ -1,0 +1,13 @@
+{
+  "accountId": "5641465",
+  "clientId": "<integration record Client ID>",
+  "mappings": {
+    "sales": { "certId": "<Certificate ID of the sales mapping>", "keyPath": "C:/path/pc_crm_sales.key" },
+    "travel": { "certId": "<Certificate ID of the travel mapping>", "keyPath": "C:/path/pc_crm_travel.key" }
+  },
+  "deployments": {
+    "sales": "customdeploy_pc_crm_api_sales",
+    "travel": "customdeploy_pc_crm_api_travel"
+  },
+  "script": "customscript_pc_crm_api"
+}

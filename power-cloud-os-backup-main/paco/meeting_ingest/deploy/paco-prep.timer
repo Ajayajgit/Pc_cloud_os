@@ -1,0 +1,9 @@
+[Unit]
+Description=Receive prep DMs independently of private clicks
+[Timer]
+OnBootSec=1min
+OnUnitInactiveSec=10s
+AccuracySec=1s
+Unit=paco-prep.service
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_pc_ol_status">
+  <description>PC | Status of a row in PC | Operation Ledger.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>PC | Ledger Status</name>
+  <customvalues>
+    <customvalue scriptid="val_pc_ol_pending">
+      <isinactive>F</isinactive>
+      <value>Pending</value>
+    </customvalue>
+    <customvalue scriptid="val_pc_ol_done">
+      <isinactive>F</isinactive>
+      <value>Done</value>
+    </customvalue>
+    <customvalue scriptid="val_pc_ol_failed">
+      <isinactive>F</isinactive>
+      <value>Failed</value>
+    </customvalue>
+    <customvalue scriptid="val_pc_ol_refused">
+      <isinactive>F</isinactive>
+      <value>Refused</value>
+    </customvalue>
+  </customvalues>
+</customlist>

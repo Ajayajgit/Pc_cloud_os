@@ -1,0 +1,12 @@
+<entitycustomfield scriptid="custentity_pc_commercial_model">
+  <appliestoproject>T</appliestoproject>
+  <description>PC | Sales OS phase 1. Commercial model, copied from the opportunity.</description>
+  <displaytype>NORMAL</displaytype>
+  <fieldtype>SELECT</fieldtype>
+  <help>How the work is sold. Copied from the opportunity when the project is created.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>PC | Commercial Model</label>
+  <selectrecordtype>[scriptid=customlist_pc_commercial_model]</selectrecordtype>
+  <storevalue>T</storevalue>
+</entitycustomfield>

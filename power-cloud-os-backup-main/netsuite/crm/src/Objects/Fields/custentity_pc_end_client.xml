@@ -1,0 +1,12 @@
+<entitycustomfield scriptid="custentity_pc_end_client">
+  <appliestoproject>T</appliestoproject>
+  <description>PC | Sales OS phase 1. The client the work is for, copied from the opportunity.</description>
+  <displaytype>NORMAL</displaytype>
+  <fieldtype>SELECT</fieldtype>
+  <help>The NetSuite user this work is for. Copied from the opportunity when the project is created.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>PC | End Client</label>
+  <selectrecordtype>-2</selectrecordtype>
+  <storevalue>T</storevalue>
+</entitycustomfield>

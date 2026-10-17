@@ -1,0 +1,37 @@
+<mapreducescript scriptid="customscript_pc_af_sweep_mr">
+    <description>Gives every Anderson Frank timesheet invoice an explicit AF status by walking the invoice population, not just the report. Closes the gap where hours approved promptly never appear on an unapproved report and would otherwise stay blank forever. Writes only where a value actually changes.</description>
+    <isinactive>F</isinactive>
+    <name>PC AF Invoice Status Sweep</name>
+    <notifyadmins>F</notifyadmins>
+    <notifyowner>T</notifyowner>
+    <scriptfile>[/SuiteScripts/PowerCloud/af_unapproved_hours/scripts/pc_af_sweep_mr.js]</scriptfile>
+    <scriptcustomfields>
+        <scriptcustomfield scriptid="custscript_pc_af_sweep_from">
+            <accesslevel>2</accesslevel>
+            <applyformatting>F</applyformatting>
+            <checkspelling>F</checkspelling>
+            <defaultchecked>F</defaultchecked>
+            <defaultvalue></defaultvalue>
+            <description>Optional earliest invoice date to sweep. Leave blank to sweep all history. Only narrows the run; it never changes how a status is decided.</description>
+            <displaytype>NORMAL</displaytype>
+            <fieldtype>DATE</fieldtype>
+            <isformula>F</isformula>
+            <ismandatory>F</ismandatory>
+            <label>Sweep From Date</label>
+            <searchlevel>2</searchlevel>
+            <storevalue>T</storevalue>
+        </scriptcustomfield>
+    </scriptcustomfields>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_pc_af_sweep_mr">
+            <buffersize>1</buffersize>
+            <concurrencylimit>1</concurrencylimit>
+            <isdeployed>T</isdeployed>
+            <loglevel>AUDIT</loglevel>
+            <queueallstagesatonce>F</queueallstagesatonce>
+            <status>NOTSCHEDULED</status>
+            <title>PC AF Invoice Status Sweep</title>
+            <yieldaftermins>60</yieldaftermins>
+        </scriptdeployment>
+    </scriptdeployments>
+</mapreducescript>

@@ -1,0 +1,18 @@
+{
+  "_comment": "Maps the connector segment of a NetSuite MCP tool name (mcp__<connector>__ns_createRecord) to its environment. claude.ai connectors expose an ID there, not their display name, so the write gate cannot tell prod from sandbox without this file. env: prod | sandbox. A prod entry may add status: pre-go-live while the account is still being built (creates and updates then flow like sandbox, deletes still ask once per session); remove it or set live at go-live. Unlisted connectors get the fail-safe prompt. Find an ID in the tool name shown on a write prompt, or ask Claude to list its NetSuite tools.",
+  "connectors": {
+    "c7a4517d-2d89-4be3-8a97-2d8c91f163a9": {
+      "name": "NetSuite production (acct 5641465)",
+      "env": "prod"
+    },
+    "cf679a55-6cb4-4b61-aae4-90eb9ff6697b": {
+      "name": "NetSuite production (MH Crane)",
+      "env": "prod",
+      "status": "pre-go-live"
+    },
+    "d696e3db-7aa8-4d4a-a156-61cd748d0c67": {
+      "name": "NetSuite production (540 Brands, acct 4012264)",
+      "env": "prod"
+    }
+  }
+}

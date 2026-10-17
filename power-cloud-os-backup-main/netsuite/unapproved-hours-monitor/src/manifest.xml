@@ -1,0 +1,16 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+    <projectname>PowerCloud AF Unapproved Hours Monitor</projectname>
+    <frameworkversion>1.0</frameworkversion>
+    <dependencies>
+        <features>
+            <feature required="true">CUSTOMRECORDS</feature>
+            <feature required="true">JOBS</feature>
+            <feature required="true">SERVERSIDESCRIPTING</feature>
+        </features>
+        <objects>
+            <!-- The accountant's role. Referenced by the import Suitelet's
+                 deployment audience; not owned or modified by this project. -->
+            <object>customrole1000</object>
+        </objects>
+    </dependencies>
+</manifest>

@@ -1,0 +1,53 @@
+<customrecordtype scriptid="customrecord_pc_channel_map">
+  <accesstype>NONENEEDED</accesstype>
+  <allowattachments>F</allowattachments>
+  <allowinlineediting>F</allowinlineediting>
+  <allowquickadd>F</allowquickadd>
+  <allowquicksearch>F</allowquicksearch>
+  <description>PC | Reference data. One row per class; a retired channel is marked Inactive. Each row says how the channel relates to Power Cloud and who is billed. No secrets; every role that views an opportunity must be able to read it.</description>
+  <includename>T</includename>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <recordname>PC | Channel Map</recordname>
+  <showcreationdate>F</showcreationdate>
+  <showlastmodified>F</showlastmodified>
+  <shownotes>F</shownotes>
+  <customrecordcustomfields>
+    <customrecordcustomfield scriptid="custrecord_pc_cm_class">
+      <description>PC | Class this row maps. One row per class.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>SELECT</fieldtype>
+      <help>The class (Revenue Source) this row describes. One row per class; a retired channel is marked Inactive.</help>
+      <isformula>F</isformula>
+      <ismandatory>T</ismandatory>
+      <label>PC | Class</label>
+      <selectrecordtype>-101</selectrecordtype>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_pc_cm_relationship">
+      <description>PC | Relationship of this channel to Power Cloud.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>SELECT</fieldtype>
+      <help>Subcontract, Referral or Direct.</help>
+      <isformula>F</isformula>
+      <ismandatory>T</ismandatory>
+      <label>PC | Relationship</label>
+      <selectrecordtype>[scriptid=customlist_pc_cm_relationship]</selectrecordtype>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_pc_cm_billing_party">
+      <description>PC | Customer Power Cloud bills for this channel.</description>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>SELECT</fieldtype>
+      <help>The customer Power Cloud bills. Required when the relationship is Subcontract.</help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>PC | Billing Party</label>
+      <selectrecordtype>-2</selectrecordtype>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+  </customrecordcustomfields>
+</customrecordtype>

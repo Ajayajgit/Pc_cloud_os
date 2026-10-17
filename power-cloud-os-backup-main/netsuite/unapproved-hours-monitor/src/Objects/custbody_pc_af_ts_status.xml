@@ -1,0 +1,23 @@
+<transactionbodycustomfield scriptid="custbody_pc_af_ts_status">
+    <selectrecordtype>[scriptid=customlist_pc_af_ts_status]</selectrecordtype>
+    <applyformatting>F</applyformatting>
+    <defaultchecked>F</defaultchecked>
+    <defaultvalue></defaultvalue>
+    <description>Approval state as of the last import. Read together with AF Status As Of - never on its own.</description>
+    <displaytype>LOCKED</displaytype>
+    <fieldtype>SELECT</fieldtype>
+    <help>Maintained by the AF Unapproved Hours import. Do not edit manually.</help>
+    <label>AF Timesheet Status</label>
+    <storevalue>T</storevalue>
+    <accesslevel>2</accesslevel>
+    <checkspelling>F</checkspelling>
+    <encryptatrest>F</encryptatrest>
+    <globalsearch>F</globalsearch>
+    <isformula>F</isformula>
+    <ismandatory>F</ismandatory>
+    <searchlevel>2</searchlevel>
+    <showinlist>F</showinlist>
+    <isparent>F</isparent>
+    <subtab>[scriptid=custtab_pc_af]</subtab>
+    <bodysale>T</bodysale>
+</transactionbodycustomfield>

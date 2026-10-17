@@ -1,0 +1,51 @@
+# Sync and Office junk
+desktop.ini
+Thumbs.db
+.DS_Store
+~$*
+*.tmp
+
+# Superseded documents, deliberately out of backup scope
+/Archive/
+
+# Client folders never belong in this repo. sync-backup.ps1 copies an explicit
+# allowlist and aborts on unexpected top-level folders; these are belt and braces
+# in case anything is ever copied in by hand.
+/*/source/
+/*/working/
+/*/deliverables/
+/*/execution/
+CONTEXT.md
+
+# ...but the OS's own CONTEXT.md files are not client material and must be
+# backed up. Without these, a restore is missing the client-record stamp.
+!/.claude/**/CONTEXT.md
+!/templates/**/CONTEXT.md
+
+# Raw session captures are verbatim chat and stay on the Drive (session-memory D3,
+# 2026-09-24). sync-backup.ps1 excludes them; this is belt and braces.
+/Internal/sessions/raw/
+**/sessions/raw/
+
+# Python bytecode from running the scripts against the Drive.
+__pycache__/
+*.pyc
+
+# Power Cloud's own NetSuite projects under netsuite/ are mirrored from the dev tree
+# by sync-backup.ps1, which already skips these; belt and braces.
+netsuite/**/node_modules/
+netsuite/**/.suitecloud/
+netsuite/**/*.key
+netsuite/**/*.pem
+netsuite/**/.env
+netsuite/**/.env.local
+netsuite/**/crm_api.local.json
+netsuite/**/.token_cache.json
+netsuite/**/runbook_log.jsonl
+netsuite/**/settings.local.json
+
+# Key material, wherever it strays (2026-10-12).
+*.key
+*.pem
+*.p12
+*.pfx

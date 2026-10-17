@@ -1,0 +1,12 @@
+[Unit]
+Description=Process Paco private replies with a one-second idle interval
+
+[Timer]
+AccuracySec=1s
+OnBootSec=1min
+OnUnitInactiveSec=1s
+Unit=paco-chat.service
+
+[Install]
+WantedBy=timers.target
+

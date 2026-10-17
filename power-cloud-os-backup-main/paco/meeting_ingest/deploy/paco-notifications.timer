@@ -1,0 +1,9 @@
+[Unit]
+Description=Receive Monday notifications independently of private clicks
+[Timer]
+OnBootSec=1min
+OnUnitInactiveSec=10s
+AccuracySec=1s
+Unit=paco-notifications.service
+[Install]
+WantedBy=timers.target

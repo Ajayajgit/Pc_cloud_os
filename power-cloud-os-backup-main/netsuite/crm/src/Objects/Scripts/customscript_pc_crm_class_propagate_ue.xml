@@ -1,0 +1,34 @@
+<usereventscript scriptid="customscript_pc_crm_class_propagate_ue">
+  <name>PC | Class Propagation</name>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/PC/pc_crm_class_propagate_ue.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_pc_crm_class_prop_inv">
+      <allroles>T</allroles>
+      <executioncontext>USERINTERFACE|WEBSERVICES|RESTWEBSERVICES|RESTLET|CSVIMPORT|MAPREDUCE|SCHEDULED|WORKFLOW|SUITELET</executioncontext>
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <recordtype>INVOICE</recordtype>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_pc_crm_class_prop_cm">
+      <allroles>T</allroles>
+      <executioncontext>USERINTERFACE|WEBSERVICES|RESTWEBSERVICES|RESTLET|CSVIMPORT|MAPREDUCE|SCHEDULED|WORKFLOW|SUITELET</executioncontext>
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <recordtype>CREDITMEMO</recordtype>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_pc_crm_class_prop_tb">
+      <allroles>T</allroles>
+      <executioncontext>USERINTERFACE|WEBSERVICES|RESTWEBSERVICES|RESTLET|CSVIMPORT|MAPREDUCE|SCHEDULED|WORKFLOW|SUITELET</executioncontext>
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <recordtype>TIMEBILL</recordtype>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</usereventscript>

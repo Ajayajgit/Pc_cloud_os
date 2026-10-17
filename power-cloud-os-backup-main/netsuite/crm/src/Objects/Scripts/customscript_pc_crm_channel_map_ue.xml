@@ -1,0 +1,16 @@
+<usereventscript scriptid="customscript_pc_crm_channel_map_ue">
+  <name>PC | Channel Map Guard</name>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/PC/pc_crm_channel_map_ue.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_pc_crm_channel_map_ue">
+      <allroles>T</allroles>
+      <executioncontext>USERINTERFACE|WEBSERVICES|RESTWEBSERVICES|RESTLET|CSVIMPORT</executioncontext>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <recordtype>[scriptid=customrecord_pc_channel_map]</recordtype>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</usereventscript>

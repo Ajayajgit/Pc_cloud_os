@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_pc_commercial_model">
+  <description>PC | Commercial model of a deal, copied from the opportunity to the project.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>PC | Commercial Model</name>
+  <customvalues>
+    <customvalue scriptid="val_pc_cm_tm">
+      <isinactive>F</isinactive>
+      <value>Time and materials</value>
+    </customvalue>
+    <customvalue scriptid="val_pc_cm_ms">
+      <isinactive>F</isinactive>
+      <value>Managed services</value>
+    </customvalue>
+    <customvalue scriptid="val_pc_cm_pss">
+      <isinactive>F</isinactive>
+      <value>Power Suite subscription</value>
+    </customvalue>
+  </customvalues>
+</customlist>

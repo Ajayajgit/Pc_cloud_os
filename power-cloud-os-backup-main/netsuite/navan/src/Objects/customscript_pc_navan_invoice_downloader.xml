@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheduledscript scriptid="customscript_pc_navan_invoice_downloader">
+    <name>PowerCloud - Navan Invoice Downloader</name>
+    <scriptfile>[/SuiteScripts/PowerCloud/navan-expense/scripts/ss_navan_invoice_downloader.js]</scriptfile>
+    <description>Pushes a batch of booking-map rows missing invoices to the PC Browser Relay, which logs into Navan with a real browser, captures each PDF, and posts it back to the rl_navan_invoice_attach RESTlet for attachment.</description>
+    <isinactive>F</isinactive>
+    <notifyowner>T</notifyowner>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_pc_navan_invoice_downloader">
+            <title>PowerCloud Navan Invoice Downloader</title>
+            <status>SCHEDULED</status>
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <!-- Daily 08:00 schedule is set in the NetSuite UI, NOT here: SDF's server-side
+                 validation rejects a scheduled-script recurrence ("end-by date before start
+                 date {1}") even though the identical structure is valid for Map/Reduce. If a
+                 future deploy resets this deployment, re-confirm the schedule in the UI. -->
+        </scriptdeployment>
+    </scriptdeployments>
+</scheduledscript>

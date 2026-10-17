@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_pc_af_ts_status">
+    <description>Anderson Frank timesheet approval state, as of the last import. Approved is always an inference from absence - AF never states it. Where AF First Seen Unapproved is populated we watched it go unapproved then absent; where it is blank the invoice was never seen unapproved at all.</description>
+    <isinactive>F</isinactive>
+    <isordered>T</isordered>
+    <name>PC AF Timesheet Status</name>
+    <customvalues>
+        <customvalue scriptid="val_too_recent">
+            <isinactive>F</isinactive>
+            <value>Awaiting Status</value>
+        </customvalue>
+        <customvalue scriptid="val_approved">
+            <isinactive>F</isinactive>
+            <value>Approved</value>
+        </customvalue>
+        <customvalue scriptid="val_unapproved">
+            <isinactive>F</isinactive>
+            <value>Unapproved</value>
+        </customvalue>
+    </customvalues>
+</customlist>
